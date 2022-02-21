@@ -1,25 +1,25 @@
-<h1 align="center">WordSkills</h1>
+<h1 align="center">WorldSkills</h1>
 <p align="center"><a href="https://docs.microsoft.com/ru-ru/dotnet/csharp/?ranMID=46131&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-2U2Ef54GskLqnjXpxD9_hg&epi=a1LgFw09t88-2U2Ef54GskLqnjXpxD9_hg&irgwc=1&OCID=AID2200057_aff_7806_1243925&tduid=%28ir__bigzef2mxgkf6zoxfl9yvpgsmf2xt3gq9hivua2k00%29%287806%29%281243925%29%28a1LgFw09t88-2U2Ef54GskLqnjXpxD9_hg%29%28%29&irclickid=_bigzef2mxgkf6zoxfl9yvpgsmf2xt3gq9hivua2k00"><img src="https://img.shields.io/static/v1?label=C#&message=6.0.1&color=green" alt="service-test status"></a> 
-    <blockquote>WordSkills - Автономная некоммерческая организация «Агентство развития профессионального мастерства», функциональный преемник Союза «Молодые профессионалы». Целью организации является развитие движения Ворлдскиллс в Российской Федерации</blockquote>
+    <blockquote>WorldSkills - РђРІС‚РѕРЅРѕРјРЅР°СЏ РЅРµРєРѕРјРјРµСЂС‡РµСЃРєР°СЏ РѕСЂРіР°РЅРёР·Р°С†РёСЏ В«РђРіРµРЅС‚СЃС‚РІРѕ СЂР°Р·РІРёС‚РёСЏ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕРіРѕ РјР°СЃС‚РµСЂСЃС‚РІР°В», С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅС‹Р№ РїСЂРµРµРјРЅРёРє РЎРѕСЋР·Р° В«РњРѕР»РѕРґС‹Рµ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»С‹В». Р¦РµР»СЊСЋ РѕСЂРіР°РЅРёР·Р°С†РёРё СЏРІР»СЏРµС‚СЃСЏ СЂР°Р·РІРёС‚РёРµ РґРІРёР¶РµРЅРёСЏ Р’РѕСЂР»РґСЃРєРёР»Р»СЃ РІ Р РѕСЃСЃРёР№СЃРєРѕР№ Р¤РµРґРµСЂР°С†РёРё</blockquote>
 
-### Используемые библиотеки:
+### РСЃРїРѕР»СЊР·СѓРµРјС‹Рµ Р±РёР±Р»РёРѕС‚РµРєРё:
 
 - SSMS
 
-### Состав команды
+### РЎРѕСЃС‚Р°РІ РєРѕРјР°РЅРґС‹
 
-* Наставник - 
-* Наставник - 
-* Кодер - GIS
-* Кодер - Paranoic
-* Кодер - 
-* Кодер - 
+* РќР°СЃС‚Р°РІРЅРёРє - 
+* РќР°СЃС‚Р°РІРЅРёРє - 
+* РљРѕРґРµСЂ - GIS
+* РљРѕРґРµСЂ - Paranoic
+* РљРѕРґРµСЂ - 
+* РљРѕРґРµСЂ - 
 
-### Документации
+### Р”РѕРєСѓРјРµРЅС‚Р°С†РёРё
 
-* [Документация по WordSkills](InfoBase/info.md) 
+* [Р”РѕРєСѓРјРµРЅС‚Р°С†РёСЏ РїРѕ WorldSkills](InfoBase/info.md) 
 
-### Сноска
+### РЎРЅРѕСЃРєР°
 
-Copyright © 2020-2021 [Ferbray](https://github.com/Ferbray).
-Date start — 21.02.2022
+Copyright В© 2020-2021 [Ferbray](https://github.com/Ferbray).
+Date start вЂ” 21.02.2022
