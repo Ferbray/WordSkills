@@ -1,0 +1,8 @@
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\obj\Debug\LearnC.csproj.AssemblyReference.cache
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\obj\Debug\LearnC.csproj.SuggestedBindingRedirects.cache
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\obj\Debug\LearnC.csproj.CoreCompileInputs.cache
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\bin\Debug\LearnC.exe.config
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\bin\Debug\LearnC.exe
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\bin\Debug\LearnC.pdb
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\obj\Debug\LearnC.exe
+C:\Users\yt_fe\OneDrive\Рабочий стол\Learning C#\LearnC\LearnC\obj\Debug\LearnC.pdb
