@@ -1,0 +1,8 @@
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\bin\Debug\Taks.exe.config
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\bin\Debug\Taks.exe
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\bin\Debug\Taks.pdb
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\obj\Debug\Taks.csproj.AssemblyReference.cache
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\obj\Debug\Taks.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\obj\Debug\Taks.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\obj\Debug\Taks.exe
+C:\Users\user\Documents\VerySecret\Education\Taks\Taks\obj\Debug\Taks.pdb

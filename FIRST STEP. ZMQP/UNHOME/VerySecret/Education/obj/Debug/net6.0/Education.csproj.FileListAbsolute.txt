@@ -1,0 +1,5 @@
+C:\Users\user\Documents\VerySecret\Education\obj\Debug\net6.0\Education.csproj.AssemblyReference.cache
+C:\Users\user\Documents\VerySecret\Education\obj\Debug\net6.0\Education.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\VerySecret\Education\obj\Debug\net6.0\Education.AssemblyInfoInputs.cache
+C:\Users\user\Documents\VerySecret\Education\obj\Debug\net6.0\Education.AssemblyInfo.cs
+C:\Users\user\Documents\VerySecret\Education\obj\Debug\net6.0\Education.csproj.CoreCompileInputs.cache

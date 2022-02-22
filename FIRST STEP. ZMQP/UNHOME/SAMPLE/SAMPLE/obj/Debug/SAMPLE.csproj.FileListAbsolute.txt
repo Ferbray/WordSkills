@@ -1,0 +1,8 @@
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\bin\Debug\SAMPLE.exe.config
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\bin\Debug\SAMPLE.exe
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\bin\Debug\SAMPLE.pdb
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\obj\Debug\SAMPLE.csproj.AssemblyReference.cache
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\obj\Debug\SAMPLE.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\obj\Debug\SAMPLE.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\obj\Debug\SAMPLE.exe
+C:\Users\user\Documents\VerySecret\Education\SAMPLE\SAMPLE\obj\Debug\SAMPLE.pdb

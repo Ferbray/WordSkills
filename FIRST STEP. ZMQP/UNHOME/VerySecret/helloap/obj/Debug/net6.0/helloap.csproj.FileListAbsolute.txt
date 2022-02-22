@@ -1,0 +1,15 @@
+C:\Users\user\Documents\VerySecret\helloap\bin\Debug\net6.0\helloap.exe
+C:\Users\user\Documents\VerySecret\helloap\bin\Debug\net6.0\helloap.deps.json
+C:\Users\user\Documents\VerySecret\helloap\bin\Debug\net6.0\helloap.runtimeconfig.json
+C:\Users\user\Documents\VerySecret\helloap\bin\Debug\net6.0\helloap.dll
+C:\Users\user\Documents\VerySecret\helloap\bin\Debug\net6.0\helloap.pdb
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.csproj.AssemblyReference.cache
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.AssemblyInfoInputs.cache
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.AssemblyInfo.cs
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.dll
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\refint\helloap.dll
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.pdb
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\helloap.genruntimeconfig.cache
+C:\Users\user\Documents\VerySecret\helloap\obj\Debug\net6.0\ref\helloap.dll

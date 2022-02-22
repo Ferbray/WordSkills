@@ -1,0 +1,8 @@
+D:\UNHOME\FiveApp\FiveApp\bin\Debug\FiveApp.exe.config
+D:\UNHOME\FiveApp\FiveApp\bin\Debug\FiveApp.exe
+D:\UNHOME\FiveApp\FiveApp\bin\Debug\FiveApp.pdb
+D:\UNHOME\FiveApp\FiveApp\obj\Debug\FiveApp.csproj.AssemblyReference.cache
+D:\UNHOME\FiveApp\FiveApp\obj\Debug\FiveApp.csproj.SuggestedBindingRedirects.cache
+D:\UNHOME\FiveApp\FiveApp\obj\Debug\FiveApp.csproj.CoreCompileInputs.cache
+D:\UNHOME\FiveApp\FiveApp\obj\Debug\FiveApp.exe
+D:\UNHOME\FiveApp\FiveApp\obj\Debug\FiveApp.pdb
