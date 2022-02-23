@@ -48,7 +48,7 @@ namespace LearnC
             Console.ReadKey();
         }
 
-        static void Learn1()
+        public static void Learn1()
         {
             int bl_def = default;
             Console.WriteLine($"Int default: {bl_def}");
@@ -65,7 +65,7 @@ namespace LearnC
             }
         }
 
-        static void Learn2()
+        public static void Learn2()
         {
             string spl = "12,3_4,56_7,89";
             string[] list1 = spl.Split('_');
@@ -85,7 +85,7 @@ namespace LearnC
             }
         }
 
-        static void Learn3()
+        public static void Learn3()
         {
             StringBuilder remake_string = new StringBuilder("It's megasuper string");
             Console.WriteLine(remake_string.ToString());
