@@ -1,0 +1,7 @@
+========FOR START========
+Programming Language C# | Язык программирования C# | BOOK
+=======NEXT=============
+
+1) https://professorweb.ru/my/ADO_NET/base/level1/ado_net_index.php
+
+2) https://professorweb.ru/my/WPF/base_WPF/level1/base_WPF_index.php 
