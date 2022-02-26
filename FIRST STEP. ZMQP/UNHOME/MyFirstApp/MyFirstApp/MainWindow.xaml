@@ -1,0 +1,23 @@
+﻿<Window x:Class="MyFirstApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyFirstApp"
+        mc:Ignorable="d"
+        Title="zxcDenchik228" Height="450" Width="800"
+        Icon="Resources/LOGO.jpg">
+    <Grid Background="#34103d">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Resources/LOGO.jpg" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,15,0,0" Width="46" Opacity="0.7" Grid.ColumnSpan="2"></Image>
+        <TextBlock Text="zxcDenchik228" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="244,31,0,0" Foreground="#ddff03" FontFamily="OCR A Extended" FontWeight="Normal" TextDecorations="{x:Null}" FontStyle="Normal" Background="#26A2FF07" Grid.Column="1"/>
+        <Grid Background="#210329" VerticalAlignment="Top" Height="80" Panel.ZIndex="-2" Grid.ColumnSpan="2"></Grid>
+        <Grid Background="#210329" VerticalAlignment="Bottom" Height="35" Grid.ColumnSpan="2"/>
+        <Frame NavigationUIVisibility="Hidden" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" Grid.ColumnSpan="2"/>
+        <Button x:Name="ButtonBack" Content="Fontan" HorizontalAlignment="Right" Margin="0,20,20,0" VerticalAlignment="Top" Height="41" Width="103" Background="#FF928E00" BorderBrush="#00707070" Foreground="#FFFFF807" FontFamily="Agency FB" FontSize="20" Click="ButtonBack_Click" Grid.Column="1"/>
+    </Grid>
+
+</Window>
