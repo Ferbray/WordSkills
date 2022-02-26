@@ -10,8 +10,8 @@
         <Image Panel.ZIndex="2" Source="Resources/maxresdefault.jpg" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="109" Margin="51,19,0,0"></Image>
         <TextBlock Text="ZXCVanya" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFFFFF" Panel.ZIndex="2" Margin="0,31,0,0" FontFamily="Bradley Hand ITC"></TextBlock>
         <Grid VerticalAlignment="Bottom" Height="50" Background="#111111"/>
-        <Grid HorizontalAlignment="Center" Background="#FFFFFF" Width="800" Margin="0,100,0,50"/>
+        <Grid HorizontalAlignment="Center" Background="#81104F" Width="800" Margin="0,100,0,50"/>
         <Grid VerticalAlignment="Top" MinHeight="100" Background="#111111"/>
-        <Frame Grid.Row="1" x:Name="MainFrame"/>
+        <Frame NavigationUIVisibility="Hidden" Grid.Row="1" x:Name="MainFrame"/>
     </Grid>
 </Window>
