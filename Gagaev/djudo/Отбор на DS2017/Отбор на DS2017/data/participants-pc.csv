@@ -1,0 +1,219 @@
+Number;Name;LastName;Gender;Birthday;Birthtown;Street;Hometown;Sportsclub;Weight
+20;Pack;Marie;f;17.02.2009;Waren (Müritz);Zur Alten Schmiede 22;17349 Waren (Müritz);JSV Waren;29
+23;Trenks;Anna;f;10.02.2009;Berlin;Schwanbecker Strae 8;17087 Berlin;PSV Berlin;28
+7;Enders;Anna;f;18.02.2009;Berlin;Semmelweitrae 21;17258 Berlin;PSV Berlin;28
+1;Behnke;Ann-Kathrin;f;20.02.2009;Demmin;Siedlung Nr. 2;17091 Demmin;Judo MV;29
+9;Köpke;Franziska Marie;f;02.02.2009;Dresden;Sperlingstrae 9;17034 Dresden;Dresdner Judo Verein;28
+25;Weiler;Tim;m;30.09.2006;Magdeburg;Zum grünen Steig 3;17094 Magdeburg;JSV Magdeburg;35
+12;Hofmann;Paul;f;07.11.2006;Leipzig;Ziolkowskistrae 18;17089 Leipzig;Leipziger Sportlöwen;35
+4;Fricke;Jan;m;24.12.2006;Arnstadt;Ziegelei 3;17034 Arnstadt;;35
+19;Nebelung;Nico;f;11.08.2005;Waren;Warener Chauee 38;17091 Waren;JSV Waren;35
+25;Wachsmuth;Noel Amon;m;22.08.2005;Waren;Waldmeisterweg 3;17034 Waren;JSV Waren;40
+11;Petersen;Sandro;f;28.08.2005;Neustrelitz;Usedomer Strae 3;17255 Neustrelitz;Neustrelitzer PSV;40
+12;Schell;Susan;f;04.09.2005;Neustrelitz;Tollenseweg 1;17036 Neustrelitz;Neustrelitzer PSV;40
+3;Bednarek;Talea Asina;m;27.09.2005;Goslar;Teschendorfer Chauee 27;17348 Goslar;;39
+26;Benz;Tom;m;01.12.2005;Suhl;Kopernikutrae 24;17237 Suhl;Suhler JSV;44
+15;Fejleh;Vanea;m;27.01.2006;Meiningen;Koszaliner Strae 4;17034 Meiningen;;39
+11;Greiner;Vivien;m;04.02.2006;Anklam;Kurze Str. 4;07309 Anklam;Hanse-Judo;33
+10;Hoffmann;Salim;f;15.02.2006;Neubrandenburg;L.-v.-Beethoven-Ring 14;07036 Neubrandenburg;Judo Jedis NB;37
+11;Holzmann;Rudi;m;01.03.2006;Aachen;Lindenring 11;17098 Berlin;PSV Berlin;31
+16;Kirschke;Nora-Aileen;m;08.03.2006;Anklam;Lindenstrae 16;17036 Anklam;Hanse-Judo;36
+6;Langhans;Moritz;m;08.03.2005;Berlin;Marie-Hager-Strae 36;17094 Berlin;PSV Berlin;41
+15;Laskewitz;Moritz;m;25.04.2003;Cottbus;Max-Planck-Strae 4;17036 Cottbus;Judo Ost;60
+9;Manjah;Maximilian;m;28.04.2004;Demmin;Melienstrae 15;17036 Demmin;Judo MV;57
+5;Mohr;Marius;m;04.05.2006;Ufa/Ruia;Straustrae 3;17036 Bad Liebenwerda;PSV Berlin;35
+11;Rosasco;Marie-Luise;f;08.05.2006;Waren;Strae zum Reitplatz 5a;17036 Waren;JSV Waren;37
+17;Roa;Malik;m;12.05.2005;Prenzlau;Strae der Jugend 7;17033 Prenzlau;Judo MV;33
+13;Schneider;Luisa;m;13.05.2003;Neustrelitz;Stralsunder Strae 24;17033 Neustrelitz;Neustrelitzer PSV;45
+13;Schockenbäumer;Lisa;m;17.05.2004;Eisenach;Stolpe 34;17034 Eisenach;Judo Ost;31
+2;Staszewska;Len Malte;f;25.05.2004;Bern;Salvador-Allende-Strae 61;17091 Berlin;PSV Berlin;41
+8;Stopfel;Lea;f;26.05.2005;Neubrandenburg;Sabeler Weg 27;17036 Neubrandenburg;Judo Jedis NB;43
+22;Thomas;Lea;m;05.06.2003;Kiel;Rudolf-Virchow-Str. 23;17036 Kiel;Kieler PSV;42
+10;Tutov;Karsten Julius;f;07.06.2006;Bad Schwartau;Röntgenstrae 10;17036 Bad Schwartau;;46
+18;Wasmund;Julian;f;16.06.2005;Göttingen;Robert-Koch-Strae 28;17337 Göttingen;PSV Göttingen;44
+19;Winter;Jules Ernest;f;15.07.2005;Unter Allgäu;Robert-Koch-Strae 12;17033 Unter Allgäu;Bayerischer Judoverein;44
+15;Schlaack;Jule;m;26.08.2004;Köln;Robert-Blum-Strae 6;17033 Köln;PSV Köln;47
+13;Rogge;Jonas;f;01.09.2003;Neubrandenburg;Radegaststrae 7;17217 Neubrandenburg;Judo Jedis NB;44
+5;Retzlaff;Jona;f;05.09.2003;Oberhof;Klein Methling 43;17207 Oberhof;;42
+11;Metz;Joe;f;22.09.2003;Neubrandenburg;Mlada-Boleslaver-Str. 48 (Mu) Barkower Str. 14c (Va);17033 Neubrandenburg;Judo Jedis NB;31
+14;Matzke;Jennifer;m;24.09.2003;Anklam;Müritzweg 5;17033 Anklam;Hanse-Judo;30
+2;Marung;Janik;m;27.09.2004;Demmin;Nbdg. Chauee 13;17358 Demmin;Judo MV;33
+3;Lubs;Hannes;m;23.10.2005;Geesthacht;Neustrelitzer Str. 51;17094 Lübeck;Lübecker Judoverein;31
+3;Lippstreu;Hans;m;27.10.2006;Naltschick/Ruia;Neustrelitzer Strae 101;17255 Lübeck;Lübecker Judoverein;38
+10;Levermann;Florian;m;19.11.2003;Neubrandenburg;Ottenhagen 12;17039 Neubrandenburg;Judo Jedis NB;36
+1;Ho Thu;Felix;m;16.01.2004;Dortmund;Otto-Lilienthal-Str. 20;17033 Dortmund;;30
+18;Grabe;Ewa Marta;f;17.01.2005;Neubrandenburg;Petrosawodsker Str. 46;17034 Neubrandenburg;Judo Jedis NB;52
+4;Zickuhr;Dania;m;18.01.2006;Neubrandenburg;Petrosawodsker Strae 74;17036 Neubrandenburg;Judo Jedis NB;37
+23;Walter;Christoph;m;20.01.2006;Sólechow/Poland;Pinnow Nr. 21;17036 Mölln;;33
+12;Stoof;Chris-Jeremy;m;07.02.2006;Prenzlau;Prenzlauer Strae 48;17159 Prenzlau;Judo MV;39
+2;Stadach;Cheyenne;f;13.02.2006;Pasewalk;Kirschenallee 45;17033 Pasewalk;;38
+1;Schumann;Cheyenne;f;24.02.2006;Papenburg;Kirschenallee 43;17033 Papenburg;;
+17;Schöler;Berenike Maria;f;25.02.2005;Neubrandenburg;Kirchstrae 38;17039 Neubrandenburg;Judo Jedis NB;
+14;Salomon;Adnan;f;31.03.2004;Neubrandenburg;Keinerstrae 22;17033 Neubrandenburg;Judo Jedis NB;
+16;Pohl;Markus;m;06.05.2003;Karlsruhe;Kastanienallee 39;17091 Karlsruhe;Karlsruher JV;36
+6;Meier;Marvin;m;06.06.2004;Neubrandenburg;Jorg-Brücke-Strae 8;17033 Neubrandenburg;Judo Jedis NB;37
+15;Lange;Nele;m;13.07.2005;Frankfurt Oder;Brauereistrae 79;17033 Frankfurt Oder;;38
+9;Krasemann;Paul Eric;m;27.07.2006;Neubrandenburg;Brunner Strae 18;17033 Neubrandenburg;Judo Jedis NB;36
+4;Klütz;Philipp;m;09.08.2004;Frankfurt am Main;Carl-Stolte-Strae 19;17033 Frankfurt am Main;JSV Frankfurt;33
+9;Jaensch;Richard;f;11.08.2001;Neubrandenburg;Dahlienstieg 6;17348 Neubrandenburg;Judo Jedis NB;39
+4;Holz;Rieke;f;12.08.2005;Neubrandenburg;Dorfstrae 12b;17033 Neubrandenburg;Judo Jedis NB;32
+4;Hirsch;Robert;f;15.08.2006;Helmstedt;Dorfstrae 21;17033 Helmstedt;;32
+3;Hannemann;Sebastian;m;29.08.2004;Neubrandenburg;Heidepark 130;17309 Neubrandenburg;Judo Jedis NB;40
+20;Halberstadt;Thomas;f;11.09.2005;Greifswald;Hildebrandshagen 1;17039 Greifswald;;44
+21;Fischer;Tobias;m;05.10.2006;Neubrandenburg;John-Schehr-Strae 36;17033 Neubrandenburg;Judo Jedis NB;37
+7;Ellmann;Viviane;f;05.10.2003;Erfurt;John-Schehr-Strae 11 B;17348 Erfurt;;48
+13;Dittrich;Vivien;f;10.10.2004;Neubrandenburg;John-Schehr-Str. 20;17214 Neubrandenburg;Judo Jedis NB;32
+2;Denke;Zoé;m;26.10.2005;Mannheim;Johanneshöhe 4;17033 Mannheim;;34
+8;Buschermöhle;Lennart;m;31.10.2006;Neubrandenburg;Johanna-Beckmann-Ring 60;17034 Neubrandenburg;Judo Jedis NB;47
+16;Brunk;Henning Laurenz;m;05.11.2003;Magdeburg;Jahnstrae 46;17034 Magdeburg;JSV Magdeburg;31
+7;Brenndörfer;Aileen;f;04.12.2004;Neubrandenburg;Jägerstrae 1;17098 Neubrandenburg;Judo Jedis NB;38
+10;Böhm;Alexander;m;06.12.2005;Homs;Hofstrae 14;17033 Homs;;40
+8;Beigang;Anna-Lena;f;07.12.2006;Demmin;Hinter der Grünen Str. 5;17039 Demmin;Judo MV;36
+14;Becker;Ann-Kathrin;m;30.12.2004;Gera;Ernst-Alban-Strae 38;17094 Gera;;42
+8;Beck;Ben Marcel;m;06.01.2005;Neubrandenburg;Erich-Zastrow-Strae 12;17034 Neubrandenburg;Judo Jedis NB;43
+10;Augustin;Benno;m;12.01.2006;Jena;Am Sandberg 6;17036 Jena;Judo Ost;38
+27;Robert;Constantin;f;26.01.2004;Neubrandenburg;Am Trockenen Weg 10;17034 Neubrandenburg;Judo Jedis NB;42
+9;Schmigiel;Christian;m;29.01.2005;Friedrichshafen;Anton-Saefkow-Strae 1;17034 Friedrichshafen;SV Friedrichshafen;49
+24;Schiller;Felix;f;30.01.2006;Neubrandenburg;Bahnhofstrae 6;17036 Neubrandenburg;Judo Jedis NB;27
+17;Scharmin;Gina Michelle;m;03.02.2005;Neubrandenburg;Gebr.-Boll-Strae 16;17033 Neubrandenburg;Judo Jedis NB;37
+6;Roloff;Ibrahim;m;10.02.2005;Rostock;Berndshof 27;17091 Rostock;Hanse-Judo;41
+5;Lukesch;Jakob;m;19.02.2004;Neubrandenburg;Dorfstrae 9;17219 Neubrandenburg;Judo Jedis NB;46
+1;Kurzenberg;Johanna;m;23.03.2006;Potsdam;Dümperstr. 20;17091 Potsdam;PSV Berlin;51
+24;Kohlschmidt;Lukas;m;28.03.2005;Neubrandenburg;Eichhörnchenweg 1;17033 Neubrandenburg;Judo Jedis NB;53
+14;Klostermann;Maximilian;m;02.04.2004;Brandenburg;A.-Dürer-Strae 4;17094 Brandenburg;PSV Berlin;41
+5;Groth;Ole;m;08.04.2004;Neubrandenburg;Ahornweg 12;17034 Neubrandenburg;Judo Jedis NB;43
+7;Giese;Pascal Bastian;m;16.04.2004;Rostock;Am Anger 26 B;17034 Rostock;Hanse-Judo;45
+1;Gerwien;Sven;m;17.04.2004;Neubrandenburg;Am Feldrain 3;17373 Neubrandenburg;Judo Jedis NB;39
+12;Füel;Tom;m;07.05.2005;Neubrandenburg;Elsterweg 12;17033 Neubrandenburg;Judo Jedis NB;33
+2;Frahm;Amanda;m;21.05.2006;Bremen;Fohlenwinkel 28;17348 Bremen;;37
+8;Fischer;Anna;m;26.05.2004;Neubrandenburg;Gartenstrae 18;17033 Neubrandenburg;Judo Jedis NB;32
+6;Diederich;Bastian;m;30.05.2005;Neubrandenburg;Gartenstrae 21 Hauptstrae 8;17034 Neubrandenburg;Judo Jedis NB;48
+12;Czok;Ben Luca;f;04.06.2004;Rostock;Georg-Schumann-Strae 1;17217 Rostock;Hanse-Judo;45
+3;Creutzburg;Friedrich;m;21.06.2005;Neubrandenburg;Glienker Dorfstrae 43;17094 Neubrandenburg;Judo Jedis NB;39
+7;Bülow;Huein;m;28.06.2004;Gera;Greifstr. 12;17039 Gera;Thüringer SV;34
+13;Bremer;Jannik;m;01.08.2006;Pasewalk;Greifswalder Strae 4;17098 Pasewalk;;39
+14;Altahhan;Joachim;f;24.09.2005;Waren;Grüne Strae 11;17033 Waren;JSV Waren;26
+;Albrecht;Leon;m;15.05.2006;Waren (Müritz);Am Mühlenweg 7b;17349 Waren (Müritz);JSV Waren;31
+;Abel;Lukas;m;25.07.2003;Berlin;Hohlweg 1;17087 Berlin;PSV Berlin;38
+;Mewes;Marten Mathias;m;12.10.2003;Berlin;Stettiner Strae 26;17258 Berlin;PSV Berlin;32
+;Meier;Maximilian Tobias;m;10.04.2004;Demmin;Berliner Chauee 2;17091 Demmin;Judo MV;40
+;Mehler;Pepe;f;26.04.2004;Dresden;Leipziger Allee 8;17034 Dresden;Dresdner Judo Verein;44
+;Marzisz;Sophie;m;30.03.2004;Magdeburg;Schuhstrae 2;17094 Magdeburg;JSV Magdeburg;37
+;Manteufel;Bengt-Florian;f;07.11.2004;Leipzig;Gustaf-Olafson-Strae 46;17089 Leipzig;Leipziger Sportlöwen;48
+;Malchow;Birte Sophie;f;24.10.2004;Arnstadt;Bergstrae 3;17034 Arnstadt;Thüringer SV;32
+;Liebau;Celine;m;03.04.2005;Neubrandenburg;Agenten Weg 6;17217 Neubrandenburg;Judo Jedis NB;34
+;Levenhagen;Christian;m;18.04.2005;Anklam;Einhorn Allee 14;17033 Anklam;Hanse-Judo;47
+;Kelm;Danny;m;06.05.2005;Günstow;Star-Wars-Strae 32;17235 Günstow;;31
+;Karsch;Dschafar;f;07.07.2005;Solingen;Hauptstrae 9a;17033 Solingen;Judoverein Soli;32
+;Gischow;Emma;m;27.07.2005;Göppingen;Turmstrae 6;17217 Göppingen;Göppinger Judojugend;40
+;Giesa ;Eric;m;05.08.2005;Waren (Müritz);Bethesda Weg 5;17192 Waren (Müritz);JSV Waren;44
+;Geisler;Florian;m;11.08.2005;Waren;Oblivion Platz 7;17091 Waren;JSV Waren;37
+;Gauck;Frank;m;22.08.2005;Waren;Hoher Weg 9;17034 Waren;JSV Waren;48
+;Fröhlich;Florian;f;28.08.2005;Neustrelitz;Eitrae 2;17255 Neustrelitz;Neustrelitzer PSV;32
+;Franzke;Franziska;f;04.09.2005;Neustrelitz;Blumenweg 67;17036 Neustrelitz;Neustrelitzer PSV;40
+;Dawidowicz;Franziska;f;27.09.2005;Goslar;Königswegs 5;17348 Goslar;;44
+;Buth;Laura-Sophie;f;01.12.2005;Suhl;Game-Of-Thrones-Allee 3;17237 Suhl;Suhler JSV;37
+;Bui Kieu Duc;Lea;f;27.01.2006;Meiningen;Jarvis Allee 3;17034 Meiningen;;48
+;Brunner;Lena;f;04.02.2006;Anklam;Tardis Platz 4;17309 Anklam;Hanse-Judo;32
+;Breitsprecher;Maja;m;15.02.2006;Neubrandenburg;Butrae 12;17036 Neubrandenburg;Judo Jedis NB;34
+;Brandt;Martin;m;01.03.2006;Budapest/Hungary;Eberhof 23;17098 Freiburg;;47
+;Blank;Minh;m;08.03.2006;Anklam;Hof I;17036 Anklam;Hanse-Judo;31
+;Birkholz;Sven Hendrik;m;08.03.2005;Berlin;Strandstrae 3;17094 Berlin;PSV Berlin;41
+;Behland;Timo;m;25.04.2003;Cottbus;Kleiner Weg 1;17036 Cottbus;Judo Ost;43
+;Bauch;Tristan;m;04.12.2004;Demmin;Groer Weg 5;17036 Demmin;Judo MV;37
+;Barsikow;Winnie;m;06.12.2005;Debrecen/Hungary;Wellington Allee 3;17036 Mühlheim;;40
+;Baar;Leo Richard;f;07.12.2006;Waren;Merkelstrae 2;17036 Waren;JSV Waren;48
+;Flemig;Maja;m;30.12.2004;Prenzlau;Gauckallee 8;17033 Prenzlau;Judo MV;31
+;Ewert;Malte;m;06.01.2005;Neustrelitz;Einsteinstrae 1;17033 Neustrelitz;Neustrelitzer PSV;33
+;Eingel;Niklas;m;12.01.2006;Eisenach;Schrödingers Weg 5;17034 Eisenach;Judo Ost;39
+;Dolata;Paul;f;26.01.2004;Bern;Galileo Platz 3;17091 Cottbus;Judo Ost;38
+;Deuse;Sina;m;29.01.2005;Neubrandenburg;Curiestrae 76;17036 Neubrandenburg;Judo Jedis NB;42
+;Karp;Till;m;30.01.2006;Kiel;Planck Platz 4;17036 Kiel;Kieler PSV;37
+;Kamzol;Tom;m;03.02.2005;Bad Schwartau;Memer Platz 3;17036 Bad Schwartau;;39
+;Jarke;Tom;f;10.02.2005;Göttingen;Telarstrae 2;17337 Göttingen;PSV Göttingen;41
+;Janicke;Gina Maria;m;19.02.2004;Unter Allgäu;Meyerstrae 1;17033 Unter Allgäu;Bayrischer Judoverein;37
+;Jahn;Henry;f;23.03.2006;Köln;Roentgenstrae 2;17033 Köln;PSV Köln;42
+;Jabs;Jasmin;f;28.03.2005;Neubrandenburg;Hertzallee 65;17217 Neubrandenburg;Judo Jedis NB;42
+;Ismaeel;Jette;f;02.04.2004;Oberhof;Zuse Weg 3;17207 Oberhof;;41
+;Holzhausen;Joanne;f;08.04.2004;Neubrandenburg;Kepplerstrae 3;17033 Neubrandenburg;Judo Jedis NB;39
+;Hinz;Jona;f;16.04.2004;Anklam;Gaustrae 2;17033 Anklam;Hanse-Judo;31
+;Hieke;Jule;m;17.04.2004;Demmin;Leibniz Weg 6;17358 Demmin;Judo MV;30
+;Heldt;Julius;f;07.05.2005;Geesthacht;Fahrenheit Allee 2;17094 Eisenach;Judo Ost;33
+;Hedemann;Luisa;m;21.05.2006;Naltschick/Ruia;Celsius Platz 4;17255 Landsberg am Lech;JSV Landsberg;41
+;Hausknecht;Maximilian;m;26.05.2004;Neubrandenburg;Kelvin Platz 3;17039 Neubrandenburg;Judo Jedis NB;53
+;Hartmann;Patrick;m;30.05.2005;Dortmund;Kennedy Weg 3;17033 Dortmund;;58
+;Hagen;Paul;f;04.06.2004;Neubrandenburg;Schillerstrae 3;17034 Neubrandenburg;Judo Jedis NB;38
+;Hafner;Rosemarie;f;21.06.2005;Neubrandenburg;Goethestrae 2;17036 Neubrandenburg;Judo Jedis NB;39
+;Guseinli;Sarah Michelle;m;28.06.2004;Sólechow/Poland;Leingplatz 6;17036 Rostock;Hanse-Judo;33
+;Gronwald;Tobias;m;25.02.2005;Prenzlau;Wieland 3;17159 Prenzlau;Judo MV;39
+;Görs;Viktor;f;31.03.2004;Pasewalk;Schultz-von-Thun-strae 3;17033 Pasewalk;;44
+;Lehr;Laura Sophie;m;06.05.2003;Papenburg;Brechtplatz 3;17033 Papenburg;;50
+;Labs;Leon;f;06.06.2004;Neubrandenburg;Schmelingstrae 3;17039 Neubrandenburg;Judo Jedis NB;30
+;Labes;Lucy;m;13.07.2005;Neubrandenburg;Am Mühlenweg 7b;17033 Neubrandenburg;Judo Jedis NB;43
+;Küner;Malte;m;27.07.2006;Karlsruhe;Hohlweg 1;17091 Karlsruhe;Karlsruher JV;39
+;Kurtze;Marvin Günter Paul;f;09.08.2004;Neubrandenburg;Stettiner Strae 26;17033 Neubrandenburg;Judo Jedis NB;33
+;Kühn;Michelle;m;11.08.2001;Frankfurt Oder;Berliner Chauee 2;17033 Frankfurt Oder;PSV Berlin;40
+;Kretschmann;Mohammad;m;12.08.2005;Neubrandenburg;Leipziger Allee 8;17033 Neubrandenburg;Judo Jedis NB;32
+;Krautschick;Nico;m;15.08.2006;Frankfurt am Main;Schuhstrae 2;7033 Frankfurt am Main;JSV Frankfurt;31
+;Köpke;Niklas;m;29.08.2004;Neubrandenburg;Gustaf-Olafson-Strae 46;17348 Neubrandenburg;Judo Jedis NB;33
+;Kluge;Ole Sören;m;11.09.2005;Neubrandenburg;Bergstrae 3;17033 Neubrandenburg;Judo Jedis NB;38
+;Kindler;Oliver;m;05.10.2006;Helmstedt;Agenten Weg 6;17033 Helmstedt;;30
+;Meyer;Jörg Robert;f;05.10.2003;Neubrandenburg;Einhorn Allee 14;17309 Neubrandenburg;Judo Jedis NB;40
+;Mietzner;Ulrike;m;10.10.2004;Greifswald;Star-Wars-Strae 32;17039 Greifswald;Greifswalder Judoverein;41
+;Milosevic;Florian;m;26.10.2005;Neubrandenburg;Hauptstrae 9a;17033 Neubrandenburg;Judo Jedis NB;42
+;Minning;Fiete-Hartmut;m;31.10.2006;Erfurt;Turmstrae 6;17348 Erfurt;Judo Ost;43
+;Müller;Felix;m;05.11.2003;Neubrandenburg;Bethesda Weg 5;17214 Neubrandenburg;Judo Jedis NB;44
+;Müller;Franz;f;04.12.2004;Mannheim;Oblivion Platz 7;17033 Mannheim;;30
+;Müller;Sara;m;06.12.2005;Neubrandenburg;Hoher Weg 9;17034 Neubrandenburg;Judo Jedis NB;45
+;Müller;Thomas;m;07.12.2006;Magdeburg;Eitrae 2;17034 Magdeburg;JSV Magdeburg;51
+;Murad;Thuy-Duyen;m;30.12.2004;Neubrandenburg;Blumenweg 67;170981 Neubrandenburg;Judo Jedis NB;31
+;Nagel;Till;m;06.01.2005;Homs;Königswegs 5;17033 Homs;;30
+;Nguyen;Tim;f;12.01.2006;Demmin;Game-Of-Thrones-Allee 3;17039 Demmin;Judo MV;33
+;Nock;Vanea;f;26.01.2004;Gera;Jarvis Allee 3;17094 Gera;;41
+;Parchmann;Violetta;m;29.01.2005;Neubrandenburg;Tardis Platz 4;17034 Neubrandenburg;Judo Jedis NB;53
+;Patro;Erich;f;30.01.2006;Jena;Butrae 12;17036 Jena;Judo Ost;58
+;Paul;Anna-Lena;f;03.02.2005;Neubrandenburg;Eberhof 23;17034 Neubrandenburg;Judo Jedis NB;38
+;Peters;Thomas Erik;m;10.02.2005;Friedrichshafen;Hof I;17034 Friedrichshafen;;39
+;Pham;Sebastian;m;19.02.2004;Neubrandenburg;Strandstrae 3;17036 Neubrandenburg;Judo Jedis NB;33
+;Piske;Salome;f;15.06.2006;Neubrandenburg;Kleiner Weg 1;17033 Neubrandenburg;Judo Jedis NB;39
+;Pöhls;Pia;f;25.08.2003;Rostock;Groer Weg 5;17091 Rostock;Hanse-Judo;44
+;Raasch;Paula-Lee;m;12.11.2003;Neubrandenburg;Wellington Allee 3;17219 Neubrandenburg;Judo Jedis NB;50
+;Reichardt;Marvin;m;10.07.2004;Potsdam;Merkelstrae 2;17091 Potsdam;PSV Berlin;30
+;Reinfarth;Markus;f;26.08.2004;Neubrandenburg;Gauckallee 8;17033 Neubrandenburg;Judo Jedis NB;43
+;Reschke;Lena Maria;f;30.09.2004;Brandenburg;Einsteinstrae 1;17094 Brandenburg;PSV Berlin;39
+;Richter;Lea;m;07.11.2004;Neubrandenburg;Schrödingers Weg 5;17034 Neubrandenburg;Judo Jedis NB;33
+;Riebe;Jannis Dirk Ulrich;f;24.12.2004;Rostock;Galileo Platz 3;17034 Rostock;Hanse-Judo;40
+;Röpcke;Darina;m;03.01.2005;Neubrandenburg;Curiestrae 76;17373 Neubrandenburg;Judo Jedis NB;32
+;Rohloff;Christoph;m;28.04.2005;Neubrandenburg;Planck Platz 4;17033 Neubrandenburg;Judo Jedis NB;31
+;Roskamm-Meins;Christian;m;06.05.2005;Bremen;Memer Platz 3;17348 Bremen;;33
+;Ruppelt;Adrian;m;07.07.2005;Neubrandenburg;Telarstrae 2;17033 Neubrandenburg;Judo Jedis NB;38
+;Salow;Karl;f;27.07.2005;Neubrandenburg;Meyerstrae 1;17034 Neubrandenburg;Judo Jedis NB;30
+;Scharnhorst;Hanka;m;05.08.2005;Rostock;Roentgenstrae 2;17217 Rostock;Hanse-Judo;40
+;Schellenberger;Aron;m;11.08.2005;Neubrandenburg;Hertzallee 65;17349 Neubrandenburg;Judo Jedis NB;41
+;Schmidt;Lucius;m;22.08.2005;Gera;Zuse Weg 3;17087 Gera;Thüringer SV;42
+;Schönitz;Toni;m;28.08.2005;Pasewalk;Kepplerstrae 3;17258 Pasewalk;;43
+;Schult;Sven Sebastian Torsten;m;04.01.2005;Waren;Gaustrae 2;17091 Waren;JSV Waren;44
+;Schulz;Stefan Paul;m;27.09.2005;;Leibniz Weg 6;17034;;30
+;Schurig;Sebastian;m;01.12.2005;;Fahrenheit Allee 2;17094;;45
+;Schwarzkoff;Philipp;f;27.01.2006;Lübeck;Celsius Platz 4;17089 Lübeck;Lübecker Judoverein;51
+;Strege;Luisa;f;04.01.2006;;Kelvin Platz 3;17034;;31
+;Sulz;Luca Elea;m;15.03.2006;;Kennedy Weg 3;17217;;30
+;Sykora;Louis Ronald;f;01.03.2006;Hildesheim;Schillerstrae 3;17033 Hildesheim;;33
+;Vandreier;Laura;f;08.03.2006;;Goethestrae 2;17235;;41
+;Voellmecke;Johanna;m;08.07.2005;;Leingplatz 6;17033;;53
+;Vollmelle;Henning;f;25.04.2003;;Wieland 3;17217;;58
+;Stopfel;Marie;m;28.04.2004;Weimar;Schultz-von-Thun-strae 3;17192 Weimar;Judo Ost;38
+;Stölzel;Matteo;m;04.05.2006;;Brechtplatz 3;17091;;39
+;Stange;Michael;m;08.05.2006;;Schmelingstrae 3;17034;;33
+;Sperling;Nico;m;12.05.2005;Rudolstadt;Am Mühlenweg 7b;17255 Rudolstadt;;39
+;Stange;Nico;m;13.01.2003;;Hohlweg 1;17036;;44
+;Simson;Oliver;f;17.02.2004;;Stettiner Strae 26;17348;;50
+;Simowski;Fritz;m;25.05.2004;;Berliner Chauee 2;17237;;30
+;Muhammed;Ousama;m;26.09.2005;;Leipziger Allee 8;17034;;43
+;Schwipper;Peter;f;05.08.2003;;Schuhstrae 2;17309;;39
+;Vo;Heidi;f;07.01.2006;;Gustaf-Olafson-Strae 46;17036;;33
+;Wilhelmi;Emma;m;16.05.2005;;Bergstrae 3;17098;;40
+;Wille;Dorian;m;15.03.2005;;Agenten Weg 6;17036;;32
+;Witzmann;David;f;26.07.2004;;Einhorn Allee 14;17094;;31
+;Woderich;Anne-Marie;f;01.10.2003;;Star-Wars-Strae 32;17036;;33
+;Zirtzow;Anna;;;;;;;

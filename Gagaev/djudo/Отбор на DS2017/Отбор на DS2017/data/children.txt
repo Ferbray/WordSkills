@@ -1,0 +1,12 @@
+Name, LastName, Pol, Date, BirthTown, Street, HomeTown, Club, Weight
+Alex, Christop, m, 20.01.2006, Belgorod, Pinnow Nr. 21, 17036 Mlln, , 33
+Jonh, Chris-Jere my, m, 07.02.2006, Grozhiy, Prenzlauer Strae 48, 17159 Prenzlau, Judo MV, 39
+Julya, Cheyenne, f, 13.02.2006, Vladivostok, Kirschenallee 45, 17033 Pasewalk, , 38
+Anna, Cheyenne, f, 24.02.2006, Kirov, Kirschenallee 43, 17033 Papenburg 
+Tatiana, Berenike Maria, f, 25.02.2005, Tyu men, Kirchstrae 38, 17039 Neubrandenburg, Judo Jedis NB 
+Mariya, Adnan, f, 31.03.2004, Surgut, Kessinerstrae 22, 17033 Neubrandenburg, Judo Jedis NB 
+Timerlan, Markus, m, 06.05.2003, Kazan, Kastanienallee 39, 17091 Karlsruhe, Karlsruher JV, 36
+Dmitriy, Marvin, m, 06.06.2004, Orenburg, Jorg-Brcke-Strae 8, 17033 Neubrandenburg, Judo Jedis NB, 37
+Igor, Nele, m, 13.07.2005, Pavlovsk Posadsky, Brauereistrae 79, 17033 Frankfurt Oder, , 38
+Vladi mir, Paul Eric, m, 27.07.2006, St. Peterburg, Brunner Strae 18, 17033 Neubrandenburg, Judo Jedis NB, 36
+Klauz, Philipp, m, 09.08.2004, Krasnodar, Carl-Stolte-Strae 19, 17033 Frankfurt am Main, JSV Frankfurt, 33
