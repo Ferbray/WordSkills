@@ -1,0 +1,16 @@
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\bin\Debug\MarathonSkills2k16.exe.config
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\bin\Debug\MarathonSkills2k16.exe
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\bin\Debug\MarathonSkills2k16.pdb
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.csproj.AssemblyReference.cache
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.csproj.SuggestedBindingRedirects.cache
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MainWindow.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\App.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16_MarkupCompile.cache
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16_MarkupCompile.lref
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MainWindow.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.g.resources
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.Properties.Resources.resources
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.csproj.GenerateResource.cache
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.csproj.CoreCompileInputs.cache
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.exe
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\ZXC\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\MarathonSkills2k16.pdb
