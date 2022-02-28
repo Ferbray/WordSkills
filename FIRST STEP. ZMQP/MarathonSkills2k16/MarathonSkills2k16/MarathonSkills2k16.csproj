@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AboutBlog.xaml.cs">
+      <DependentUpon>AboutBlog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthForm.xaml.cs">
       <DependentUpon>AuthForm.xaml</DependentUpon>
     </Compile>
@@ -66,12 +69,22 @@
     <Compile Include="NewMember.xaml.cs">
       <DependentUpon>NewMember.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProcessingPay.xaml.cs">
+      <DependentUpon>ProcessingPay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistrationForm.xaml.cs">
       <DependentUpon>RegistrationForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsors.xaml.cs">
+      <DependentUpon>Sponsors.xaml</DependentUpon>
     </Compile>
     <Compile Include="Template.xaml.cs">
       <DependentUpon>Template.xaml</DependentUpon>
     </Compile>
+    <Page Include="AboutBlog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AuthForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -96,7 +109,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ProcessingPay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistrationForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sponsors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Безымянный.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

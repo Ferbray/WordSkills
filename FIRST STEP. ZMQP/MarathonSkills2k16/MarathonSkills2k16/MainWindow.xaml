@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarathonSkills2k16"
         mc:Ignorable="d"
-        Title="MahatronSkills 2016" Height="960" Width="1280"
+        Title="MahatronSkills 2016" Height="960" Width="1280" MinWidth="1000" MinHeight="790"
         >
     <Grid>
         <Grid>

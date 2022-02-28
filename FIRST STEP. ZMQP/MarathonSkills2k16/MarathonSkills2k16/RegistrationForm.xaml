@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MarathonSkills2k16"
       mc:Ignorable="d" 
       d:DesignHeight="960" d:DesignWidth="1280"
-      Title="RegistrationForm">
+      Title="Marathon Skills 2016 - Register">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -15,9 +15,9 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 80,0,0">
             <TextBlock Text="Регистрация бегуна" Foreground="#FF878787" FontSize="48" HorizontalAlignment="Center"></TextBlock>
-            <TextBlock Text="Пожайлуста, заполните всю информацию, чтобы зарегистрироваться в качестве бегуна" Foreground="#FF4D4D4D" FontSize="24" HorizontalAlignment="Center" Width="1000" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0" VerticalAlignment="Stretch"/>
+            <TextBlock Text="Пожайлуста, заполните всю информацию, чтобы зарегистрироваться в качестве бегуна" Foreground="#FF4D4D4D" FontSize="20" HorizontalAlignment="Center" Width="Auto" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0" VerticalAlignment="Stretch"/>
         </Grid>
-        <Grid Grid.Row="1" Margin="130,0,130,0">
+        <Grid Grid.Row="1" Margin="50,0,50,0">
             <TextBlock Text="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="150, 0, 0, 0"/>
             <TextBox Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220, 0, 0, 0" FontStyle="Italic" FontSize="20"/>
             <TextBlock Text="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="125,53,0,0"/>

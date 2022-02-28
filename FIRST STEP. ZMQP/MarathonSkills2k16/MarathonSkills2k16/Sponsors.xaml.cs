@@ -16,36 +16,29 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16
 {
     /// <summary>
-    /// Логика взаимодействия для MainMen.xaml
+    /// Логика взаимодействия для Sponsors.xaml
     /// </summary>
-    public partial class MainMen : Page
+    public partial class Sponsors : Page
     {
-        public MainMen()
+        public Sponsors()
         {
             InitializeComponent();
         }
 
-        private void TextBlock_Initialized(object sender, EventArgs e)
-        {
-            DateTime dt = DateTime.Now;
-            string whatsDay = dt.ToString("dddd d MMMM yyyy");
-            (sender as TextBlock).Text = $"{whatsDay}";
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Template());
+            Manager.MainFrame.GoBack();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AuthForm());
+            AboutBlog wd = new AboutBlog();
+            wd.Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Sponsors());
+            Manager.MainFrame.Navigate(new ProcessingPay());
         }
     }
-
 }

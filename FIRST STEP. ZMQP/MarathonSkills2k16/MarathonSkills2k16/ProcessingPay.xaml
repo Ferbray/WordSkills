@@ -1,0 +1,33 @@
+﻿<Page x:Class="MarathonSkills2k16.ProcessingPay"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="ProcessingPay">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 80,0,0">
+            <TextBlock Text="Спасибо за вашу спонсорскую поддержку" Foreground="#FF878787" FontSize="48" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock  Foreground="#FF4D4D4D" FontSize="20" HorizontalAlignment="Center" Width="Auto" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0" VerticalAlignment="Center" FlowDirection="LeftToRight" ScrollViewer.HorizontalScrollBarVisibility="Disabled" UseLayoutRounding="False" TextAlignment="Center">Спасибо за поддержку бегуна в Marathon Skills 2016! <LineBreak/> Ваше пожертвование пойдет в его благотворительную организацию</TextBlock>
+        </Grid>
+        <Grid Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock FontSize="48" Foreground="#FF2B2B2B" HorizontalAlignment="Center">Иван Прудов (204) из Russia</TextBlock>
+            <TextBlock FontSize="72" Foreground="#FF5D5D5D" HorizontalAlignment="Center" Margin="0, 60">Фонд Кошек</TextBlock>
+            <TextBlock FontSize="128" Foreground="#FF424242" HorizontalAlignment="Center" Margin="0, 140">$50</TextBlock>
+            <Button Content="Назад" BorderThickness="1,1,1,1" Padding="35, 15, 35, 15" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Normal" Margin="0,350,0,0" Click="Button_Click_2">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>
