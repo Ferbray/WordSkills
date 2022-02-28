@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MarathonSkills2k16
 {
     /// <summary>
@@ -23,14 +24,21 @@ namespace MarathonSkills2k16
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new MainMen());
+            Manager.MainFrame = MainFrame;
+
         }
 
-        private void TextBlock_Initialized(object sender, EventArgs e)
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DateTime dt = DateTime.Now;
-            string whatsDay = dt.ToString("dddd d MMMM yyyy");
-            (sender as TextBlock).Text = $"{whatsDay}";
+            Manager.MainFrame.GoBack();
         }
 
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

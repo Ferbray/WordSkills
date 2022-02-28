@@ -5,58 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarathonSkills2k16"
         mc:Ignorable="d"
-        Title="MahatronSkills 2016" Height="960" Width="1280">
+        Title="MahatronSkills 2016" Height="960" Width="1280"
+        >
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="300"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="70"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Background="#FF4C4C4C">
-            <TextBlock Text="MARATHON SKILLS 2016" FontSize="72" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0, 20, 0, 0"/>
-            <TextBlock Text="Москва, Россия" FontSize="32" FontWeight="Normal" Foreground="#FF9C9C9C" HorizontalAlignment="Center" Margin="0, 10, 0, 0" FontStyle="Italic"></TextBlock>
-            <TextBlock Text="" FontSize="32" FontWeight="Normal" Foreground="#FF9C9C9C" HorizontalAlignment="Center" FontStyle="Italic" Initialized="TextBlock_Initialized"></TextBlock>
-        </StackPanel>
-        <StackPanel Grid.Row="1" VerticalAlignment="Center">
-            <Grid HorizontalAlignment="Center">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Button Grid.Row="0" Content="Я хочу стать бегуном" Padding="10,25,10,25" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" Margin="20, 30, 20, 0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="#FF4C4C4C">
+                <Button Content="Назад" BorderThickness="1,1,1,1" Padding="5, 2, 5, 2" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF101010" FontWeight="Normal" Margin="10, 10, 10, 10" Click="Button_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="15"/>
+                            <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </Button.Resources>
                 </Button>
-
-                <Button Grid.Row="1" Content="Я хочу стать спонсором бегуна" Padding="10,25,10,25" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" Margin="20, 30, 20, 0">
-                    <Button.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="15"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button Grid.Row="2" Content="Я хочу узнать больше о событии" Padding="10,25,10,25" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" Margin="20, 30, 20, 30">
-                    <Button.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="15"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
+                <TextBlock Text="MARATHON SKILLS 2016" FontSize="36" FontWeight="Bold" Foreground="White" Margin="110, 0, 0, 0" VerticalAlignment="Center"/>
             </Grid>
-            <Button Content="Login" Height="50" Width="120" BorderThickness="1,1,1,1" FontSize="24" Foreground="#FF101010" Margin="0, 0, 30, 0" HorizontalAlignment="Right" FontWeight="Normal">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="15"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Background="#FF4C4C4C" Width="Auto">
-
-        </StackPanel>
+            
+            <Grid Grid.Row="2" Background="#FF4C4C4C">
+                <TextBlock TextWrapping="Wrap" Text="18 дней 8 часов и 17 минут до старта марафона!" Foreground="White" FontSize="24" FontStyle="Normal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 0"/>
+            </Grid>
+        </Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"></Frame>
     </Grid>
 </Window>
