@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\MyFiles\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-D:\MyFiles\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\App.xaml
-1219584333
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\App.xaml
+4-887726094
 
-51579654133
+9164263541
 13-38814620
-MainWindow.xaml;
+Pages\Begun1.xaml;MainWindow.xaml;Pages\Login.xaml;Test.xaml;
 
 False
 
