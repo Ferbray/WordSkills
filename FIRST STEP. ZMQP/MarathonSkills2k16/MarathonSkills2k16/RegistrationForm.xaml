@@ -44,14 +44,14 @@
             <DatePicker HorizontalAlignment="Right" Margin="0,260,10,0" VerticalAlignment="Top" Width="230" Height="34" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
             <TextBlock Text="Страна:" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="0,312,255,0"/>
             <ComboBox HorizontalAlignment="Right" Margin="0,312,10,0" VerticalAlignment="Top" Width="230" Height="35" DisplayMemberPath="sda"/>
-            <Button Content="Регистрация" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="0,0,150,80">
+            <Button Content="Регистрация" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="0,0,150,80" Click="Button_Click_1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Отмена" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="150,0,0,80">
+            <Button Content="Отмена" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="150,0,0,80" Click="Button_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>

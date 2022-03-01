@@ -24,5 +24,15 @@ namespace MarathonSkills2k16
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.GoBack();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new RegFormV2());
+        }
     }
 }

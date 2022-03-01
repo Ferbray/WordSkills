@@ -46,6 +46,12 @@ namespace MarathonSkills2k16
         {
             Manager.MainFrame.Navigate(new Sponsors());
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AboutEvent());
+        }
+
     }
 
 }

@@ -10,24 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MarathonSkills2k16
 {
     /// <summary>
-    /// Логика взаимодействия для AboutBlog.xaml
+    /// Логика взаимодействия для RegFormV2.xaml
     /// </summary>
-    public partial class AboutBlog : Window
+    public partial class RegFormV2 : Page
     {
-        public AboutBlog()
+        public RegFormV2()
         {
             InitializeComponent();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
-            this.Close();
+            AboutBlog wd = new AboutBlog();
+            wd.Show();
         }
     }
 }
