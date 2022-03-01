@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Pages
 {
     /// <summary>
     /// Логика взаимодействия для Test.xaml
     /// </summary>
-    public partial class Test : Page
+    public partial class Home : Page
     {
-        public Test()
+        public Home()
         {
             InitializeComponent();
         }

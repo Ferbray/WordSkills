@@ -24,7 +24,7 @@ namespace WpfApp1
         {
             InitializeComponent();
             Manager.MainFrame = MainFrame;
-            Manager.MainFrame.Navigate(new Test());
+            Manager.MainFrame.Navigate(new Pages.Home());
         }
     }
 }

@@ -34,5 +34,9 @@ C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Begun1.g
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Begun1.baml
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Login.g.cs
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Login.baml
-C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Test.g.cs
-C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Test.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Home.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Home.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\AboutLogin.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\AboutLogin.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\RegBegun.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\RegBegun.baml

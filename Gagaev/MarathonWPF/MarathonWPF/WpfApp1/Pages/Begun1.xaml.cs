@@ -37,7 +37,7 @@ namespace WpfApp1
 
         private void NewBegun_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.GoBack();
+            Manager.MainFrame.Navigate(new Pages.RegBegun());
         }
 
         private void OldBegun_Click(object sender, RoutedEventArgs e)
