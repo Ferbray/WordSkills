@@ -41,7 +41,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Grid.Row="2" Content="Я хочу узнать больше о событии" Padding="10,25,10,25" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" Margin="20, 30, 20, 30">
+                <Button Grid.Row="2" Content="Я хочу узнать больше о событии" Padding="10,25,10,25" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" Margin="20, 30, 20, 30" Click="Button_Click_3">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>

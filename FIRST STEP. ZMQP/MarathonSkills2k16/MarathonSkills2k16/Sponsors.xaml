@@ -20,23 +20,23 @@
         <Grid Grid.Row="1">
             <TextBlock Text="Информация о Спонсоре" FontWeight="Bold" FontSize="36" Foreground="#FF878787" Margin="80, 0, 0, 0"></TextBlock>
             <TextBlock Text="Ваше имя: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="100, 100, 0, 0"></TextBlock>
-            <TextBox Width="280" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,100,0,0" FontStyle="Italic" FontSize="20"/>
+            <TextBox Width="280" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,100,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
             <TextBlock Text="Бегун: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="140,165,0,0"/>
-            <ComboBox HorizontalAlignment="Left" Margin="220,165,0,0" VerticalAlignment="Top" Width="280" Height="35" DisplayMemberPath="sda"/>
+            <ComboBox HorizontalAlignment="Left" Margin="220,165,0,0" VerticalAlignment="Top" Width="280" Height="35" DisplayMemberPath="sda" VerticalContentAlignment="Center"/>
             <TextBlock Text="Карта: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="140,230,0,0"/>
-            <TextBox Width="280" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,230,0,0" FontStyle="Italic" FontSize="20"/>
+            <TextBox Width="280" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,230,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
             <TextBlock Text="Номер карты: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="60,294,0,0"/>
-            <TextBox Width="280" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,294,0,0" FontStyle="Italic" FontSize="20"/>
+            <TextBox Width="280" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,294,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
             <TextBlock Text="Срок действия: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="45,350,0,0"></TextBlock>
-            <TextBox Width="50" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,350,0,0" FontStyle="Italic" FontSize="20"/>
-            <TextBox Width="80" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="290,350,0,0" FontStyle="Italic" FontSize="20"/>
+            <TextBox Width="50" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,350,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
+            <TextBox Width="80" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="290,350,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
             <TextBlock Text="CVV: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="160,410,0,0"></TextBlock>
-            <TextBox Width="80" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,410,0,0" FontStyle="Italic" FontSize="20"/>
+            <TextBox Width="80" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,410,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
             <TextBlock Text="Благотворительность" FontWeight="Bold" HorizontalAlignment="Right" FontSize="36" Foreground="#FF878787" Margin="0, 0, 80, 0"/>
             <TextBlock Text="Фонд кошек" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="0,60,210,0"></TextBlock>
             <Button Width="40" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0, 60, 100, 0" Click="Button_Click_1" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Resources/Безымянный.png" Stretch="Fill"/>
+                    <ImageBrush ImageSource="/Resources/Безымянный2.png" Stretch="Fill"/>
                 </Button.Background>
                 <Button.Style>
                     <Style TargetType="Button">
@@ -69,7 +69,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <TextBox Width="100" Height="46" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,250,220,0" FontStyle="Italic" FontSize="20"/>
+            <TextBox Width="100" Height="46" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,250,220,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
             <Button Content="-" BorderThickness="1,1,1,1" Height="46" Width="70" FontSize="36" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Bold" Margin="0,250,340,0">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">

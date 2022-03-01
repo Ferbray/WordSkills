@@ -15,18 +15,17 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16
 {
     /// <summary>
-    /// Логика взаимодействия для AboutBlog.xaml
+    /// Логика взаимодействия для OnlyTest.xaml
     /// </summary>
-    public partial class AboutBlog : Window
+    public partial class OnlyTest : Window
     {
-        public AboutBlog()
+        public OnlyTest()
         {
             InitializeComponent();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
             this.Close();
         }
     }

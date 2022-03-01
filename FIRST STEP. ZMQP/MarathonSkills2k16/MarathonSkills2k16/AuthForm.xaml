@@ -21,9 +21,8 @@
             <TextBlock Text="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="50, 0, 0, 0"/>
             <TextBox Width="330" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150, 0, 0, 0" FontStyle="Italic" FontSize="20"/>
             <TextBlock Text="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="50,53,0,0"/>
-            <TextBox Width="330" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,53,0,0" FontStyle="Italic" FontSize="20"/>
-            
-            <Button Content="Login" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="0,150,150,80">
+            <PasswordBox x:Name="PassField" Width="330" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,53,0,0" FontStyle="Italic" FontSize="20"/>
+            <Button Content="Login" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="0,150,150,80" Click="Button_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
@@ -37,6 +36,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-        </Grid> 
+            
+        </Grid>
     </Grid>
 </Page>

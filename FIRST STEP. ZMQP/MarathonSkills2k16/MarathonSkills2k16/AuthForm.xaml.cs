@@ -24,5 +24,11 @@ namespace MarathonSkills2k16
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            OnlyTest ot = new OnlyTest();
+            ot.Show();
+        }
     }
 }

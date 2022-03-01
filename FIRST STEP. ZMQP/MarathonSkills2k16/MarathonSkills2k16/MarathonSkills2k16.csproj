@@ -59,6 +59,9 @@
     <Compile Include="AboutBlog.xaml.cs">
       <DependentUpon>AboutBlog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AboutEvent.xaml.cs">
+      <DependentUpon>AboutEvent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthForm.xaml.cs">
       <DependentUpon>AuthForm.xaml</DependentUpon>
     </Compile>
@@ -69,8 +72,14 @@
     <Compile Include="NewMember.xaml.cs">
       <DependentUpon>NewMember.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OnlyTest.xaml.cs">
+      <DependentUpon>OnlyTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProcessingPay.xaml.cs">
       <DependentUpon>ProcessingPay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegFormV2.xaml.cs">
+      <DependentUpon>RegFormV2.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegistrationForm.xaml.cs">
       <DependentUpon>RegistrationForm.xaml</DependentUpon>
@@ -82,6 +91,10 @@
       <DependentUpon>Template.xaml</DependentUpon>
     </Compile>
     <Page Include="AboutBlog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AboutEvent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,7 +122,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="OnlyTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ProcessingPay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegFormV2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,7 +180,13 @@
     <Resource Include="Resources\unnamed.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Resources\Безымянный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Безымянный2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
