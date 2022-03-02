@@ -38,7 +38,7 @@ namespace WpfApp1.Pages
 
         private void Begun2_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Content = new Begun1();
+            Manager.MainFrame.Navigate(new SponsorsBegun());
         }
 
         private void Begun3_Click(object sender, RoutedEventArgs e)

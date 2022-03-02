@@ -1,0 +1,60 @@
+﻿<Window x:Class="WpfApp1.Windows.AboutFond"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Windows"
+        mc:Ignorable="d"
+        Title="AboutFond" Height="400" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderBrush="Black" BorderThickness="2,2,2,2">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Наименование спонсора" FontSize="28" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0"></TextBlock>
+        <Button Width="21" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Close_Window">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/CloseWindow.png"/>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="LightGray"></Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightGray"></Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Grid Grid.Row="1">
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Width="140" Height="140">
+                <TextBlock FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF804700">Logo</TextBlock>
+                <Grid.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFECD9B1" Offset="0.867"/>
+                        <GradientStop Color="#FFD4B72F" Offset="1"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <Grid.Clip>
+                    <EllipseGeometry Center="70,70" RadiusX="70" RadiusY="70"></EllipseGeometry>
+                </Grid.Clip>
+            </Grid>
+        </Grid>
+        <TextBlock Grid.Row="2" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Здесь указывается описание благотворительной<LineBreak></LineBreak> 
+            организации.<LineBreak></LineBreak> 
+            должна быть обеспечена возможность просмотра<LineBreak></LineBreak> 
+            большого количества информации в данном окне.
+        </TextBlock>
+    </Grid>
+</Window>

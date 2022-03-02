@@ -40,3 +40,9 @@ C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\AboutL
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\AboutLogin.baml
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\RegBegun.g.cs
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\RegBegun.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\RegMarathon.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\RegMarathon.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\AboutFond.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\AboutFond.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\SponsorsBegun.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\SponsorsBegun.baml

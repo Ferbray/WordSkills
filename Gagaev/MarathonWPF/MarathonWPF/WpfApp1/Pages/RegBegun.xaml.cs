@@ -24,17 +24,32 @@ namespace WpfApp1.Pages
         {
             InitializeComponent();
             subtitle.Text = "Пожалуйста заполните всю информацию, чтобы зарегистрироваться в качестве\n\t\t\t\tбегуна";
-            RegEmail.MaxLength = 16;
-            RegName.MaxLength = 16;
-            RegFamily.MaxLength = 16;
-            RegPass.MaxLength = 16;
-            RegPassAgree.MaxLength = 16;
+            RegEmail.MaxLength = 24;
+            RegName.MaxLength = 24;
+            RegFamily.MaxLength = 24;
+            RegPass.MaxLength = 24;
+            RegPassAgree.MaxLength = 24;
             combo_gender.Items.Add("Мужской");
             combo_gender.Items.Add("Женский");
+            combo_country.Items.Add("Россия");
+            combo_country.Items.Add("Украина");
+            combo_country.Items.Add("Белоруссия");
+            combo_country.Items.Add("Europa");
         }
+
+        public void RegMarathon(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new RegMarathon());
+        }
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.GoBack();
+        }
+
+        public void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Home());
         }
 
         private void PasswordBox_KeyDown(object sender, KeyEventArgs e)

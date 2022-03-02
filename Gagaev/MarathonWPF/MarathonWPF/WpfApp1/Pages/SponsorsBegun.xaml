@@ -1,0 +1,145 @@
+﻿<Page x:Class="WpfApp1.Pages.SponsorsBegun"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="900"
+      Title="SponsorsBegun">
+
+    <Grid>
+        <Grid Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#FF504E4E" VerticalAlignment="Top" Height="50"/>
+            <TextBlock Grid.Row="0" Text="MARATHON SKILLS 2016" FontSize="28" Foreground="#FFFFFF" Margin="152,8,0,0" TextAlignment="Center" FontFamily="Verdana" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"></TextBlock>
+            <Button Grid.Row="0" Content="Назад" x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Height="40" FontSize="14" Margin="10,5,0,0" Click="Cancel_Pay">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160"></RowDefinition>
+                    <RowDefinition Height="460"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Спонсор бегуна" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,15,0,0" Foreground="#FF504E4E"></TextBlock>
+                <TextBlock Grid.Row="0" FontSize="22" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,70,0,0" TextAlignment="Center">
+                    Пожалуйста выберите  бегуна, которого вы хотели бы спонсировать и сумму,<LineBreak></LineBreak>
+                    которую вы хотели бы спонсировать. Спасибо за вашу поддержку бегунов и их<LineBreak></LineBreak>
+                    благотворительных учереждений
+                </TextBlock>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Text="Информация о Спонсоре" FontSize="22" Foreground="#FF888888" HorizontalAlignment="Right" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,80,0"></TextBlock>
+                        <TextBlock Grid.Row="1" Text="Ваше имя:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0" FontSize="22"></TextBlock>
+                        <TextBox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Width="200" Height="40" Margin="0,2,60,0"></TextBox>
+                        <TextBlock Grid.Row="2" Text="Бегун:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0" FontSize="22"></TextBlock>
+                        <ComboBox x:Name="combo_begun" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Width="200" Height="40" Margin="0,2,60,0"></ComboBox>
+                        <TextBlock Grid.Row="3" Text="Карта:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0" FontSize="22"></TextBlock>
+                        <TextBox Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Width="200" Height="40" Margin="0,2,60,0"></TextBox>
+                        <TextBlock Grid.Row="4" Text="Номер карты#:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0" FontSize="22"></TextBlock>
+                        <TextBox Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Width="200" Height="40" Margin="0,2,60,0"></TextBox>
+                        <TextBlock Grid.Row="5" Text="Срок действия:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0" FontSize="22"></TextBlock>
+                        <TextBox Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" Width="60" Height="40" Margin="0,2,200,0"></TextBox>
+                        <TextBox Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" Width="100" Height="40" Margin="0,2,80,0"></TextBox>
+                        <TextBlock Grid.Row="6" Text="CVC:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0" FontSize="22"></TextBlock>
+                        <TextBox Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Right" Width="80" Height="40" Margin="0,2,180,0"></TextBox>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="70"></RowDefinition>
+                            <RowDefinition Height="80"></RowDefinition>
+                            <RowDefinition Height="70"></RowDefinition>
+                            <RowDefinition Height="70"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Благотворительность" FontSize="22" Foreground="#FF888888" HorizontalAlignment="Left" FontWeight="Bold" VerticalAlignment="Center" Margin="120,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="180,0,0,0">Фонд кошек</TextBlock>
+                        <Button Grid.Row="1" Width="30" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,1,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="info_window">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Resources/icon_info.png"/>
+                            </Button.Background>
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="LightGray"></Setter>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="LightGray"></Setter>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <TextBlock Grid.Row="2" Text="Сумма пожертвования" FontSize="22" Foreground="#FF888888" HorizontalAlignment="Left" FontWeight="Bold" VerticalAlignment="Center" Margin="120,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Text="50$" FontSize="90" Foreground="#FF888888" Margin="170,45,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Grid.RowSpan="2"></TextBlock>
+                        <Button Grid.Row="4" Content="-" VerticalAlignment="Center" HorizontalAlignment="Left" Width="80" Height="40" Margin="100,0,0,0" FontSize="28">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <TextBox Grid.Row="4" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="190,0,0,0"></TextBox>
+                        <Button Grid.Row="4" Content="+" VerticalAlignment="Center" HorizontalAlignment="Left" Width="80" Height="40" Margin="300,0,0,0" FontSize="18">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button Grid.Row="5" Content="Заплатить" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" Height="40" Margin="50,0,0,0" FontSize="18">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Grid.Row="5" Content="Отмена" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" Height="40" Margin="280,0,0,0" FontSize="18" Click="Cancel_Pay">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2" Background="#FF504E4E" VerticalAlignment="Bottom" Height="50"/>
+            <TextBlock Grid.Row="2" Text="18 дней 8 часов и 17 минут до старта марафона!" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></TextBlock>
+        </Grid>
+    </Grid>
+</Page>
