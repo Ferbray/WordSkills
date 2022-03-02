@@ -1,0 +1,103 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.EditProfile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="EditProfile">
+
+    <Grid VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Foreground="#FF757575" FontSize="36" HorizontalAlignment="Center">Редактирование профиля</TextBlock>
+
+            <Grid Grid.Row="1">
+                <TextBlock Foreground="#FF585858" FontSize="22" HorizontalAlignment="Right">Email: <Italic> the.email@address.com</Italic></TextBlock>
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Имя:</TextBlock>
+                <TextBox Width="150" Height="30" HorizontalAlignment="Right"></TextBox>
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Фамилия:</TextBlock>
+                <TextBox Width="150" Height="30" HorizontalAlignment="Right"></TextBox>
+
+            </Grid>
+            <Grid Grid.Row="4">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Пол:</TextBlock>
+                <ComboBox Width="150" Height="30" HorizontalAlignment="Right" FontSize="20" IsReadOnly="True" IsEditable="True" SelectedIndex="0">
+
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Мужской</TextBlock>
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Женский</TextBlock>
+                </ComboBox>
+
+            </Grid>
+            <Grid Grid.Row="5">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Дата рождения:</TextBlock>
+                <DatePicker Width="150" Height="30" HorizontalAlignment="Right" FontSize="18" VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch"></DatePicker>
+            </Grid>
+            <Grid Grid.Row="6">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Страна:</TextBlock>
+                <ComboBox Width="150" Height="30" HorizontalAlignment="Right" FontSize="20" IsReadOnly="True" IsEditable="True" SelectedIndex="0">
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Japan</TextBlock>
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Russia</TextBlock>
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Canada</TextBlock>
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">USA</TextBlock>
+                </ComboBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Border HorizontalAlignment="Right" Width="150" Height="170" BorderThickness="1,1,1,1" Background="#FFE5E5E5" BorderBrush="#FF1F1F1F">
+
+                </Border>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock Foreground="#FF6C6C6C" FontSize="22">Фото файл:</TextBlock>
+                <TextBox Width="200" Height="30" HorizontalAlignment="Left"></TextBox>
+                <Button Content="Просмотр" BorderThickness="1,1,1,1" Width="150" Height="40" FontSize="20"  Foreground="#FF101010" FontWeight="Normal" HorizontalAlignment="Right">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBlock Foreground="#FF5C5C5C" FontSize="22" HorizontalAlignment="Center">Смена пароля</TextBlock>
+                <TextBlock Foreground="#FF939393" HorizontalAlignment="Center" Margin="0,30,0,-21" FontSize="18" Width="375" TextWrapping="Wrap">Оставьте эти поля незаполненными, если вы не хотите изменять пароль</TextBlock>
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Пароль:</TextBlock>
+                <TextBox Width="150" Height="30" HorizontalAlignment="Right"></TextBox>
+            </Grid>
+            <Grid Grid.Row="4">
+                <TextBlock Foreground="#FF585858" VerticalAlignment="Center" FontSize="22" HorizontalAlignment="Right" Margin="0,0,160,0">Повтор пароля:</TextBlock>
+                <TextBox Width="150" Height="30" HorizontalAlignment="Right"></TextBox>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>

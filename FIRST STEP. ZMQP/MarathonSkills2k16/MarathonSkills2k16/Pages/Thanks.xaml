@@ -1,0 +1,30 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.Thanks"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="Thanks">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 80,0,0">
+            <TextBlock Text="Спасибо за вашу регистрацию в качестве бегуна!" Foreground="#FF878787" FontSize="48" HorizontalAlignment="Left" Width="999" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <TextBlock  Foreground="#FF4D4D4D" FontSize="20" HorizontalAlignment="Center" Width="Auto" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0" FlowDirection="LeftToRight" ScrollViewer.HorizontalScrollBarVisibility="Disabled" UseLayoutRounding="False" TextAlignment="Center">Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2016! <LineBreak/>С вами свяжутся по поводу оплаты.</TextBlock>
+            <Button Content="OK" BorderThickness="1,1,1,1" Padding="35, 15, 35, 15" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Normal" Margin="0,150,0,0" Click="Button_Click_2">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

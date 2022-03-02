@@ -24,7 +24,7 @@ namespace MarathonSkills2k16
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new MainMen());
+            MainFrame.Navigate(new Pages.MainMen());
             Manager.MainFrame = MainFrame;
 
         }

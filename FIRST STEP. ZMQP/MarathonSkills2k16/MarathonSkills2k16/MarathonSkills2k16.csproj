@@ -56,53 +56,98 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AboutBlog.xaml.cs">
+    <Compile Include="Pages\EditProfile.xaml.cs">
+      <DependentUpon>EditProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MyResult.xaml.cs">
+      <DependentUpon>MyResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AboutBlog.xaml.cs">
       <DependentUpon>AboutBlog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AboutEvent.xaml.cs">
+    <Compile Include="Pages\AboutEvent.xaml.cs">
       <DependentUpon>AboutEvent.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AuthForm.xaml.cs">
+    <Compile Include="Pages\AuthForm.xaml.cs">
       <DependentUpon>AuthForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainMen.xaml.cs">
+    <Compile Include="Windows\Contacts.xaml.cs">
+      <DependentUpon>Contacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ForAdmin.xaml.cs">
+      <DependentUpon>ForAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ForCoordinator.xaml.cs">
+      <DependentUpon>ForCoordinator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ForRunners.xaml.cs">
+      <DependentUpon>ForRunners.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMen.xaml.cs">
       <DependentUpon>MainMen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
-    <Compile Include="NewMember.xaml.cs">
+    <Compile Include="Pages\NewMember.xaml.cs">
       <DependentUpon>NewMember.xaml</DependentUpon>
     </Compile>
-    <Compile Include="OnlyTest.xaml.cs">
+    <Compile Include="Windows\OnlyTest.xaml.cs">
       <DependentUpon>OnlyTest.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProcessingPay.xaml.cs">
+    <Compile Include="Pages\ProcessingPay.xaml.cs">
       <DependentUpon>ProcessingPay.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegFormV2.xaml.cs">
+    <Compile Include="Pages\RegFormV2.xaml.cs">
       <DependentUpon>RegFormV2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationForm.xaml.cs">
+    <Compile Include="Pages\RegistrationForm.xaml.cs">
       <DependentUpon>RegistrationForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sponsors.xaml.cs">
+    <Compile Include="Pages\Sponsors.xaml.cs">
       <DependentUpon>Sponsors.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Template.xaml.cs">
+    <Compile Include="Pages\Template.xaml.cs">
       <DependentUpon>Template.xaml</DependentUpon>
     </Compile>
-    <Page Include="AboutBlog.xaml">
+    <Compile Include="Pages\Thanks.xaml.cs">
+      <DependentUpon>Thanks.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pages\EditProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AboutEvent.xaml">
+    <Page Include="Pages\MyResult.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AuthForm.xaml">
+    <Page Include="Windows\AboutBlog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainMen.xaml">
+    <Page Include="Pages\AboutEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AuthForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Contacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ForAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ForCoordinator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ForRunners.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MainMen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,31 +163,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NewMember.xaml">
+    <Page Include="Pages\NewMember.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="OnlyTest.xaml">
+    <Page Include="Windows\OnlyTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProcessingPay.xaml">
+    <Page Include="Pages\ProcessingPay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegFormV2.xaml">
+    <Page Include="Pages\RegFormV2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistrationForm.xaml">
+    <Page Include="Pages\RegistrationForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Sponsors.xaml">
+    <Page Include="Pages\Sponsors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Template.xaml">
+    <Page Include="Pages\Template.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Thanks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -174,7 +223,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="LOGO.jpg" />
+    <Resource Include="Resources\LOGO.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\unnamed.jpg" />

@@ -1,0 +1,83 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.RegistrationForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="Marathon Skills 2016 - Register">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 80,0,0">
+            <TextBlock Text="Регистрация бегуна" Foreground="#FF878787" FontSize="48" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Пожайлуста, заполните всю информацию, чтобы зарегистрироваться в качестве бегуна" Foreground="#FF4D4D4D" FontSize="20" HorizontalAlignment="Center" Width="Auto" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0" VerticalAlignment="Stretch"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Right" Margin="0,0,20,0">
+                <TextBlock Text="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="150, 0, 0, 0"/>
+                <TextBox Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220, 0, 0, 0" FontStyle="Italic" FontSize="20"/>
+                <TextBlock Text="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="125,53,0,0"/>
+                <TextBox Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,53,0,0" FontStyle="Italic" FontSize="20"/>
+                <TextBlock Text="Повторите пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="2,109,0,0"/>
+                <TextBox Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,109,0,0" FontStyle="Italic" FontSize="20"/>
+                <TextBlock Text="Имя:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="160,164,0,0"/>
+                <TextBox Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,164,0,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="20" Text="" FontStyle="Italic"/>
+                <TextBlock Text="Фамилия:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="108,221,0,0"/>
+                <TextBox Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,221,0,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="20" Text="" FontStyle="Italic"/>
+                <TextBlock Text="Пол:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="162,282,0,0"/>
+                <ComboBox HorizontalAlignment="Left" Margin="220,282,0,0" VerticalAlignment="Top" Width="230" Height="35" IsEditable="True" IsReadOnly="True" VerticalContentAlignment="Center" FontSize="20" Foreground="#FF5B5B5B" SelectedIndex="0" >
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Мужской</TextBlock>
+                    <TextBlock  FontSize="20" Foreground="#FF5B5B5B">Женский</TextBlock>
+                </ComboBox>
+            </Grid>
+            <Grid Grid.Column="1" HorizontalAlignment="Left" Margin="20,0,0,0">
+            <Image HorizontalAlignment="Right" Height="150" Width="150" VerticalAlignment="Top" Source="/Resources/unnamed.jpg" />
+            <TextBlock Text="Файл фото:" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="0, 150, 250, 0"/>
+            <TextBox Width="230" Height="34" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0, 200, 140, 0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="20" Text="" FontStyle="Italic"/>
+            
+            <Button Content="Просмотр" BorderThickness="1,1,1,1" Padding="5, 2, 5, 2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Normal" Margin="0, 200, 10, 0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBlock Text="Дата рождения:" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="0,256,248,0"/>
+            <DatePicker HorizontalAlignment="Right" Margin="0,260,10,0" VerticalAlignment="Top" Width="230" Height="34" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+            <TextBlock Text="Страна:" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="0,312,255,0"/>
+                <ComboBox HorizontalAlignment="Right" Margin="0,312,10,0" VerticalAlignment="Top" Width="230" Height="35" IsEditable="True" IsReadOnly="True" VerticalContentAlignment="Center" FontSize="20" Foreground="#FF5B5B5B" SelectedIndex="0" >
+                    <TextBlock FontSize="20" Foreground="#FF5B5B5B">Russia</TextBlock>
+                    <TextBlock FontSize="20" Foreground="#FF5B5B5B">USA</TextBlock>
+                    <TextBlock FontSize="20" Foreground="#FF5B5B5B">Europe</TextBlock>
+                    <TextBlock FontSize="20" Foreground="#FF5B5B5B">China</TextBlock>
+                    <TextBlock FontSize="20" Foreground="#FF5B5B5B">Japan</TextBlock>
+                    <TextBlock FontSize="20" Foreground="#FF5B5B5B">Canada</TextBlock>
+                </ComboBox>
+                <Button Content="Регистрация" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="0,0,150,80" Click="Button_Click_1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Отмена" BorderThickness="1,1,1,1" Padding="15, 8, 15, 8" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF101010" FontWeight="Normal" Margin="150,0,0,80" Click="Button_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

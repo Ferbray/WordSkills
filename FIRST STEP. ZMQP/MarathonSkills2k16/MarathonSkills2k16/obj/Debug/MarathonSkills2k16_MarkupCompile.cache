@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\App.xaml
-12-1535331467
+19-701782479
 
-171283488386
+241268218150
 14209946504
-AboutBlog.xaml;AboutEvent.xaml;AuthForm.xaml;MainMen.xaml;MainWindow.xaml;NewMember.xaml;OnlyTest.xaml;ProcessingPay.xaml;RegFormV2.xaml;RegistrationForm.xaml;Sponsors.xaml;Template.xaml;
+Pages\EditProfile.xaml;Pages\MyResult.xaml;Windows\AboutBlog.xaml;Pages\AboutEvent.xaml;Pages\AuthForm.xaml;Windows\Contacts.xaml;Pages\ForAdmin.xaml;Pages\ForCoordinator.xaml;Pages\ForRunners.xaml;Pages\MainMen.xaml;MainWindow.xaml;Pages\NewMember.xaml;Windows\OnlyTest.xaml;Pages\ProcessingPay.xaml;Pages\RegFormV2.xaml;Pages\RegistrationForm.xaml;Pages\Sponsors.xaml;Pages\Template.xaml;Pages\Thanks.xaml;
 
 False
 
