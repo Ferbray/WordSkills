@@ -32,13 +32,18 @@ namespace WpfApp1.Pages
         }
         private void Cancel_Pay(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.GoBack();
+            Manager.MainFrame.Navigate(new menu_beguna());
         }
 
         private void info_window(object sender, RoutedEventArgs e)
         {
             Windows.AboutFond wd = new Windows.AboutFond();
             wd.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new thanks_reg());
         }
     }
 }

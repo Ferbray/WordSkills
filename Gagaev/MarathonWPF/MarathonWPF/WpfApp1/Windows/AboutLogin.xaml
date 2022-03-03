@@ -51,7 +51,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Бегун"  Width="200" MaxWidth="200" Height="40" Margin="0,30,0,0" FontSize="18">
+        <Button Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Бегун"  Width="200" MaxWidth="200" Height="40" Margin="0,30,0,0" FontSize="18" Click="Button_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="7"/>

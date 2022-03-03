@@ -28,5 +28,11 @@ namespace WpfApp1.Windows
         {
             this.Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Manager.MainFrame.Navigate(new Pages.menu_beguna());
+        }
     }
 }

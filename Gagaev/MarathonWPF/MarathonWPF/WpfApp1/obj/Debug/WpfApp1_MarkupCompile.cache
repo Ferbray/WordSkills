@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\App.xaml
-9-932988748
+15-447264749
 
-14-2119063105
+21-101208072
 15767508510
-Pages\Begun1.xaml;MainWindow.xaml;Pages\Login.xaml;Pages\Home.xaml;Pages\RegBegun.xaml;Pages\RegMarathon.xaml;Pages\SponsorsBegun.xaml;Windows\AboutFond.xaml;Windows\AboutLogin.xaml;
+Pages\AllResults.xaml;Pages\Begun1.xaml;MainWindow.xaml;Pages\Login.xaml;Pages\Home.xaml;Pages\menu_beguna.xaml;Pages\my_results.xaml;Pages\RegBegun.xaml;Pages\RegMarathon.xaml;Pages\SponsorsBegun.xaml;Pages\thanks_donate.xaml;Pages\thanks_reg.xaml;Windows\AboutFond.xaml;Windows\AboutLogin.xaml;Windows\Contacts.xaml;
 
 False
 

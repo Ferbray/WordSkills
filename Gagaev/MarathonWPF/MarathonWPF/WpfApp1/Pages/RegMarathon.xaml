@@ -96,7 +96,7 @@
                     </Button>
                     <TextBlock Grid.Row="6" Text="Сумма взноса:" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,280,0"></TextBlock>
                     <TextBox Grid.Row="6" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="22" Margin="0,0,60,0"></TextBox>
-                    <Button Grid.Row="7" Content="Регистрация" VerticalAlignment="Center" HorizontalAlignment="Right" Width="150" Height="40" Margin="0,0,240,0" FontSize="18">
+                    <Button Grid.Row="7" Content="Регистрация" VerticalAlignment="Center" HorizontalAlignment="Right" Width="150" Height="40" Margin="0,0,240,0" FontSize="18" Click="Button_Click">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>

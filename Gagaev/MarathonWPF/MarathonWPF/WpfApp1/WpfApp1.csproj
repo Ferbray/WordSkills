@@ -57,8 +57,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AllResults.xaml.cs">
+      <DependentUpon>AllResults.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\menu_beguna.xaml.cs">
+      <DependentUpon>menu_beguna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\my_results.xaml.cs">
+      <DependentUpon>my_results.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegBegun.xaml.cs">
       <DependentUpon>RegBegun.xaml</DependentUpon>
@@ -69,12 +78,26 @@
     <Compile Include="Pages\SponsorsBegun.xaml.cs">
       <DependentUpon>SponsorsBegun.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\thanks_donate.xaml.cs">
+      <DependentUpon>thanks_donate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\thanks_reg.xaml.cs">
+      <DependentUpon>thanks_reg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Results.cs" />
     <Compile Include="Windows\AboutFond.xaml.cs">
       <DependentUpon>AboutFond.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AboutLogin.xaml.cs">
       <DependentUpon>AboutLogin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Contacts.xaml.cs">
+      <DependentUpon>Contacts.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pages\AllResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Begun1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,6 +126,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\menu_beguna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\my_results.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RegBegun.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,11 +146,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\thanks_donate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\thanks_reg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AboutFond.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AboutLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Contacts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
