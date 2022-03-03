@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AboutEvent.xaml
+    /// Логика взаимодействия для MarathonInfo.xaml
     /// </summary>
-    public partial class AboutEvent : Page
+    public partial class MarathonInfo : Page
     {
-        public AboutEvent()
+        public MarathonInfo()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new MarathonInfo());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new BMICalc());
         }
     }
 }

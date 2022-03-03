@@ -56,11 +56,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\BMICalc.xaml.cs">
+      <DependentUpon>BMICalc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditProfile.xaml.cs">
       <DependentUpon>EditProfile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MarathonInfo.xaml.cs">
+      <DependentUpon>MarathonInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MyResult.xaml.cs">
       <DependentUpon>MyResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MySponsors.xaml.cs">
+      <DependentUpon>MySponsors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerList.xaml.cs">
+      <DependentUpon>RunnerList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AboutBlog.xaml.cs">
       <DependentUpon>AboutBlog.xaml</DependentUpon>
@@ -111,11 +123,27 @@
     <Compile Include="Pages\Thanks.xaml.cs">
       <DependentUpon>Thanks.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\BMICalc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\MarathonInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MyResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MySponsors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -236,6 +264,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Безымянный2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\man.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

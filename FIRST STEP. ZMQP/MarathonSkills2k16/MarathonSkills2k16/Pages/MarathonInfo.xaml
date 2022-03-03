@@ -1,0 +1,58 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.MarathonInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="MarathonInfo">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="36" HorizontalAlignment="Center" Margin="0,100,0,0">Информация о Marathon Skills 2016</TextBlock>
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="170"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Width="250" Height="150" BorderThickness="1,1,1,1" Background="#FFE5E5E5" BorderBrush="#FF1F1F1F" VerticalAlignment="Top">
+                    <TextBlock FontSize="18" Foreground="#FF5B5B5B" HorizontalAlignment="Center" VerticalAlignment="Center" Width="288" TextWrapping="Wrap" TextAlignment="Center"><Bold FontSize="24" FontWeight="Normal">Карта марафона</Bold><LineBreak/>(Нажмите, чтобы открыть интерактивную карту)</TextBlock>
+
+                </Button>
+                <Grid Grid.Row="1" Width="250" Height="150" VerticalAlignment="Top">
+                    <Border Width="120" Height="70" BorderThickness="1,1,1,1" Background="#FFE5E5E5" BorderBrush="#FF1F1F1F" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" HorizontalAlignment="Center" VerticalAlignment="Center" Width="288" TextWrapping="Wrap" TextAlignment="Center">Photo</TextBlock>
+                    </Border>
+                    <Border Width="120" Height="70" BorderThickness="1,1,1,1" Background="#FFE5E5E5" BorderBrush="#FF1F1F1F" VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" HorizontalAlignment="Center" VerticalAlignment="Center" Width="288" TextWrapping="Wrap" TextAlignment="Center">Photo</TextBlock>
+                    </Border>
+                    <Border Width="120" Height="70" BorderThickness="1,1,1,1" Background="#FFE5E5E5" BorderBrush="#FF1F1F1F" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" HorizontalAlignment="Center" VerticalAlignment="Center" Width="288" TextWrapping="Wrap" TextAlignment="Center">Photo</TextBlock>
+                    </Border>
+                    <Border Width="120" Height="70" BorderThickness="1,1,1,1" Background="#FFE5E5E5" BorderBrush="#FF1F1F1F" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" HorizontalAlignment="Center" VerticalAlignment="Center" Width="288" TextWrapping="Wrap" TextAlignment="Center">Photo</TextBlock>
+                    </Border>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <TextBlock Foreground="#FF727272" FontSize="20" TextWrapping="Wrap" Grid.Row="0"  VerticalAlignment="Top">Информация о навыках марафона 2016 пойдет сюда. Информация может покрыть расположение, время, расстояние, рекордные времена, достопримечательности, и т.д</TextBlock>
+                <TextBlock Foreground="#FF727272" FontSize="20" TextWrapping="Wrap" Grid.Row="1" VerticalAlignment="Top">Информация о навыках марафона 2016 пойдет сюда. Информация может покрыть расположение, время, расстояние, рекордные времена, достопримечательности, и т.д</TextBlock>
+                <TextBlock Foreground="#FF727272" FontSize="20" TextWrapping="Wrap" Grid.Row="2" VerticalAlignment="Top">Информация о навыках марафона 2016 пойдет сюда. Информация может покрыть расположение, время, расстояние, рекордные времена, достопримечательности, и т.д</TextBlock>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,56 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.MySponsors"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="MySponsors">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Center" Margin="0, 80,0,0">
+            <TextBlock Text="Мои спонсоры" Foreground="#FF878787" FontSize="48" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Здесь показаны все ваши спонсоры в Marathon Skills 2016." Foreground="#FF4D4D4D" FontSize="20" HorizontalAlignment="Center" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Center">
+                <TextBlock Foreground="#FF898989" FontSize="20" TextWrapping="Wrap" Width="320" TextAlignment="Center">Наименование благотворительной организации</TextBlock>
+                <Image Source="/Resources/unnamed.jpg" Width="130" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 70" AllowDrop="False">
+                    <Image.Clip>
+                        <EllipseGeometry Center="65, 65" RadiusX="65" RadiusY="65" />
+                    </Image.Clip>
+                </Image>
+                <TextBlock Foreground="#FF898989" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Width="409">Это было бы длинным описание благотворительности. Это могло пойти для нескольких параграфов.</TextBlock>
+            </Grid>
+            <Grid Grid.Column="1" VerticalAlignment="Top">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Border BorderThickness="0,0,0,3" BorderBrush="#FFA0A0A0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0" HorizontalAlignment="Left" Margin="0,0,60,0">
+                            <TextBlock Foreground="#FF505050" FontSize="24" >Спонсор</TextBlock>
+                        </Grid>
+                        <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="60,0,0,0">
+                            <TextBlock Foreground="#FF505050" FontSize="24">Взнос</TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+                    <TextBlock Foreground="#FF646464" Margin="0,50,0,-40" FontSize="24" HorizontalAlignment="Right">Всего $</TextBlock>
+                </Grid>
+                
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

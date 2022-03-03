@@ -50,5 +50,10 @@ namespace MarathonSkills2k16.Pages
         {
             Manager.MainFrame.Navigate(new EditProfile());
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new MySponsors());
+        }
     }
 }

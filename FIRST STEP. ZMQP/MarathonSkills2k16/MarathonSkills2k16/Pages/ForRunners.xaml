@@ -64,7 +64,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Grid.Row="1"  Width="450" Height="140" VerticalAlignment="Center" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" FontStyle="Italic">
+                <Button Grid.Row="1"  Width="450" Height="140" VerticalAlignment="Center" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" FontStyle="Italic" Click="Button_Click_4">
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center" >Мой спонсор</TextBlock>
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">

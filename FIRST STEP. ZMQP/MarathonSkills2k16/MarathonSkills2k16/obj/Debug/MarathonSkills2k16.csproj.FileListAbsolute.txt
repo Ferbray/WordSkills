@@ -98,3 +98,11 @@ C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\
 C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\MyResult.baml
 C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\EditProfile.g.cs
 C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\EditProfile.baml
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\MySponsors.g.cs
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\MySponsors.baml
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\RunnerList.g.cs
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\RunnerList.baml
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\MarathonInfo.g.cs
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\MarathonInfo.baml
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\BMICalc.g.cs
+C:\UE9TSEVMIE5BSFVZ\OTHER\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\BMICalc.baml

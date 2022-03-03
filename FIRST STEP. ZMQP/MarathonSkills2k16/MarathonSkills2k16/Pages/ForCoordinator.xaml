@@ -27,7 +27,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Content="Бегуны" Width="450" Height="140" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" VerticalAlignment="Top" FontStyle="Italic">
+                <Button Grid.Row="0" Content="Бегуны" Width="450" Height="140" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" VerticalAlignment="Top" FontStyle="Italic" Click="Button_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
