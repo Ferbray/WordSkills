@@ -1,0 +1,103 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.HowLong"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="HowLong">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Bottom">Насколько долгий марафон?</TextBlock>
+        <Grid Grid.Row="1" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="320"/>
+                    <RowDefinition Height="Auto"/>    
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="24" VerticalAlignment="Center" Foreground="Gray">Имя выбранного пункта</TextBlock>
+                <Grid Grid.Row="1">
+                    <Button BorderThickness="3,3,3,3" Width="350" Height="250">
+                        <TextBlock Foreground="#FF7D7D7D" FontSize="22">Выбранное фото</TextBlock>
+                    </Button>
+                </Grid>
+                <TextBlock Grid.Row="2" Foreground="#FF9C9C9C" FontSize="22" TextWrapping="Wrap" VerticalAlignment="Center">Информация о скорости выбранного пункта и сколько времени это взяло бы, чтобы закончить марафон</TextBlock>
+            </Grid>
+            <Grid Grid.Column="1">
+                
+                <Grid Width="400">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Background="{x:Null}" BorderThickness="2,2,2,0" Width="140" HorizontalAlignment="Right">
+                            <TextBlock Foreground="#FF797979" FontSize="22">Скорость</TextBlock></Button>
+                        <Button Grid.Column="1" Background="{x:Null}" BorderThickness="0,2,2,0" Width="140" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                            <TextBlock Foreground="#FF797979" FontSize="22">Дистанция</TextBlock>
+                            </Button>
+                    </Grid>
+                    <Border Grid.Row="1" BorderBrush="#FF707070" BorderThickness="2,2,2,0">
+                        <Grid Margin="30,0,0,0">
+                            <Button BorderThickness="1,1,1,1" Width="80" Height="60" HorizontalAlignment="Left" Margin="10,0,20,0">
+                            <TextBlock Foreground="#FF7D7D7D" FontSize="22">Photo</TextBlock>
+                        </Button>
+                        <TextBlock Foreground="#FF8A8A8A" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Название 1</TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="2" BorderBrush="#FF707070" BorderThickness="2,0,2,0">
+                        <Grid Margin="30,0,0,0">
+                            <Button BorderThickness="1,1,1,1" Width="80" Height="60" HorizontalAlignment="Left" Margin="10,0,20,0">
+                                <TextBlock Foreground="#FF7D7D7D" FontSize="22">Photo</TextBlock>
+                            </Button>
+                            <TextBlock Foreground="#FF8A8A8A" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Название 2</TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="3" BorderBrush="#FF707070" BorderThickness="2,0,2,0">
+                        <Grid Margin="30,0,0,0">
+                            <Button BorderThickness="1,1,1,1" Width="80" Height="60" HorizontalAlignment="Left" Margin="10,0,20,0">
+                                <TextBlock Foreground="#FF7D7D7D" FontSize="22">Photo</TextBlock>
+                            </Button>
+                            <TextBlock Foreground="#FF8A8A8A" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Название 3</TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="4" BorderBrush="#FF707070" BorderThickness="2,0,2,0">
+                        <Grid Margin="30,0,0,0">
+                            <Button BorderThickness="1,1,1,1" Width="80" Height="60" HorizontalAlignment="Left" Margin="10,0,20,0">
+                                <TextBlock Foreground="#FF7D7D7D" FontSize="22">Photo</TextBlock>
+                            </Button>
+                            <TextBlock Foreground="#FF8A8A8A" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Название 4</TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="5" BorderBrush="#FF707070" BorderThickness="2,0,2,2">
+                        <Grid Margin="30,0,0,0">
+                            <Button BorderThickness="1,1,1,1" Width="80" Height="60" HorizontalAlignment="Left" Margin="10,0,20,0">
+                                <TextBlock Foreground="#FF7D7D7D" FontSize="22">Photo</TextBlock>
+                            </Button>
+                            <TextBlock Foreground="#FF8A8A8A" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Название 5</TextBlock>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</Page>

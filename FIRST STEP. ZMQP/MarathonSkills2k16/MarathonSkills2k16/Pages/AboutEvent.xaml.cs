@@ -39,5 +39,11 @@ namespace MarathonSkills2k16.Pages
         {
             Manager.MainFrame.Navigate(new BMRCalc());
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new HowLong());
+        }
+
     }
 }
