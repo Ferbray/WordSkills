@@ -16,28 +16,19 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AboutEvent.xaml
+    /// Логика взаимодействия для BMRCalc.xaml
     /// </summary>
-    public partial class AboutEvent : Page
+    public partial class BMRCalc : Page
     {
-        public AboutEvent()
+        public BMRCalc()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new MarathonInfo());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new BMICalc());
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new BMRCalc());
+            Windows.LevelActivity lA = new Windows.LevelActivity();
+            lA.Show();
         }
     }
 }

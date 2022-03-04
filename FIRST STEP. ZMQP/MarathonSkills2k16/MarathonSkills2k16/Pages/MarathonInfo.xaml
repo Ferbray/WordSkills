@@ -45,9 +45,9 @@
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
                 </Grid.RowDefinitions>
                 <TextBlock Foreground="#FF727272" FontSize="20" TextWrapping="Wrap" Grid.Row="0"  VerticalAlignment="Top">Информация о навыках марафона 2016 пойдет сюда. Информация может покрыть расположение, время, расстояние, рекордные времена, достопримечательности, и т.д</TextBlock>
                 <TextBlock Foreground="#FF727272" FontSize="20" TextWrapping="Wrap" Grid.Row="1" VerticalAlignment="Top">Информация о навыках марафона 2016 пойдет сюда. Информация может покрыть расположение, время, расстояние, рекордные времена, достопримечательности, и т.д</TextBlock>

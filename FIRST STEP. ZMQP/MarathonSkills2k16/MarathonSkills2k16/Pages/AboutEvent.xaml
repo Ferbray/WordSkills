@@ -72,7 +72,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Grid.Row="2" Content="BMR калькулятор" VerticalAlignment="Bottom"  Width="450" Height="140" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444"  FontStyle="Italic" Background="#FFDDDDDD">
+                <Button Grid.Row="2" Content="BMR калькулятор" VerticalAlignment="Bottom"  Width="450" Height="140" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444"  FontStyle="Italic" Background="#FFDDDDDD" Click="Button_Click_2">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>

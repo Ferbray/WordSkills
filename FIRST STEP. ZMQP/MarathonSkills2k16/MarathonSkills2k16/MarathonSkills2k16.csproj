@@ -59,6 +59,9 @@
     <Compile Include="Pages\BMICalc.xaml.cs">
       <DependentUpon>BMICalc.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BMRCalc.xaml.cs">
+      <DependentUpon>BMRCalc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditProfile.xaml.cs">
       <DependentUpon>EditProfile.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,9 @@
     <Compile Include="Pages\NewMember.xaml.cs">
       <DependentUpon>NewMember.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\LevelActivity.xaml.cs">
+      <DependentUpon>LevelActivity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\OnlyTest.xaml.cs">
       <DependentUpon>OnlyTest.xaml</DependentUpon>
     </Compile>
@@ -124,6 +130,10 @@
       <DependentUpon>Thanks.xaml</DependentUpon>
     </Compile>
     <Page Include="Pages\BMICalc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BMRCalc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -192,6 +202,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\NewMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LevelActivity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -267,6 +281,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image-removebg-preview %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

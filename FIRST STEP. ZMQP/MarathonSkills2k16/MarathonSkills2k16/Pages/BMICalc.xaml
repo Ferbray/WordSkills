@@ -28,15 +28,27 @@
                 </Grid.RowDefinitions>
                 <TextBlock Foreground="#FF727272" FontSize="22" TextWrapping="Wrap" Width="400">Информация о том что такое BMI и как калькулятор работает</TextBlock>
                 <Grid Grid.Row="1" VerticalAlignment="Top">
-                    <Button Grid.Row="0" Width="150" Height="130" BorderThickness="1,1,1,1" HorizontalAlignment="Left" Margin="40, 0, 0,0 " BorderBrush="#FF1F1F1F" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Background="#FFD6D6D6">
-
-                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" Height="24" TextAlignment="Center">Мужской</TextBlock>
-
+                    <Button Grid.Row="0" Width="150" Height="130" BorderThickness="1,1,1,1" HorizontalAlignment="Left" Margin="40, 0, 0,0 " BorderBrush="#FF1F1F1F" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Background="#FFF4F4F4" Foreground="{x:Null}">
+                        <Grid Height="130">
+                        <Grid Width="70" Height="70" VerticalAlignment="Center">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/Resources/man.png" Stretch="Uniform"/>
+                            </Grid.Background>
+                            
+                        </Grid>
+                            <TextBlock FontSize="18" Foreground="#FF5B5B5B" Height="24" VerticalAlignment="Bottom" Margin="0,0,0,5" TextAlignment="Center">Мужской</TextBlock>
+                        </Grid>
                     </Button>
-                    <Button Grid.Row="0" Width="150" Height="130" BorderThickness="1,1,1,1" HorizontalAlignment="Right" Margin="0, 0, 40,0 " BorderBrush="#FF1F1F1F" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Background="#FFDDDDDD">
+                    <Button Grid.Row="0" Width="150" Height="130" BorderThickness="1,1,1,1" HorizontalAlignment="Right" Margin="0, 0, 40,0 " BorderBrush="#FF1F1F1F" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Background="#FFF4F4F4">
+                        <Grid Height="130">
+                            <Grid Width="70" Height="70" VerticalAlignment="Center">
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/Resources/image-removebg-preview.png" Stretch="Uniform"/>
+                                </Grid.Background>
 
-                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" Height="24" TextAlignment="Center">Женский</TextBlock>
-
+                            </Grid>
+                            <TextBlock FontSize="18" Foreground="#FF5B5B5B" Height="24" VerticalAlignment="Bottom" Margin="0,0,0,5" TextAlignment="Center">Женский</TextBlock>
+                        </Grid>
                     </Button>
                 </Grid>
                 <Grid Grid.Row="2" VerticalAlignment="Center">
@@ -71,29 +83,72 @@
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
-                <Border Width="200" Height="300" BorderThickness="1,1,1,1" Background="#FFE5E5E5" HorizontalAlignment="Center" BorderBrush="#FF1F1F1F" VerticalAlignment="Top" >
-                    <TextBlock FontSize="26" Foreground="#FF5B5B5B" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="288" TextWrapping="Wrap" TextAlignment="Center">Здоровый</TextBlock>
+                <Border Width="200" Height="260" BorderThickness="1,1,1,1" Background="#FFE5E5E5" HorizontalAlignment="Center" BorderBrush="#FF1F1F1F" VerticalAlignment="Top" >
+                    <Grid Height="260">
+                        <Grid Width="70" Height="160" VerticalAlignment="Center">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/Resources/image-removebg-preview (1).png" Stretch="Uniform"/>
+                            </Grid.Background>
+
+                        </Grid>
+                        <TextBlock FontSize="18" Foreground="#FF5B5B5B" Height="24" VerticalAlignment="Bottom" Margin="0,0,0,5" TextAlignment="Center">Здоровый</TextBlock>
+                    </Grid>
                 </Border>
-                <Grid Height="40" VerticalAlignment="Bottom" Margin="0,0,0,150" HorizontalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    
-                    <Border Grid.Column="0" BorderBrush="#FFFFB800" BorderThickness="0,15,0,0">
-                        <TextBlock Foreground="#FF838383" Width="120" HorizontalAlignment="Center" FontSize="16">Недостаточный</TextBlock>
-                    </Border>
-                    <Border Grid.Column="1" BorderBrush="#FF00FF22" Width="120" BorderThickness="0,15,0,0">
-                        <TextBlock Foreground="#FF838383" HorizontalAlignment="Center" FontSize="16">Здоровый</TextBlock>
-                    </Border>
-                    <Border Grid.Column="2" BorderBrush="#FFFFB800" Width="120" BorderThickness="0,15,0,0">
-                        <TextBlock Foreground="#FF838383" HorizontalAlignment="Center" FontSize="16">Избыточный</TextBlock>
-                    </Border>
-                    <Border Grid.Column="3" BorderBrush="Red" Width="120" BorderThickness="0,15,0,0">
-                        <TextBlock Foreground="#FF838383" HorizontalAlignment="Center" FontSize="16">Ожирение</TextBlock>
-                    </Border>
+                <Grid VerticalAlignment="Bottom" Margin="0,0,0,100" HorizontalAlignment="Center" Height="90">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                    </Grid>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Grid.Row="0" Text="0" FontSize="22" Foreground="#FF707070" Margin="6,0,0,0"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Polygon Points="-14,0,0,22,14,0" Margin="12,0,0,0" VerticalAlignment="Top" Fill="#FFB1B1B1" Stroke="#FF333333"/>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="7*"/>
+                                <RowDefinition Height="58*"/>
+                            </Grid.RowDefinitions>
+
+
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="37*"/>
+                            <RowDefinition Height="53*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Height="40" VerticalAlignment="Top" Margin="0,13,0,0" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Column="0" BorderBrush="#FFFFB800" BorderThickness="0,15,0,0">
+                                <TextBlock Foreground="#FF838383" Width="120" HorizontalAlignment="Center" FontSize="16">Недостаточный</TextBlock>
+                            </Border>
+                            <Border Grid.Column="1" BorderBrush="#FF00FF22" Width="120" BorderThickness="0,15,0,0">
+                                <TextBlock Foreground="#FF838383" HorizontalAlignment="Center" FontSize="16">Здоровый</TextBlock>
+                            </Border>
+                            <Border Grid.Column="2" BorderBrush="#FFFFB800" Width="120" BorderThickness="0,15,0,0">
+                                <TextBlock Foreground="#FF838383" HorizontalAlignment="Center" FontSize="16">Избыточный</TextBlock>
+                            </Border>
+                            <Border Grid.Column="3" BorderBrush="Red" Width="120" BorderThickness="0,15,0,0">
+                                <TextBlock Foreground="#FF838383" HorizontalAlignment="Center" FontSize="16">Ожирение</TextBlock>
+                            </Border>
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>
