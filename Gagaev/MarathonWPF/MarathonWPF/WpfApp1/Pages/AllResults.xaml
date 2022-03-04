@@ -33,15 +33,8 @@
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Результаты предыдущих гонок" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,15,0,0" Foreground="#FF504E4E"></TextBlock>
-            <Button Grid.Row="1" Content="Поиск" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="105" Height="40" FontSize="14" Margin="0,0,40,20" Click="Button_Click">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            
-            <Grid Grid.Row="1">
+
+            <Grid Grid.Row="1" HorizontalAlignment="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
@@ -49,19 +42,26 @@
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="420"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="500"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="Марафон: " FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FF504E4E" Margin="0,0,220,5"></TextBlock>
-                <ComboBox x:Name="combo_marathon" Grid.Row="0" Grid.Column="0" Width="200" Height="40" HorizontalAlignment="Right" Margin="0,0,20,0"></ComboBox>
+                <ComboBox x:Name="combo_marathon" FontSize="22" Grid.Row="0" Grid.Column="0" Width="200" Height="40" HorizontalAlignment="Right" Margin="0,0,20,0"></ComboBox>
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="Дистанция: " FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FF504E4E" Margin="0,0,220,5"></TextBlock>
-                <ComboBox x:Name="combo_distance" Grid.Row="1" Grid.Column="0" Width="200" Height="40" HorizontalAlignment="Right" Margin="0,0,20,0"></ComboBox>
-                <TextBlock Grid.Row="0" Grid.Column="1" Text="Пол: " FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="130,0,0,5"></TextBlock>
-                <ComboBox x:Name="combo_gender" Grid.Row="0" Grid.Column="1" Width="200" Height="40" HorizontalAlignment="Left" Margin="200,0,0,0"></ComboBox>
-                <TextBlock Grid.Row="1" Grid.Column="1" Text="Категория: " FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="50,0,0,5"></TextBlock>
-                <ComboBox x:Name="combo_category" Grid.Row="1" Grid.Column="1" Width="200" Height="40" HorizontalAlignment="Left" Margin="200,0,0,0"></ComboBox>
+                <ComboBox x:Name="combo_distance" Grid.Row="1" FontSize="22" Grid.Column="0" Width="200" Height="40" HorizontalAlignment="Right" Margin="0,0,20,0"></ComboBox>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Пол: " FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="110,0,0,5"></TextBlock>
+                <ComboBox x:Name="combo_gender" Grid.Row="0" FontSize="22" Grid.Column="1" Width="200" Height="40" HorizontalAlignment="Left" Margin="180,0,0,0"></ComboBox>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Категория: " FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="30,0,0,5"></TextBlock>
+                <ComboBox x:Name="combo_category" Grid.Row="1" FontSize="22" Grid.Column="1" Width="200" Height="40" HorizontalAlignment="Left" Margin="180,0,0,0"></ComboBox>
+                <Button Grid.Row="1" Grid.Column="1" Content="Поиск" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="105" Height="40" FontSize="14" Margin="0,0,0,20" Click="Button_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </Grid>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="270"></ColumnDefinition>
                     <ColumnDefinition Width="400"></ColumnDefinition>

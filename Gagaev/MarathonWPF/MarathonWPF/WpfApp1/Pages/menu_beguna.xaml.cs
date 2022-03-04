@@ -50,5 +50,15 @@ namespace WpfApp1.Pages
         {
             Manager.MainFrame.Navigate(new my_results());
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new EditProfile());
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new MySponsors());
+        }
     }
 }

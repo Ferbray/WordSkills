@@ -56,7 +56,7 @@
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Width="340" Height="80" FontSize="28" Margin="0,20,10,0">
+                    <Button Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Width="340" Height="80" FontSize="28" Margin="0,20,10,0" Click="Button_Click_3">
                         <TextBlock FontStyle="Italic">Редактирование<LineBreak></LineBreak>профиля</TextBlock>
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
@@ -84,7 +84,7 @@
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button Grid.Row="1" Content="Мой спонсор" HorizontalAlignment="Left" VerticalAlignment="Top" Width="340" Height="80" FontSize="28" Margin="10,20,0,0" FontStyle="Italic">
+                    <Button Grid.Row="1" Content="Мой спонсор" HorizontalAlignment="Left" VerticalAlignment="Top" Width="340" Height="80" FontSize="28" Margin="10,20,0,0" FontStyle="Italic" Click="Button_Click_4">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>

@@ -47,10 +47,10 @@
             <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Bold>Пол: </Bold> мужской <Bold>Возрастная категория: </Bold> 18-29
             </TextBlock>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="270"></ColumnDefinition>
                     <ColumnDefinition Width="160"></ColumnDefinition>
                     <ColumnDefinition Width="130"></ColumnDefinition>
                     <ColumnDefinition Width="190"></ColumnDefinition>

@@ -37,8 +37,8 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="Password:" VerticalAlignment="Top" TextAlignment="Right" FontSize="24" Margin="0,62,15,0"></TextBlock>
                 <TextBlock Grid.Column="0" Text="Email:" VerticalAlignment="Top" TextAlignment="Right"  FontSize="24" Margin="0,12,15,50"></TextBlock>
-                <PasswordBox Grid.Column="1" x:Name="LoginPass" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Height="40" Margin="0,60,50,0" FontSize="18" KeyDown="LoginPass_KeyDown"/>
-                <TextBox Grid.Column="1" x:Name="LoginEmail" VerticalAlignment="Top" HorizontalAlignment="Left"  Width="200" Height="40" Margin="0,10,50,0" TextAlignment="Left" FontSize="18"/>
+                <PasswordBox Grid.Column="1" x:Name="LoginPass" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Height="40" Margin="0,60,50,0" FontSize="22" KeyDown="LoginPass_KeyDown"/>
+                <TextBox Grid.Column="1" x:Name="LoginEmail" VerticalAlignment="Top" HorizontalAlignment="Left"  Width="200" Height="40" Margin="0,10,50,0" TextAlignment="Left" FontSize="22"/>
                 <Button Grid.Column="1" Content="Login" x:Name="authorization" VerticalAlignment="Bottom" HorizontalAlignment="Left" MinWidth="120" MaxWidth="200" Height="40" Margin="0,0,0,20" FontSize="18" Click="Login_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">

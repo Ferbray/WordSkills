@@ -60,11 +60,17 @@
     <Compile Include="Pages\AllResults.xaml.cs">
       <DependentUpon>AllResults.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditProfile.xaml.cs">
+      <DependentUpon>EditProfile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\menu_beguna.xaml.cs">
       <DependentUpon>menu_beguna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MySponsors.xaml.cs">
+      <DependentUpon>MySponsors.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\my_results.xaml.cs">
       <DependentUpon>my_results.xaml</DependentUpon>
@@ -85,6 +91,7 @@
       <DependentUpon>thanks_reg.xaml</DependentUpon>
     </Compile>
     <Compile Include="Results.cs" />
+    <Compile Include="Sponsors.cs" />
     <Compile Include="Windows\AboutFond.xaml.cs">
       <DependentUpon>AboutFond.xaml</DependentUpon>
     </Compile>
@@ -118,6 +125,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\EditProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +138,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\menu_beguna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MySponsors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

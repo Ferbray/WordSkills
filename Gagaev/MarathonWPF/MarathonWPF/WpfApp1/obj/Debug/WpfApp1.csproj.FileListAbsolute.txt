@@ -58,3 +58,7 @@ C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\AllResul
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\my_results.g.cs
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\AllResults.baml
 C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\my_results.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\EditProfile.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\EditProfile.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\MySponsors.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\MySponsors.baml
