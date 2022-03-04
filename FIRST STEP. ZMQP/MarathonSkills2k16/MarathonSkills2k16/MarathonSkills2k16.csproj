@@ -68,6 +68,9 @@
     <Compile Include="Pages\HowLong.xaml.cs">
       <DependentUpon>HowLong.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ListOrganization.xaml.cs">
+      <DependentUpon>ListOrganization.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MarathonInfo.xaml.cs">
       <DependentUpon>MarathonInfo.xaml</DependentUpon>
     </Compile>
@@ -145,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\HowLong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ListOrganization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

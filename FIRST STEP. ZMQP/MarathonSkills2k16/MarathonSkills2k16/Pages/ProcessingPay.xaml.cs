@@ -20,14 +20,33 @@ namespace MarathonSkills2k16.Pages
     /// </summary>
     public partial class ProcessingPay : Page
     {
-        public ProcessingPay()
+        public ProcessingPay(string name = "Иван Прудов", string pay = "$50")
         {
             InitializeComponent();
+            if (pay == "")
+            {
+                PayCount.Text = "$50";
+            }
+            else
+            {
+                PayCount.Text = pay;
+            }
+
+            if (name == "")
+            {
+                NamePayer.Text = "Иван Прудов";
+            }
+            else
+            {
+                NamePayer.Text = name;
+            }
+            
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.GoBack();
         }
+
     }
 }

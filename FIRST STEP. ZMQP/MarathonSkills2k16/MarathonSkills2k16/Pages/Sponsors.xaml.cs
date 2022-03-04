@@ -37,8 +37,50 @@ namespace MarathonSkills2k16.Pages
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
+
         {
-            Manager.MainFrame.Navigate(new ProcessingPay());
+            Manager.MainFrame.Navigate(new ProcessingPay(name: NamePay.Text,pay: Count.Text));
+        }
+
+        private void TextBox_Initialized(object sender, EventArgs e)
+        {
+            (sender as TextBox).Text = "50";
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Count.Text = $"${int.Parse(Count.Text.Substring(1, Count.Text.Length - 1)) + 10}";
+            CountBox.Text = Count.Text.Substring(1, Count.Text.Length - 1);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            if ( int.Parse(Count.Text.Substring(1, Count.Text.Length - 1)) > 0 )
+            {
+                Count.Text = $"${int.Parse(Count.Text.Substring(1, Count.Text.Length - 1)) - 10}";
+                CountBox.Text = Count.Text.Substring(1, Count.Text.Length - 1);
+            }
+        }
+
+        private void CountBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                int value = int.Parse(CountBox.Text);
+                if (value > 0)
+                {
+                    Count.Text = $"${CountBox.Text}";
+                }
+                else
+                {
+                    Count.Text = $"$0";
+                }
+            }
+
+            catch
+            {
+                Count.Text = $"$0";
+            }
         }
     }
 }

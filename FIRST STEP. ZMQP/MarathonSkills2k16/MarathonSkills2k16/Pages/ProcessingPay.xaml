@@ -18,9 +18,9 @@
             <TextBlock  Foreground="#FF4D4D4D" FontSize="20" HorizontalAlignment="Center" Width="Auto" FontStretch="Medium" TextWrapping="Wrap" Margin="0,76,0,0" VerticalAlignment="Center" FlowDirection="LeftToRight" ScrollViewer.HorizontalScrollBarVisibility="Disabled" UseLayoutRounding="False" TextAlignment="Center">Спасибо за поддержку бегуна в Marathon Skills 2016! <LineBreak/> Ваше пожертвование пойдет в его благотворительную организацию</TextBlock>
         </Grid>
         <Grid Grid.Row="1" VerticalAlignment="Center">
-            <TextBlock FontSize="48" Foreground="#FF2B2B2B" HorizontalAlignment="Center">Иван Прудов (204) из Russia</TextBlock>
+            <TextBlock x:Name="NamePayer" FontSize="48" Foreground="#FF2B2B2B" HorizontalAlignment="Center" >Иван Прудов</TextBlock>
             <TextBlock FontSize="72" Foreground="#FF5D5D5D" HorizontalAlignment="Center" Margin="0, 60">Фонд Кошек</TextBlock>
-            <TextBlock FontSize="128" Foreground="#FF424242" HorizontalAlignment="Center" Margin="0, 140">$50</TextBlock>
+            <TextBlock x:Name="PayCount" Text="$50" FontSize="128" Foreground="#FF424242" HorizontalAlignment="Center" Margin="0, 140"/>
             <Button Content="Назад" BorderThickness="1,1,1,1" Padding="35, 15, 35, 15" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Normal" Margin="0,350,0,0" Click="Button_Click_2">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">

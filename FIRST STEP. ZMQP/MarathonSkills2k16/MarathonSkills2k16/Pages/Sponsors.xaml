@@ -25,7 +25,7 @@
             <Grid Grid.Column="0" HorizontalAlignment="Right">
                 <TextBlock Text="Информация о Спонсоре" FontWeight="Bold" FontSize="36" Foreground="#FF878787" HorizontalAlignment="Center" Grid.RowSpan="2"></TextBlock>
                 <TextBlock Text="Ваше имя: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="100, 100, 0, 0"></TextBlock>
-                <TextBox Width="280" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,100,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="NamePay" Width="280" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,100,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
                 <TextBlock Text="Бегун: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="140,165,0,0"/>
                 <ComboBox HorizontalAlignment="Left" Margin="220,165,0,0" VerticalAlignment="Top" Width="280" Height="35" DisplayMemberPath="sda" VerticalContentAlignment="Center"/>
                 <TextBlock Text="Карта: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4B4B4B" FontSize="24" Margin="140,230,0,0"/>
@@ -68,16 +68,16 @@
                     </Button.Style>
                 </Button>
                 <TextBlock Text="Сумма пожертвования" FontWeight="Bold" HorizontalAlignment="Center" FontSize="36" Foreground="#FF878787" Margin="0, 110, 0, 0"/>
-                <TextBlock Text="$50" HorizontalAlignment="Center" FontSize="72" Foreground="#FF878787" Margin="0, 150, 0, 0"/>
-                <Button Content="+" BorderThickness="1,1,1,1" Height="46" Width="70" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Bold" Margin="200,250,0,0">
+                <TextBlock x:Name="Count" Text="$50" HorizontalAlignment="Center" FontSize="72" Foreground="#FF878787" Margin="0, 150, 0, 0"/>
+                <Button Content="+" BorderThickness="1,1,1,1" Height="46" Width="70" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Bold" Margin="200,250,0,0" Click="Button_Click_3">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </Button.Resources>
                 </Button>
-                <TextBox Width="100" Height="46" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,250,0,0" FontStyle="Italic" FontSize="20" VerticalContentAlignment="Center"/>
-                <Button Content="-" BorderThickness="1,1,1,1" Height="46" Width="70" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Bold" Margin="0,250,200,0">
+                <TextBox x:Name="CountBox" Width="100" Height="46" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,250,0,0" FontStyle="Italic" FontSize="24" VerticalContentAlignment="Center" Initialized="TextBox_Initialized" HorizontalContentAlignment="Center" Foreground="#FF4E4E4E" KeyUp="CountBox_KeyUp"/>
+                <Button Content="-" BorderThickness="1,1,1,1" Height="46" Width="70" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF101010" FontWeight="Bold" Margin="0,250,200,0" Click="Button_Click_4">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
