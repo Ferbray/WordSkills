@@ -49,5 +49,10 @@ namespace MarathonSkills2k16.Pages
         {
             Manager.MainFrame.Navigate(new ListOrganization());
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PreviousRaceResult());
+        }
     }
 }

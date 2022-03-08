@@ -238,3 +238,5 @@ C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STE
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\HowLong.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\ListOrganization.g.cs
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\ListOrganization.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\PreviousRaceResult.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\PreviousRaceResult.baml
