@@ -1,0 +1,125 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.Entrance"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280"
+      Title="Entrance">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#FF656565" FontSize="36" Grid.Row="0">Поступление инвентаря</TextBlock>
+        <Grid Grid.Row="1" Width="500">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFAFAFAF" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#FF5B5B5B">Наименование
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="#FFAFAFAF" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#FF5B5B5B">Поступление
+                    </TextBlock>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFE3E3E3" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"  Foreground="#FF5B5B5B">Номер бегуна
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="White" BorderBrush="#FF676767">
+                </Border>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFE3E3E3" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"  Foreground="#FF5B5B5B">RFID Браслет
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="White" BorderBrush="#FF676767">
+                </Border>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFE3E3E3" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"  Foreground="#FF5B5B5B">Бейсболка
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="White" BorderBrush="#FF676767">
+                </Border>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFE3E3E3" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"  Foreground="#FF5B5B5B">Бутылка воды
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="White" BorderBrush="#FF676767">
+                </Border>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFE3E3E3" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"  Foreground="#FF5B5B5B">Футболка
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="White" BorderBrush="#FF676767">
+                </Border>
+            </Grid>
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border BorderThickness="2,2,0,2" Grid.Column="0" Background="#FFE3E3E3" BorderBrush="#FF676767">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"  Foreground="#FF5B5B5B">Сувенирный буклет
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="2,2,2,2" Grid.Column="1" Background="White" BorderBrush="#FF676767">
+                </Border>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button Grid.Column="0" Content="Сохранить" Margin="0,0,10,0" BorderThickness="1,1,1,1" Padding="35, 10, 35, 10" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF101010" FontWeight="Normal">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

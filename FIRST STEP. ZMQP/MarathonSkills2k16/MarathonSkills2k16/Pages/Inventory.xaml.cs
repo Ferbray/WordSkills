@@ -16,33 +16,24 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ForAdmin.xaml
+    /// Логика взаимодействия для Inventory.xaml
     /// </summary>
-    public partial class ForAdmin : Page
+    public partial class Inventory : Page
     {
-        public ForAdmin()
+        public Inventory()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new UserManagement());
+            Manager.MainFrame.Navigate(new Entrance());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new VolunteerManagement());
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new ManageCharities());
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new Inventory());
+            Windows.Statement st = new Windows.Statement();
+            st.Show();
         }
     }
 }

@@ -266,3 +266,9 @@ C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkill
 C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\ManageCharities.baml
 C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\AddCharity.g.cs
 C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\AddCharity.baml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\Inventory.g.cs
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\Inventory.baml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\Entrance.g.cs
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Pages\Entrance.baml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Windows\Statement.g.cs
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\MarathonSkills2k16\MarathonSkills2k16\obj\Debug\Windows\Statement.baml
