@@ -57,8 +57,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BegunCoordinator.cs" />
     <Compile Include="Pages\AllResults.xaml.cs">
       <DependentUpon>AllResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\begun_coord.xaml.cs">
+      <DependentUpon>begun_coord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ControlBegun.xaml.cs">
+      <DependentUpon>ControlBegun.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditProfile.xaml.cs">
       <DependentUpon>EditProfile.xaml</DependentUpon>
@@ -68,6 +75,9 @@
     </Compile>
     <Compile Include="Pages\menu_beguna.xaml.cs">
       <DependentUpon>menu_beguna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\menu_coord.xaml.cs">
+      <DependentUpon>menu_coord.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MySponsors.xaml.cs">
       <DependentUpon>MySponsors.xaml</DependentUpon>
@@ -84,6 +94,9 @@
     <Compile Include="Pages\SponsorsBegun.xaml.cs">
       <DependentUpon>SponsorsBegun.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\sponsors_coord.xaml.cs">
+      <DependentUpon>sponsors_coord.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\thanks_donate.xaml.cs">
       <DependentUpon>thanks_donate.xaml</DependentUpon>
     </Compile>
@@ -92,6 +105,7 @@
     </Compile>
     <Compile Include="Results.cs" />
     <Compile Include="Sponsors.cs" />
+    <Compile Include="SponsorsCoordinator.cs" />
     <Compile Include="Windows\AboutFond.xaml.cs">
       <DependentUpon>AboutFond.xaml</DependentUpon>
     </Compile>
@@ -125,6 +139,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\begun_coord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ControlBegun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,6 +160,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\menu_beguna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\menu_coord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,6 +184,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SponsorsBegun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\sponsors_coord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -199,10 +229,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <Resource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    </Resource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -216,6 +246,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\icon_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
