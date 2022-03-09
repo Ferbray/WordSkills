@@ -16,28 +16,23 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ForAdmin.xaml
+    /// Логика взаимодействия для ManageCharities.xaml
     /// </summary>
-    public partial class ForAdmin : Page
+    public partial class ManageCharities : Page
     {
-        public ForAdmin()
+        public ManageCharities()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new UserManagement());
+            Manager.MainFrame.Navigate(new AddCharity());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new VolunteerManagement());
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new ManageCharities());
+            Manager.MainFrame.Navigate(new AddCharity());
         }
     }
 }

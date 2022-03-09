@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AddCharity.xaml.cs">
+      <DependentUpon>AddCharity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddNewUser.xaml.cs">
       <DependentUpon>AddNewUser.xaml</DependentUpon>
     </Compile>
@@ -77,8 +80,14 @@
     <Compile Include="Pages\HowLong.xaml.cs">
       <DependentUpon>HowLong.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ImportVolunteers.xaml.cs">
+      <DependentUpon>ImportVolunteers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ListOrganization.xaml.cs">
       <DependentUpon>ListOrganization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManageCharities.xaml.cs">
+      <DependentUpon>ManageCharities.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ManageRunner.xaml.cs">
       <DependentUpon>ManageRunner.xaml</DependentUpon>
@@ -159,6 +168,10 @@
     <Compile Include="Pages\Thanks.xaml.cs">
       <DependentUpon>Thanks.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\AddCharity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AddNewUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -187,7 +200,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ImportVolunteers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ListOrganization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ManageCharities.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

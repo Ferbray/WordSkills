@@ -56,7 +56,7 @@
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Foreground="#FF727272" FontSize="24" VerticalAlignment="Stretch" HorizontalAlignment="Center">Выгрузка</TextBlock>
 
-                    <Button Grid.Row="1" Width="230" Height="50" BorderThickness="1,1,1,1" FontSize="20" Foreground="#FF444444" >
+                    <Button Grid.Row="1" Width="230" Height="50" BorderThickness="1,1,1,1" FontSize="20" Foreground="#FF444444" Click="Button_Click" >
                         <TextBlock TextWrapping="Wrap" TextAlignment="Center">Загрузка волонтеров</TextBlock>
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">

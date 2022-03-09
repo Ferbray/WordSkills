@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace MarathonSkills2k16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для VolunteerManagement.xaml
+    /// Логика взаимодействия для ImportVolunteers.xaml
     /// </summary>
-    public partial class VolunteerManagement : Page
+    public partial class ImportVolunteers : Page
     {
-        public VolunteerManagement()
+        public ImportVolunteers()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new ImportVolunteers());
         }
     }
 }
