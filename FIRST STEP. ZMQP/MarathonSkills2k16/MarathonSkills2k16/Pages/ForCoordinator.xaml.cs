@@ -29,5 +29,10 @@ namespace MarathonSkills2k16.Pages
         {
             Manager.MainFrame.Navigate(new RunnerList());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SponsorShipOverFlow());
+        }
     }
 }

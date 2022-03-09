@@ -1,0 +1,43 @@
+﻿<Page x:Class="MarathonSkills2k16.Pages.CertificatePreview"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills2k16.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1280  "
+      Title="CertificatePreview">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="#FFCCCCCC" Grid.Row="0" Margin="0,60,0,0">
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+                <TextBlock Foreground="#FF474747" FontSize="20" Grid.Column="0">Race event: </TextBlock>
+                <ComboBox Grid.Column="1" Width="150"></ComboBox>
+            </Grid>
+        </Grid>
+        <Border Grid.Row="1" Width="380" Height="100" BorderBrush="#FFFFC202" BorderThickness="2" ScrollViewer.CanContentScroll="True" Background="#FFFFC13A">
+            <TextBlock Foreground="#FF705501" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24">Logo</TextBlock>
+        </Border>
+        <TextBlock Grid.Row="2" Width="800" Foreground="#FF818181" TextWrapping="Wrap" FontSize="22" TextAlignment="Center">Поздравляем Имя Фамилия с участием в 42km полном марафоне. Ваши результаты время 15:16:17 и занятое место 183!</TextBlock>
+        <TextBlock Grid.Row="3" Width="800" Foreground="#FF818181" TextWrapping="Wrap" FontSize="72" TextAlignment="Center" FontFamily="Times New Roman">Сертификат участника</TextBlock>
+        <Grid Grid.Row="4">
+            <TextBlock Foreground="#FF535353" FontSize="24" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center">
+                 в<LineBreak/>Marathon Skills 2014<LineBreak/>Osaka, Japan<LineBreak/><Bold FontWeight="Normal">Вы также заработали $1300<LineBreak/>для вашей благотворительной организации!</Bold>
+            </TextBlock>
+            <Image Source="/Resources/image-removebg-preview (4).png" Height="200" HorizontalAlignment="Right" Margin="0,0,10,0">
+                
+            </Image>
+        </Grid>
+    </Grid>
+</Page>

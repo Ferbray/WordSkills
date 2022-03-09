@@ -56,20 +56,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AddNewUser.xaml.cs">
+      <DependentUpon>AddNewUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BMICalc.xaml.cs">
       <DependentUpon>BMICalc.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\BMRCalc.xaml.cs">
       <DependentUpon>BMRCalc.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CertificatePreview.xaml.cs">
+      <DependentUpon>CertificatePreview.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditProfile.xaml.cs">
       <DependentUpon>EditProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditUser.xaml.cs">
+      <DependentUpon>EditUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\HowLong.xaml.cs">
       <DependentUpon>HowLong.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ListOrganization.xaml.cs">
       <DependentUpon>ListOrganization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManageRunner.xaml.cs">
+      <DependentUpon>ManageRunner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MarathonInfo.xaml.cs">
       <DependentUpon>MarathonInfo.xaml</DependentUpon>
@@ -85,6 +97,15 @@
     </Compile>
     <Compile Include="Pages\RunnerList.xaml.cs">
       <DependentUpon>RunnerList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SponsorShipOverFlow.xaml.cs">
+      <DependentUpon>SponsorShipOverFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UserManagement.xaml.cs">
+      <DependentUpon>UserManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VolunteerManagement.xaml.cs">
+      <DependentUpon>VolunteerManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AboutBlog.xaml.cs">
       <DependentUpon>AboutBlog.xaml</DependentUpon>
@@ -138,6 +159,10 @@
     <Compile Include="Pages\Thanks.xaml.cs">
       <DependentUpon>Thanks.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\AddNewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\BMICalc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -146,7 +171,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\CertificatePreview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,6 +188,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ListOrganization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ManageRunner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,6 +212,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RunnerList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SponsorShipOverFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UserManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\VolunteerManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -308,6 +357,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image-removebg-preview %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -27,7 +27,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Content="Пользователи" Width="450" Height="140" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" VerticalAlignment="Top" FontStyle="Italic">
+                <Button Grid.Row="0" Content="Пользователи" Width="450" Height="140" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444" VerticalAlignment="Top" FontStyle="Italic" Click="Button_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -49,7 +49,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0"  Width="450" Height="140" VerticalAlignment="Top" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444"  FontStyle="Italic" Background="#FFDDDDDD">
+                <Button Grid.Row="0"  Width="450" Height="140" VerticalAlignment="Top" BorderThickness="1,1,1,1" FontSize="36" Foreground="#FF444444"  FontStyle="Italic" Background="#FFDDDDDD" Click="Button_Click_1">
                     <TextBlock Text="Волонтеры" TextWrapping="Wrap"></TextBlock>
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
