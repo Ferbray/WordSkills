@@ -116,6 +116,9 @@
     <Compile Include="Pages\SponsorsBegun.xaml.cs">
       <DependentUpon>SponsorsBegun.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\sponsors_admin.xaml.cs">
+      <DependentUpon>sponsors_admin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\sponsors_coord.xaml.cs">
       <DependentUpon>sponsors_coord.xaml</DependentUpon>
     </Compile>
@@ -238,6 +241,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SponsorsBegun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\sponsors_admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -44,5 +44,10 @@ namespace WpfApp1.Pages
         {
             Manager.MainFrame.Navigate(new VolonteriAdmin());
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new sponsors_admin());
+        }
     }
 }
