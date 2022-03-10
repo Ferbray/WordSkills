@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="900"
+      d:DesignHeight="870" d:DesignWidth="1000"
       Title="sponsors_coord">
 
     <Grid Background="White">
@@ -61,14 +61,14 @@
             </Grid>
             <TextBlock Grid.Row="2" Text="Благотворительные организации: 10" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF504E4E" Margin="0,0,0,40"></TextBlock>
             <TextBlock Grid.Row="2" Text="Всего спонсорских взносов: 1000$" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF504E4E" Margin="0,40,0,0"></TextBlock>
-            <DataGrid Grid.Row="3" x:Name="SponsorsCordGrid" RowHeight="50" AutoGenerateColumns="False" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Height="280">
+            <DataGrid Grid.Row="3" x:Name="SponsorsCordGrid" RowHeight="120" AutoGenerateColumns="False" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Height="400" Margin="0,20,0,0">
                 <DataGrid.Columns>
-                    <DataGridTemplateColumn Header="Логотип" MaxWidth="350">
+                    <DataGridTemplateColumn Header="Логотип" Width="120">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding Logo}" Width="200" Height="200">
+                                <Image Source="{Binding Logo}" Width="100" Height="100">
                                     <Image.Clip>
-                                        <EllipseGeometry Center="100,100" RadiusX="100" RadiusY="100"></EllipseGeometry>
+                                        <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50"></EllipseGeometry>
                                     </Image.Clip>
                                 </Image>
                             </DataTemplate>

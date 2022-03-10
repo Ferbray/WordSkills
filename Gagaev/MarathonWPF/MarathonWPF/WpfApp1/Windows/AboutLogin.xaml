@@ -37,7 +37,7 @@
         </Button>
         <TextBlock Grid.Row="0" Text="ТОЛЬКО ДЛЯ ТЕСТИРОВАНИЯ" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="34" Margin="0,20,0,0" Foreground="#FFCE852D" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic"></TextBlock>
         <TextBlock Grid.Row="0" x:Name="subtitle" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="0,70,0,0"></TextBlock>
-        <Button Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Администратор" Width="200" Height="40" Margin="0,170,0,0" FontSize="18">
+        <Button Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Администратор" Width="200" Height="40" Margin="0,170,0,0" FontSize="18" Click="Button_Click_2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="7"/>

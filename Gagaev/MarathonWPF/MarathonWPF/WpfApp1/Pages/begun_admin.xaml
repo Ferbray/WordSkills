@@ -1,0 +1,126 @@
+﻿<Page x:Class="WpfApp1.Pages.begun_admin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="begun_admin">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FF504E4E" VerticalAlignment="Top" Height="50"/>
+        <TextBlock Grid.Row="0" Text="MARATHON SKILLS 2016" FontSize="28" Foreground="#FFFFFF" Margin="152,8,0,0" TextAlignment="Center" FontFamily="Verdana" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"></TextBlock>
+        <Button Grid.Row="0" Content="Назад" x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Height="40" FontSize="14" Margin="10,5,0,0" Click="Cancel_Pay">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="0" Content="Logout" x:Name="Logout" HorizontalAlignment="Right" VerticalAlignment="Top" Width="105" Height="40" FontSize="14" Margin="0,5,10,0" Click="Logout_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="320"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Управление пользователями" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,15,0,0" Foreground="#FF504E4E"></TextBlock>
+
+            <Grid Grid.Row="1" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="500"></ColumnDefinition>
+                    <ColumnDefinition Width="500"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="50" FontSize="18" Margin="0,20,200,0" Click="Button_Click_1">
+                    <TextBlock TextAlignment="Center">+Добавление<LineBreak></LineBreak>нового</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Фильтр по ролям:" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="0,0,0,0"></TextBlock>
+                    <ComboBox Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="40" FontSize="18" Margin="210,0,0,0">
+                        <ComboBoxItem>Все</ComboBoxItem>
+                        <ComboBoxItem>Координатор</ComboBoxItem>
+                        <ComboBoxItem>Бегун</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Grid.Row="1" Text="Сортировать по:" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="10,0,0,0"></TextBlock>
+                    <ComboBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="40" FontSize="18" Margin="210,0,0,0">
+                        <ComboBoxItem>Имени</ComboBoxItem>
+                        <ComboBoxItem>Фамилии</ComboBoxItem>
+                        <ComboBoxItem>email</ComboBoxItem>
+                        <ComboBoxItem>Роли</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Grid.Row="2" Text="Поиск:" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="120,0,0,0"></TextBlock>
+                    <TextBox Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="40" FontSize="18" Margin="210,0,0,0"></TextBox>
+                    <Button Grid.Row="3" Content="Обновить" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="40" FontSize="18" Margin="210,0,0,0" Click="Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="245"></ColumnDefinition>
+                    <ColumnDefinition Width="755"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="22" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Bold>Total runners:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Column="1" x:Name="total_runners" FontSize="22" Text="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,2,0,0"></TextBlock>
+            </Grid>
+            <DataGrid Grid.Row="3" x:Name="BegunsAdminGrid" RowHeight="50" AutoGenerateColumns="False" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Height="280">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding Name}" MaxWidth="350"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding Family}" MaxWidth="350"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Email" Binding="{Binding Email}" MaxWidth="350"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Роль" Binding="{Binding Role}"></DataGridTextColumn>
+                    <DataGridTemplateColumn Width="110">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="EditBegunCoord" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Edit" Width="100" Height="40">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="10"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="2" Background="#FF504E4E" VerticalAlignment="Bottom" Height="50"/>
+        <TextBlock Grid.Row="2" Text="18 дней 8 часов и 17 минут до старта марафона!" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></TextBlock>
+    </Grid>
+</Page>

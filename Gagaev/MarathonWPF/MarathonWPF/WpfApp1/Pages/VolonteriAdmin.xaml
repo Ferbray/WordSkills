@@ -1,0 +1,119 @@
+﻿<Page x:Class="WpfApp1.Pages.VolonteriAdmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="VolonteriAdmin">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FF504E4E" VerticalAlignment="Top" Height="50"/>
+        <TextBlock Grid.Row="0" Text="MARATHON SKILLS 2016" FontSize="28" Foreground="#FFFFFF" Margin="152,8,0,0" TextAlignment="Center" FontFamily="Verdana" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"></TextBlock>
+        <Button Grid.Row="0" Content="Назад" x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Height="40" FontSize="14" Margin="10,5,0,0" Click="Cancel_Pay">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="0" Content="Logout" x:Name="Logout" HorizontalAlignment="Right" VerticalAlignment="Top" Width="105" Height="40" FontSize="14" Margin="0,5,10,0" Click="Logout_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="320"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Управление волонтерами" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,15,0,0" Foreground="#FF504E4E"></TextBlock>
+
+            <Grid Grid.Row="1" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="500"></ColumnDefinition>
+                    <ColumnDefinition Width="500"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <TextBlock Grid.Row="0" Text="Сортировка и фильтрация" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FF504E4E" Margin="0,0,100,0"></TextBlock>
+                    </Grid>
+                    
+                    <Grid Grid.Row="1">
+                        <TextBlock Grid.Row="0" Text="Сортировать по:" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FF504E4E" Margin="0,0,280,2"></TextBlock>
+                        <ComboBox Grid.Row="0" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FF504E4E" Width="200"  Margin="0,0,70,0">
+                            <ComboBoxItem>Фамилии</ComboBoxItem>
+                            <ComboBoxItem>Имени</ComboBoxItem>
+                            <ComboBoxItem>Стране</ComboBoxItem>
+                            <ComboBoxItem>Полу</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Button Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Height="40" FontSize="18" Click="Button_Click" Margin="0,0,170,0">
+                        <TextBlock TextAlignment="Center">Обновить</TextBlock>
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Загрузка" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF504E4E" Margin="220,0,0,0"></TextBlock>
+                    <Button Grid.Row="1" Content="Загрузка волонтеров" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Height="40" FontSize="18" Margin="170,0,0,0" Click="Button_Click_1">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="22" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Bold>Всего волонтеров:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Column="1" x:Name="total_runners" FontSize="22" Text="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,2,0,0"></TextBlock>
+            </Grid>
+            <DataGrid Grid.Row="3" x:Name="VolonteriAdminGrid" RowHeight="50" AutoGenerateColumns="False" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Height="280">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding Family}" MaxWidth="350"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding Name}" MaxWidth="350"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Страна" Binding="{Binding Country}" MaxWidth="350"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Пол" Binding="{Binding Gender}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="2" Background="#FF504E4E" VerticalAlignment="Bottom" Height="50"/>
+        <TextBlock Grid.Row="2" Text="18 дней 8 часов и 17 минут до старта марафона!" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></TextBlock>
+    </Grid>
+</Page>

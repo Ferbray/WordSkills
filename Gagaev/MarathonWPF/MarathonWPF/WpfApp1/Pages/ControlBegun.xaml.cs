@@ -34,5 +34,20 @@ namespace WpfApp1.Pages
         {
             Manager.MainFrame.Navigate(new Home());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new EditProfileCoord());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Sertificat());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Sertificat());
+        }
     }
 }

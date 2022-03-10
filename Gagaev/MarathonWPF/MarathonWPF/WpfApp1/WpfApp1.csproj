@@ -57,9 +57,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BegunAdmin.cs" />
     <Compile Include="BegunCoordinator.cs" />
+    <Compile Include="Pages\AddBegun.xaml.cs">
+      <DependentUpon>AddBegun.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AllResults.xaml.cs">
       <DependentUpon>AllResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BegunEditAdmin.xaml.cs">
+      <DependentUpon>BegunEditAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\begun_admin.xaml.cs">
+      <DependentUpon>begun_admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\begun_coord.xaml.cs">
       <DependentUpon>begun_coord.xaml</DependentUpon>
@@ -70,8 +80,17 @@
     <Compile Include="Pages\EditProfile.xaml.cs">
       <DependentUpon>EditProfile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditProfileCoord.xaml.cs">
+      <DependentUpon>EditProfileCoord.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoadVolonters.xaml.cs">
+      <DependentUpon>LoadVolonters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\menu_admin.xaml.cs">
+      <DependentUpon>menu_admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\menu_beguna.xaml.cs">
       <DependentUpon>menu_beguna.xaml</DependentUpon>
@@ -91,6 +110,9 @@
     <Compile Include="Pages\RegMarathon.xaml.cs">
       <DependentUpon>RegMarathon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Sertificat.xaml.cs">
+      <DependentUpon>Sertificat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SponsorsBegun.xaml.cs">
       <DependentUpon>SponsorsBegun.xaml</DependentUpon>
     </Compile>
@@ -103,9 +125,13 @@
     <Compile Include="Pages\thanks_reg.xaml.cs">
       <DependentUpon>thanks_reg.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\VolonteriAdmin.xaml.cs">
+      <DependentUpon>VolonteriAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Results.cs" />
     <Compile Include="Sponsors.cs" />
     <Compile Include="SponsorsCoordinator.cs" />
+    <Compile Include="VolonteriAdminCS.cs" />
     <Compile Include="Windows\AboutFond.xaml.cs">
       <DependentUpon>AboutFond.xaml</DependentUpon>
     </Compile>
@@ -115,6 +141,10 @@
     <Compile Include="Windows\Contacts.xaml.cs">
       <DependentUpon>Contacts.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\AddBegun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AllResults.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -139,6 +169,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\BegunEditAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\begun_admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\begun_coord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -151,11 +189,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditProfileCoord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LoadVolonters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\menu_admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,6 +233,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Sertificat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\SponsorsBegun.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -196,6 +250,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\thanks_reg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\VolonteriAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -248,7 +306,16 @@
     <Resource Include="Resources\icon_info.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.jpg" />
+    <Resource Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_agree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_agreepar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

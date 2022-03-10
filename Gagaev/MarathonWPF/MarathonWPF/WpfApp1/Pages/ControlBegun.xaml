@@ -4,8 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="1000"
+      mc:Ignorable="d"
+      d:DesignHeight="870" d:DesignWidth="1000"
       Title="ControlBegun">
 
     <Grid Background="White">
@@ -35,15 +35,15 @@
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="70"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="600"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Управление бегуном" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,15,0,0" Foreground="#FF504E4E"></TextBlock>
 
             <Grid Grid.Row="1" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="700"></ColumnDefinition>
-                    <ColumnDefinition Width="300"></ColumnDefinition>
+                    <ColumnDefinition Width="650"></ColumnDefinition>
+                    <ColumnDefinition Width="350"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
                 <Grid Grid.Column="0">
@@ -55,7 +55,7 @@
                     <Grid Grid.Row="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="250"></ColumnDefinition>
+                            <ColumnDefinition Width="200"></ColumnDefinition>
                             <ColumnDefinition Width="260"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,0,0" Foreground="#FF504E4E">Email:</TextBlock>
@@ -64,7 +64,7 @@
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="250"></ColumnDefinition>
+                            <ColumnDefinition Width="200"></ColumnDefinition>
                             <ColumnDefinition Width="260"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
@@ -116,7 +116,7 @@
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="250"></ColumnDefinition>
+                            <ColumnDefinition Width="200"></ColumnDefinition>
                             <ColumnDefinition Width="260"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
@@ -133,28 +133,47 @@
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="70"></RowDefinition>
-                        <RowDefinition Height="70"></RowDefinition>
-                        <RowDefinition Height="70"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
+
                     <TextBlock Grid.Row="0" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Center" Foreground="#FF504E4E" Margin="50,0,0,0">
                         Регистрационный<LineBreak></LineBreak>статус
                     </TextBlock>
-                    <Button Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="350" Height="50" FontSize="18" Margin="25,0,0,0">
-                        <TextBlock TextAlignment="Center">Детальной информации<LineBreak></LineBreak>(CSV)</TextBlock>
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-                    <Button Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="350" Height="50" FontSize="18" Margin="25,0,0,0">
-                        <TextBlock TextAlignment="Center">Email список</TextBlock>
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="220"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="120"></RowDefinition>
+                                <RowDefinition Height="120"></RowDefinition>
+                                <RowDefinition Height="120"></RowDefinition>
+                                <RowDefinition Height="120"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="1" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="#FF948C8C">Зарегистрирован</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="#FF948C8C" TextAlignment="Right">Подтверждена<LineBreak></LineBreak>Оплата</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="#FF948C8C" TextAlignment="Right">Выдан пакет</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="#FF948C8C" TextAlignment="Right">Вышел на старт</TextBlock>
+                        </Grid>
+                        <Grid Grid.Column="1" Height="480" Width="10" Background="#FF8E8E8E" VerticalAlignment="Top"></Grid>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="120"></RowDefinition>
+                                <RowDefinition Height="120"></RowDefinition>
+                                <RowDefinition Height="120"></RowDefinition>
+                                <RowDefinition Height="120"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="0" Source="/Resources/icon_agree.png" Width="100" Height="100" VerticalAlignment="Top"></Image>
+                            <Image Grid.Row="1" Source="/Resources/icon_agree.png" Width="100" Height="100" VerticalAlignment="Top"></Image>
+                            <Image Grid.Row="2" Source="/Resources/icon_no.png" Width="100" Height="100" VerticalAlignment="Top"></Image>
+                            <Image Grid.Row="3" Source="/Resources/icon_no.png" Width="100" Height="100" VerticalAlignment="Top"></Image>
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid Grid.Row="2">
@@ -164,7 +183,7 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="50" FontSize="18">
+                <Button Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="60" FontSize="18" Click="Button_Click_2">
                     <TextBlock TextAlignment="Center">Показ<LineBreak></LineBreak>сертификата</TextBlock>
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -173,7 +192,7 @@
                     </Button.Resources>
                 </Button>
 
-                <Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="300" Height="50" FontSize="18">
+                <Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="300" Height="60" FontSize="18" Click="Button_Click_1">
                     <TextBlock TextAlignment="Center">Печать бейджа</TextBlock>
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -182,7 +201,7 @@
                     </Button.Resources>
                 </Button>
 
-                <Button Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" FontSize="18">
+                <Button Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="60" FontSize="18" Click="Button_Click">
                     <TextBlock TextAlignment="Center">Редактирование<LineBreak></LineBreak>профиля</TextBlock>
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
