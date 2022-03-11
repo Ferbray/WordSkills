@@ -119,5 +119,20 @@ namespace WpfApp1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на &lt;ResourceDictionary xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        ///                    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;&gt;
+        ///    &lt;Style x:Key=&quot;WindowStyle&quot; TargetType=&quot;Window&quot; &gt;
+        ///        &lt;Setter Property=&quot;Foreground&quot; Value=&quot;Black&quot; /&gt;
+        ///        &lt;Setter Property=&quot;Background&quot; Value=&quot;White&quot; /&gt;
+        ///    &lt;/Style&gt;
+        ///&lt;/ResourceDictionary&gt;.
+        /// </summary>
+        internal static string resourcesDict {
+            get {
+                return ResourceManager.GetString("resourcesDict", resourceCulture);
+            }
+        }
     }
 }

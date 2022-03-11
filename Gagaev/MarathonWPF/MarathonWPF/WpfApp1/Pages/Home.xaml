@@ -7,11 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800"
       Title="Home">
-
     <Grid>
         <Grid Background="White">
             <Grid.RowDefinitions>
-                <RowDefinition MinHeight="180" MaxHeight="200"></RowDefinition>
+                <RowDefinition MinHeight="180" MaxHeight="200" Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
             </Grid.RowDefinitions>

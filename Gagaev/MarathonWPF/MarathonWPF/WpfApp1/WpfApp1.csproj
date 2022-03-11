@@ -83,6 +83,9 @@
     <Compile Include="Pages\EditProfileCoord.xaml.cs">
       <DependentUpon>EditProfileCoord.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\editsponsors_admin.xaml.cs">
+      <DependentUpon>editsponsors_admin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -133,6 +136,7 @@
     </Compile>
     <Compile Include="Results.cs" />
     <Compile Include="Sponsors.cs" />
+    <Compile Include="SponsorsAdmin.cs" />
     <Compile Include="SponsorsCoordinator.cs" />
     <Compile Include="VolonteriAdminCS.cs" />
     <Compile Include="Windows\AboutFond.xaml.cs">
@@ -193,6 +197,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EditProfileCoord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\editsponsors_admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
