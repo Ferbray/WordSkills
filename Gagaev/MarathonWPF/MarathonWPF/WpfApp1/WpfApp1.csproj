@@ -89,6 +89,9 @@
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\inventory.xaml.cs">
+      <DependentUpon>inventory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoadVolonters.xaml.cs">
       <DependentUpon>LoadVolonters.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,9 @@
     <Compile Include="Windows\Contacts.xaml.cs">
       <DependentUpon>Contacts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\otchet_inventori.xaml.cs">
+      <DependentUpon>otchet_inventori.xaml</DependentUpon>
+    </Compile>
     <Page Include="Pages\AddBegun.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,6 +207,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\editsponsors_admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\inventory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -281,6 +291,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Contacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\otchet_inventori.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

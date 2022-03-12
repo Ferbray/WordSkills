@@ -128,6 +128,14 @@ namespace WpfApp1.Pages {
             #line default
             #line hidden
             return;
+            case 6:
+            
+            #line 79 "..\..\..\Pages\menu_admin.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_3);
+            
+            #line default
+            #line hidden
+            return;
             }
             this._contentLoaded = true;
         }

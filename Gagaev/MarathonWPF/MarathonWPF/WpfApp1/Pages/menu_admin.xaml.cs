@@ -49,5 +49,13 @@ namespace WpfApp1.Pages
         {
             Manager.MainFrame.Navigate(new sponsors_admin());
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Windows.otchet_inventori window = new Windows.otchet_inventori();
+            window.Show();
+
+            Manager.MainFrame.Navigate(new inventory());
+        }
     }
 }

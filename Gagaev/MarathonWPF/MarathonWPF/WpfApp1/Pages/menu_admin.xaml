@@ -76,7 +76,7 @@
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button Grid.Row="1" Content="Инвентарь" HorizontalAlignment="Left" VerticalAlignment="Top" Width="340" Height="80" FontSize="28" Margin="10,20,0,0" FontStyle="Italic">
+                    <Button Grid.Row="1" Content="Инвентарь" HorizontalAlignment="Left" VerticalAlignment="Top" Width="340" Height="80" FontSize="28" Margin="10,20,0,0" FontStyle="Italic" Click="Button_Click_3">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
