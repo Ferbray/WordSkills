@@ -42,10 +42,26 @@ namespace ZMQP.Windows
         {
             this.WindowState = WindowState.Minimized;
         }
-/*
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
-            (sender as TextBox).BorderBrush = new SolidColorBrush(Color.FromRgb(177, 1, 1));
-        }*/
+            Windows.Registration Registration = new Windows.Registration();
+            Registration.Show();
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+            this.Close();
+            at.Show();
+        }
+
+
+
+        /*
+       private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+       {
+           (sender as TextBox).BorderBrush = new SolidColorBrush(Color.FromRgb(177, 1, 1));
+       }*/
     }
 }

@@ -1,0 +1,200 @@
+﻿<Window x:Class="ZMQP.Windows.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZMQP.Windows"
+        mc:Ignorable="d" 
+        Title="ZMQP - Sign Up" Height="450" Width="350" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="{x:Null}">
+    <Window.Resources>
+        <Style x:Key="InputFormBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
+            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
+            <Setter Property="Control.Width" Value="200"></Setter>
+            <Setter Property="Control.Height" Value="20"></Setter>
+            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
+            <Setter Property="Control.FontSize" Value="16"></Setter>
+            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
+            <Setter Property="Background" Value="{x:Null}"></Setter>
+        </Style>
+        <Style x:Key="InputFormBoxPass" TargetType="{x:Type PasswordBox}">
+            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
+            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
+            <Setter Property="Control.Width" Value="200"></Setter>
+            <Setter Property="Control.Height" Value="20"></Setter>
+            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
+            <Setter Property="Control.FontSize" Value="16"></Setter>
+            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
+            <Setter Property="Background" Value="{x:Null}"></Setter>
+        </Style>
+    </Window.Resources>
+    <Border>
+        <Grid>
+        <Border CornerRadius="15">
+            <Border.Background>
+                <ImageBrush ImageSource="/Resources/gradient.png" Opacity="0.9"/>
+            </Border.Background>
+            <Border.Effect>
+                <BlurEffect Radius="5" RenderingBias="Quality"></BlurEffect>
+            </Border.Effect>
+        </Border>
+
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="270"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
+                <Grid HorizontalAlignment="Right" Margin="0,5,5,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Width="20" Height="20" Name="ToolBarButtonMin" MouseDown="ToolBarButtonMin_MouseDown">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Setter Property="Source" Value="/Resources/minus.png"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
+                    <Image Grid.Column="1" Width="20" Height="20" Name="ToolBarButtonClose" MouseDown="ToolBarButtonClose_MouseDown">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Setter Property="Source" Value="/Resources/close.png"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonClose}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/close_active.png"></Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
+
+                </Grid>
+                
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock FontSize="85" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="76" FontStyle="Normal" TextDecorations="{x:Null}" Width="280">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFF3F2F2"/>
+                            <GradientStop Color="#FF2205B3" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>ZMQP</TextBlock>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494" FontSize="22">Регистрация</TextBlock>
+                <Grid Grid.Row="1" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Логин:</TextBlock>
+                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
+                        <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF949494"/>
+                                <GradientStop Color="#FF2205B3" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+
+                    </TextBox>
+
+                </Grid>
+                <Grid Grid.Row="2" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Email:</TextBlock>
+                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
+                        <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF949494"/>
+                                <GradientStop Color="#FF2205B3" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+
+                    </TextBox>
+
+                </Grid>
+                <Grid Grid.Row="3" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Пароль:</TextBlock>
+                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
+                        <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF949494"/>
+                                <GradientStop Color="#FF2205B3" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+
+                    </TextBox>
+                
+                </Grid>
+                <Grid Grid.Row="4" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Еще раз:</TextBlock>
+                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
+                        <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF949494"/>
+                                <GradientStop Color="#FF2205B3" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+
+                    </TextBox>
+
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Text="Зарегистрироваться" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <Border.Style>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderBrush" Value="Red"></Setter>
+
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+
+
+                    </Border>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+    </Border>
+</Window>

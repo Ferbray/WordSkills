@@ -1,0 +1,196 @@
+﻿<Window x:Class="ZMQP.Windows.ApplicationTemplate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZMQP.Windows"
+        mc:Ignorable="d"
+        Title="ZMQP Launcher" Height="720" Width="1280" MinHeight="600" MinWidth="1000" AllowsTransparency="True" Background="Transparent" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResize">
+    <Window.Resources>
+        <Style TargetType="TextBlock" x:Key="MenuCategory">
+            <Setter Property="Foreground" Value="#FF909090"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="#FFB9B9B9"></Setter>
+                    <Setter Property="Cursor" Value="Hand"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Border CornerRadius="15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" CornerRadius="15,0,0,15">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF000310"/>
+                        <GradientStop Color="#FF100B1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="180"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <TextBlock FontSize="45" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Normal" TextDecorations="{x:Null}">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFF3F2F2"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground>ZMQP</TextBlock>
+                        <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" ></Line>
+                    </Grid>
+                    <Grid Grid.Row="1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Меню</TextBlock>
+                        <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}">Профиль</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0">Библиотека</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Друзья</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Настройки</TextBlock>
+                        <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="5"></Line>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Жанры</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0">Экшен</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0">RPG</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Стратегии</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Симуляторы</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Головоломки</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="6" Margin="30,0,0,0">Забавы</TextBlock>
+                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="7" Margin="30,0,0,0">Образовательные</TextBlock>
+                        <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="8"></Line>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border Grid.Column="1" CornerRadius="0,15,15,0">
+                <Grid>
+                    <Border CornerRadius="0,15,15,0">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Resources/gradient.png" Opacity="0.9"/>
+                        </Border.Background>
+                        <Border.Effect>
+                            <BlurEffect Radius="1" RenderingBias="Quality"></BlurEffect>
+                        </Border.Effect>
+                    </Border>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
+                            <Grid HorizontalAlignment="Right" Margin="0,5,5,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="30"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Width="20" Height="20" Name="ToolBarButtonMin" MouseDown="ToolBarButtonMin_MouseDown">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/Resources/minus.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+
+                                    <Image.Effect>
+                                        <BlurEffect Radius="1"></BlurEffect>
+                                    </Image.Effect>
+                                </Image>
+                                <Image Grid.Column="1" Width="20" Height="20" Name="ToolBarButtonClose" MouseDown="ToolBarButtonClose_MouseDown">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/Resources/close.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonClose}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/close_active.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+
+                                    <Image.Effect>
+                                        <BlurEffect Radius="1"></BlurEffect>
+                                    </Image.Effect>
+                                </Image>
+
+                            </Grid>
+
+                        </Grid>
+                        <Border Grid.Row="1" BorderThickness="0,0,0,1" BorderBrush="#FF1F1F1F">
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,0">
+                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/Resources/search-removebg-preview.png" Width="20" Height="20" Grid.Column="0"></Image>
+                                <TextBox Grid.Column="1" Width="200" Height="30" Background="{x:Null}" CaretBrush="#FFC80303" Foreground="#FF909090" BorderBrush="#FF2205B3" BorderThickness="0,0,0,1" Initialized="TextBox_Initialized" FontWeight="Normal" VerticalContentAlignment="Center"/>
+                            </Grid>
+                            <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,40,0">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0" Width="40">
+                                        <Image Source="/Resources/photo_2022-01-07_17-08-19 (2).jpg" Width="40">
+                                            <Image.Clip>
+                                                <EllipseGeometry Center="20, 20" RadiusX="20" RadiusY="20" />
+                                            </Image.Clip>
+                                        </Image>
+                                    </Grid>
+                                    <Grid Grid.Column="1" Margin="15,0,0,0" Height="16">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="20"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0">paranoic  </TextBlock>
+                                        <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">▼</TextBlock>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        </Border>
+                    </Grid>
+                        
+                </Grid>
+            </Border>
+            <Frame NavigationUIVisibility="Hidden" Name="MainFrame"/>
+        </Grid>
+    
+    </Border>
+</Window>
