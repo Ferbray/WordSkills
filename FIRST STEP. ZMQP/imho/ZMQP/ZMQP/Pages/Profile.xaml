@@ -10,10 +10,10 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="400"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="0" HorizontalAlignment="Left">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition/>
@@ -25,12 +25,13 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="400"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="0">
+                    <Grid Grid.Column="0" HorizontalAlignment="Center">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
+                            <RowDefinition Height="50"/>
                             <RowDefinition Height="50"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
@@ -40,17 +41,58 @@
                                 </Image.Clip>
                             </Image>
                         </Grid>
-                        <Grid Grid.Row="1">
+                        <Grid Grid.Row="1" Width="400">
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="24">paranoic</TextBlock>
+                            <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                            <TextBlock VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="24" Grid.Column="0">paranoic</TextBlock>
+                            <TextBlock VerticalAlignment="Bottom" Foreground="#FF454545" FontSize="16" Grid.Column="1" FontWeight="Bold">#666</TextBlock>
+                            </Grid>
                             <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF00611C" FontSize="18">В сети</TextBlock>
                         </Grid>
+                        <Grid Grid.Row="2">
+                            <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Редактировать" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                <Border.Style>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="BorderBrush" Value="Red"></Setter>
+
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+
+
+                            </Border>
+                        </Grid>
                     </Grid>
+                    
                 </Grid>
+                
             </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Margin="0,160,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Foreground="#FFBEBEBE" FontSize="12" TextWrapping="Wrap" Margin="20,20,20,20" Grid.Row="0">Но едва Владимир выехал за околицу в поле, как поднялся ветер и сделалась такая метель, что он ничего не взвидел. В одну минуту дорогу занесло; окрестность исчезла во мгле мутной и желтоватой, сквозь которую летели белые хлопья снегу; небо слилося с землею. </TextBlock>
+            <Line X1="30" Y1="0" X2="220" Y2="0" VerticalAlignment="Bottom" Stroke="#FF484848" Grid.Row="1" StrokeThickness="1"></Line>
+            <TextBlock Foreground="#FFBEBEBE" FontSize="22" Grid.Row="2" Margin="20,0,20,20" >Личная информация</TextBlock>
         </Grid>
     </Grid>
 </Page>

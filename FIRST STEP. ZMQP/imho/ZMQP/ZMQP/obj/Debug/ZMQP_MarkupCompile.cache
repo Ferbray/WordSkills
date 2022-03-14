@@ -9,12 +9,21 @@ ZMQP
 none
 false
 DEBUG;TRACE
+<<<<<<< Updated upstream
 C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\App.xaml
 51133643111
 
 102123677484
 14209946504
 MainWindow.xaml;Pages\Profile.xaml;Windows\ApplicationTemplate.xaml;Windows\Login.xaml;Windows\Registration.xaml;
+=======
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\App.xaml
+9361056048
+
+14-192110341
+14209946504
+MainWindow.xaml;Pages\Friends.xaml;Pages\Library.xaml;Pages\MainPage.xaml;Pages\Profile.xaml;Windows\ApplicationTemplate.xaml;Windows\Login.xaml;Windows\Auth.xaml;Windows\Registration.xaml;
+>>>>>>> Stashed changes
 
 False
 

@@ -83,9 +83,15 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< Updated upstream
         internal static System.Drawing.Bitmap eye {
             get {
                 object obj = ResourceManager.GetObject("eye", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap console_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("console_removebg_preview", resourceCulture);
+>>>>>>> Stashed changes
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +99,15 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< Updated upstream
         internal static System.Drawing.Bitmap eyeNo {
             get {
                 object obj = ResourceManager.GetObject("eyeNo", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap friends_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("friends_removebg_preview", resourceCulture);
+>>>>>>> Stashed changes
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +118,26 @@ namespace ZMQP.Properties {
         internal static System.Drawing.Bitmap gradient {
             get {
                 object obj = ResourceManager.GetObject("gradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hamburger {
+            get {
+                object obj = ResourceManager.GetObject("hamburger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("home__1__removebg_preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +245,16 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settings_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("settings_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UpsizeActive_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("UpsizeActive_removebg_preview", resourceCulture);
@@ -226,6 +268,16 @@ namespace ZMQP.Properties {
         internal static System.Drawing.Bitmap UpsizeNonActive_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("UpsizeNonActive_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("user_removebg_preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -22,6 +22,7 @@ namespace ZMQP.Windows
         public ApplicationTemplate()
         {
             InitializeComponent();
+            Manager.MainFrame = MainFrame;
         }
 
         private void ToolBarButtonMin_MouseDown(object sender, MouseButtonEventArgs e)
@@ -61,7 +62,39 @@ namespace ZMQP.Windows
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            MainFrame.Content = new Pages.Profile();
+        }
 
+        private void TextBlock_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.MainPage();
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (HamburgerMenu.Width == 50)
+            {
+                HamburgerMenu.Width = 300;
+                HamburgerMenuVisibility.Visibility = Visibility.Visible;
+                HamburgerMenuHidden.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                HamburgerMenu.Width = 50;
+                HamburgerMenu.HorizontalAlignment = HorizontalAlignment.Right;
+                HamburgerMenuVisibility.Visibility = Visibility.Hidden;
+                HamburgerMenuHidden.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.MainPage();
+        }
+
+        private void Image_MouseDown_2(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Profile();
         }
     }
 }
