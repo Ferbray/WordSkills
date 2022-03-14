@@ -62,3 +62,9 @@ C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STE
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.g.cs
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.baml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.g.cs
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.g.cs
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.g.cs
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.baml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.baml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.baml

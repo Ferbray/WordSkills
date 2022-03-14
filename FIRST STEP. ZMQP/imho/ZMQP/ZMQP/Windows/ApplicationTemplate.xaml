@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZMQP.Windows"
         mc:Ignorable="d"
-        Title="ZMQP Launcher" Height="720" Width="1280" MinHeight="600" MinWidth="1000" AllowsTransparency="True" Background="Transparent" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResize">
+        Title="ZMQP Launcher" Height="720" Width="1280" MinHeight="600" MinWidth="1000" AllowsTransparency="True" Background="Transparent" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip">
     <Window.Resources>
         <Style TargetType="TextBlock" x:Key="MenuCategory">
             <Setter Property="Foreground" Value="#FF909090"></Setter>
@@ -56,7 +56,7 @@
                             <RowDefinition Height="10"/>
                         </Grid.RowDefinitions>
                         <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Меню</TextBlock>
-                        <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}">Профиль</TextBlock>
+                        <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown">Профиль</TextBlock>
                         <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0">Библиотека</TextBlock>
                         <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Друзья</TextBlock>
                         <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Настройки</TextBlock>
@@ -83,7 +83,7 @@
                         <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Головоломки</TextBlock>
                         <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="6" Margin="30,0,0,0">Забавы</TextBlock>
                         <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="7" Margin="30,0,0,0">Образовательные</TextBlock>
-                        <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="8"></Line>
+                        
                     </Grid>
                 </Grid>
             </Border>
@@ -104,10 +104,11 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
-                            <Grid HorizontalAlignment="Right" Margin="0,5,5,0">
+                            <Grid HorizontalAlignment="Right" Margin="0,5,15,0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="20"/>
                                     <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="20"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Grid.Column="0" Width="20" Height="20" Name="ToolBarButtonMin" MouseDown="ToolBarButtonMin_MouseDown">
                                     <Image.Style>
@@ -125,7 +126,23 @@
                                         <BlurEffect Radius="1"></BlurEffect>
                                     </Image.Effect>
                                 </Image>
-                                <Image Grid.Column="1" Width="20" Height="20" Name="ToolBarButtonClose" MouseDown="ToolBarButtonClose_MouseDown">
+                                <Image Grid.Column="1" Width="20" Height="15" Name="ToolBarButtonRes" MouseDown="ToolBarButtonRes_MouseDown">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="/Resources/UpsizeNonActive-removebg-preview.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonRes}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/UpsizeActive-removebg-preview.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+
+                                    <Image.Effect>
+                                        <BlurEffect Radius="1"></BlurEffect>
+                                    </Image.Effect>
+                                </Image>
+                                <Image Grid.Column="2" Width="20" Height="20" Name="ToolBarButtonClose" MouseDown="ToolBarButtonClose_MouseDown">
                                     <Image.Style>
                                         <Style TargetType="{x:Type Image}">
                                             <Setter Property="Source" Value="/Resources/close.png"/>

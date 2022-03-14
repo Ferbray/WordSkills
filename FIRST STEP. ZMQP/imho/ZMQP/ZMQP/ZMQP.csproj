@@ -152,7 +152,9 @@
   <ItemGroup>
     <Resource Include="Resources\close_active.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\ResizeNonActive-removebg-preview.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\gradient.png" />
   </ItemGroup>
@@ -161,6 +163,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\photo_2022-01-07_17-08-19 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ResizeActive-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UpsizeNonActive-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UpsizeActive-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

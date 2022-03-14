@@ -47,5 +47,21 @@ namespace ZMQP.Windows
             (sender as TextBox).Text = "Search...";
         }
 
+        private void ToolBarButtonRes_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = WindowState.Maximized;
+            }
+        }
+
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
