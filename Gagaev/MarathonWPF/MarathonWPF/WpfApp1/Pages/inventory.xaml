@@ -285,6 +285,21 @@
 
                 </Grid>
             </Grid>
+            <Button Grid.Row="2" Content="Отчет"  Width="160" Height="50" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,700,0" Click="Button_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Grid.Row="2" Content="Поступление"  Width="200" Height="50" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="640,0,0,0" Click="Button_Click_1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Grid>
         <Grid Grid.Row="2" Background="#FF504E4E" VerticalAlignment="Bottom" Height="50"/>
         <TextBlock Grid.Row="2" Text="18 дней 8 часов и 17 минут до старта марафона!" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></TextBlock>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для inventory.xaml
+    /// Логика взаимодействия для Postuplenie.xaml
     /// </summary>
-    public partial class inventory : Page
+    public partial class Postuplenie : Page
     {
-        public inventory()
+        public Postuplenie()
         {
             InitializeComponent();
         }
@@ -37,13 +37,7 @@ namespace WpfApp1.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Windows.otchet_inventori window = new Windows.otchet_inventori();
-            window.Show();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new Postuplenie());
+            Manager.MainFrame.GoBack();
         }
     }
 }

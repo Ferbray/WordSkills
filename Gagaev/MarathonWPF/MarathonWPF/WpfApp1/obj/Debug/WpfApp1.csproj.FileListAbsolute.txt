@@ -143,3 +143,14 @@ D:\MyFiles\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\Conta
 D:\MyFiles\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\App.baml
 D:\MyFiles\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\editsponsors_admin.g.cs
 D:\MyFiles\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\editsponsors_admin.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\editsponsors_admin.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\inventory.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Postuplenie.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\sponsors_admin.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\otchet_inventori.g.cs
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\App.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\editsponsors_admin.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\inventory.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\sponsors_admin.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Windows\otchet_inventori.baml
+C:\Gagaev\GitHub\Gagaev\MarathonWPF\MarathonWPF\WpfApp1\obj\Debug\Pages\Postuplenie.baml

@@ -110,6 +110,9 @@
     <Compile Include="Pages\my_results.xaml.cs">
       <DependentUpon>my_results.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Postuplenie.xaml.cs">
+      <DependentUpon>Postuplenie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RegBegun.xaml.cs">
       <DependentUpon>RegBegun.xaml</DependentUpon>
     </Compile>
@@ -243,6 +246,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\my_results.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Postuplenie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
