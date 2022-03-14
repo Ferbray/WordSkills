@@ -47,6 +47,7 @@ namespace ZMQP.Windows
         {
             Windows.Registration Registration = new Windows.Registration();
             Registration.Show();
+            this.Close();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -54,6 +55,36 @@ namespace ZMQP.Windows
             Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
             this.Close();
             at.Show();
+        }
+
+
+        private void PassBoxButtonVisibility_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (PassBoxVisibility.Visibility == Visibility.Visible)
+            {
+                String stringPath = "/Resources/eyeNo.png";
+                Uri imageUri = new Uri(stringPath, UriKind.Relative);
+                BitmapImage imageBitmap = new BitmapImage(imageUri);
+
+                PassBoxVisibility.Visibility = Visibility.Collapsed;
+                PassBoxNoVisibility.Visibility = Visibility.Visible;
+                PassBoxNoVisibility.Password = PassBoxVisibility.Text;
+
+                PassBoxButtonVisibility.Source = imageBitmap;
+            }
+
+            else
+            {
+                String stringPath2 = "/Resources/eye.png";
+                Uri imageUri2 = new Uri(stringPath2, UriKind.Relative);
+                BitmapImage imageBitmap2 = new BitmapImage(imageUri2);
+
+                PassBoxVisibility.Visibility = Visibility.Visible;
+                PassBoxNoVisibility.Visibility = Visibility.Collapsed;
+                PassBoxVisibility.Text = PassBoxNoVisibility.Password;
+
+                PassBoxButtonVisibility.Source = imageBitmap2;
+            }
         }
 
 

@@ -5,29 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZMQP.Windows"
         mc:Ignorable="d" 
-        Title="ZMQP - Sign Up" Height="450" Width="350" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="{x:Null}">
-    <Window.Resources>
-        <Style x:Key="InputFormBox" TargetType="{x:Type TextBox}">
-            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
-            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
-            <Setter Property="Control.Width" Value="200"></Setter>
-            <Setter Property="Control.Height" Value="20"></Setter>
-            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
-            <Setter Property="Control.FontSize" Value="16"></Setter>
-            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
-            <Setter Property="Background" Value="{x:Null}"></Setter>
-        </Style>
-        <Style x:Key="InputFormBoxPass" TargetType="{x:Type PasswordBox}">
-            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
-            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
-            <Setter Property="Control.Width" Value="200"></Setter>
-            <Setter Property="Control.Height" Value="20"></Setter>
-            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
-            <Setter Property="Control.FontSize" Value="16"></Setter>
-            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
-            <Setter Property="Background" Value="{x:Null}"></Setter>
-        </Style>
-    </Window.Resources>
+        Title="ZMQP - Sign Up" Height="480" Width="350" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="{x:Null}">
     <Border>
         <Grid>
         <Border CornerRadius="15">
@@ -44,7 +22,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="100"/>
-                <RowDefinition Height="270"/>
+                <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
                 <Grid HorizontalAlignment="Right" Margin="0,5,5,0">
@@ -104,6 +82,7 @@
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
+                    <RowDefinition Height="30"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494" FontSize="22">Регистрация</TextBlock>
@@ -147,15 +126,41 @@
                         <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Пароль:</TextBlock>
-                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
-                        <TextBox.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF949494"/>
-                                <GradientStop Color="#FF2205B3" Offset="1"/>
-                            </LinearGradientBrush>
-                        </TextBox.BorderBrush>
 
-                    </TextBox>
+                        <TextBox Grid.Column="1" x:Name="PassBoxVisibility" Visibility="Collapsed" Style="{StaticResource InputFormBox}">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                        </TextBox>
+                        <PasswordBox Grid.Column="1" Style="{StaticResource InputFormBoxPass}" x:Name="PassBoxNoVisibility">
+                            <PasswordBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </PasswordBox.BorderBrush>
+                    </PasswordBox>
+
+                        <Image Grid.Column="1" Source="/Resources/eyeNo.png" HorizontalAlignment="Right" x:Name="PassBoxButtonVisibility" MouseDown="PassBoxButtonVisibility_MouseDown" Margin="0,-10,0,0" Width="25" Height="25">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="/Resources/minus.png"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
+                                            <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
                 
                 </Grid>
                 <Grid Grid.Row="4" HorizontalAlignment="Center">
@@ -164,18 +169,45 @@
                         <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Еще раз:</TextBlock>
-                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
-                        <TextBox.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF949494"/>
-                                <GradientStop Color="#FF2205B3" Offset="1"/>
-                            </LinearGradientBrush>
-                        </TextBox.BorderBrush>
+                        <TextBox Grid.Column="1" x:Name="PassBoxVisibilityDouble" Visibility="Collapsed" Style="{StaticResource InputFormBox}">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
 
-                    </TextBox>
+                        </TextBox>
+                        <PasswordBox Grid.Column="1" Style="{StaticResource InputFormBoxPass}" x:Name="PassBoxNoVisibilityDouble">
+                            <PasswordBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </PasswordBox.BorderBrush>
+                        </PasswordBox>
 
+                        <Image Grid.Column="1" Source="/Resources/eyeNo.png" HorizontalAlignment="Right" Name="PassBoxButtonVisibilityDouble" MouseDown="PassBoxButtonVisibilityDouble_MouseDown" Margin="0,-10,0,0" Width="25" Height="25">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="/Resources/minus.png"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
+                                            <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
                 </Grid>
-                <Grid Grid.Row="5">
+                <Grid Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494">Есть аккаунт, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Войти</Hyperlink></TextBlock>
+                 </Grid>
+                <Grid Grid.Row="6">
                     <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center">
                         <TextBlock Text="Зарегистрироваться" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                         <Border.Style>
@@ -189,8 +221,6 @@
                                 </Style.Triggers>
                             </Style>
                         </Border.Style>
-
-
                     </Border>
                 </Grid>
             </Grid>

@@ -4,6 +4,27 @@
              xmlns:local="clr-namespace:ZMQP"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="InputFormBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
+            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
+            <Setter Property="Control.Width" Value="200"></Setter>
+            <Setter Property="Control.Height" Value="20"></Setter>
+            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
+            <Setter Property="Control.FontSize" Value="16"></Setter>
+            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
+            <Setter Property="Background" Value="{x:Null}"></Setter>
+            <Setter Property="MaxLength" Value="18"/>
+        </Style>
+        <Style x:Key="InputFormBoxPass" TargetType="{x:Type PasswordBox}">
+            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
+            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
+            <Setter Property="Control.Width" Value="200"></Setter>
+            <Setter Property="Control.Height" Value="20"></Setter>
+            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
+            <Setter Property="Control.FontSize" Value="16"></Setter>
+            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
+            <Setter Property="Background" Value="{x:Null}"></Setter>
+            <Setter Property="MaxLength" Value="18"/>
+        </Style>
     </Application.Resources>
 </Application>

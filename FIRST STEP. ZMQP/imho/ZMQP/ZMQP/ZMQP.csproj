@@ -69,9 +69,6 @@
     <Compile Include="Windows\ApplicationTemplate.xaml.cs">
       <DependentUpon>ApplicationTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Auth.xaml.cs">
-      <DependentUpon>Auth.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
@@ -99,10 +96,6 @@
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\Auth.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -172,6 +165,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\UpsizeActive-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\eyeNo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

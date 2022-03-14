@@ -6,28 +6,7 @@
         xmlns:local="clr-namespace:ZMQP"
         mc:Ignorable="d"
         Title="ZMQP - Sign In" Height="450" Width="350" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="Transparent" Foreground="{x:Null}">
-    <Window.Resources>
-        <Style x:Key="InputFormBox" TargetType="{x:Type TextBox}">
-            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
-            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
-            <Setter Property="Control.Width" Value="200"></Setter>
-            <Setter Property="Control.Height" Value="20"></Setter>
-            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
-            <Setter Property="Control.FontSize" Value="16"></Setter>
-            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
-            <Setter Property="Background" Value="{x:Null}"></Setter>
-        </Style>
-        <Style x:Key="InputFormBoxPass" TargetType="{x:Type PasswordBox}">
-            <Setter Property="Control.FontFamily" Value="Bahnschrift"></Setter>
-            <Setter Property="Control.Foreground" Value="#FF949494"></Setter>
-            <Setter Property="Control.Width" Value="200"></Setter>
-            <Setter Property="Control.Height" Value="20"></Setter>
-            <Setter Property="Control.BorderThickness" Value="0,0,0,1"></Setter>
-            <Setter Property="Control.FontSize" Value="16"></Setter>
-            <Setter Property="CaretBrush" Value="#FFB10101"></Setter>
-            <Setter Property="Background" Value="{x:Null}"></Setter>
-        </Style>
-    </Window.Resources>
+
     <Border CornerRadius="15" Background="{x:Null}">
         <Grid>
             <Border CornerRadius="15">
@@ -133,7 +112,16 @@
                             <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Пароль:</TextBlock>
-                        <PasswordBox Grid.Column="1" Style="{StaticResource InputFormBoxPass}">
+                        <TextBox Grid.Column="1" x:Name="PassBoxVisibility" Visibility="Collapsed" Style="{StaticResource InputFormBox}">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                        </TextBox>
+                        <PasswordBox Grid.Column="1" x:Name="PassBoxNoVisibility" Style="{StaticResource InputFormBoxPass}">
                             <PasswordBox.BorderBrush>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#FF949494"/>
@@ -143,7 +131,22 @@
 
                         </PasswordBox>
 
+                        <Image Grid.Column="1" Source="/Resources/eyeNo.png" HorizontalAlignment="Right" Name="PassBoxButtonVisibility" MouseDown="PassBoxButtonVisibility_MouseDown" Margin="0,-10,0,0" Width="25" Height="25">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="/Resources/minus.png"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
+                                            <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
 
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
                     </Grid>
                     <Grid Grid.Row="4">
                         <CheckBox FontFamily="Bahnschrift" Foreground="#FF949494" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Padding="3,1,0,0" ClickMode="Release" IsChecked="True">

@@ -22,6 +22,7 @@ namespace ZMQP.Windows
         public Registration()
         {
             InitializeComponent();
+
         }
 
         private void ToolBarButtonClose_MouseDown(object sender, MouseButtonEventArgs e)
@@ -39,6 +40,72 @@ namespace ZMQP.Windows
             if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
+            }
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.Login login = new Windows.Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void PassBoxButtonVisibility_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (PassBoxVisibility.Visibility == Visibility.Visible)
+            {
+                String stringPath = "/Resources/eyeNo.png";
+                Uri imageUri = new Uri(stringPath, UriKind.Relative);
+                BitmapImage imageBitmap = new BitmapImage(imageUri);
+
+                PassBoxVisibility.Visibility = Visibility.Collapsed;
+                PassBoxNoVisibility.Visibility = Visibility.Visible;
+                PassBoxNoVisibility.Password = PassBoxVisibility.Text;
+
+                PassBoxButtonVisibility.Source = imageBitmap;
+            }
+
+            else
+            {
+                String stringPath2 = "/Resources/eye.png";
+                Uri imageUri2 = new Uri(stringPath2, UriKind.Relative);
+                BitmapImage imageBitmap2 = new BitmapImage(imageUri2);
+                
+                PassBoxVisibility.Visibility = Visibility.Visible;
+                PassBoxNoVisibility.Visibility = Visibility.Collapsed;
+                PassBoxVisibility.Text = PassBoxNoVisibility.Password;
+
+                PassBoxButtonVisibility.Source = imageBitmap2;
+            }
+        }
+
+        private void PassBoxButtonVisibilityDouble_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (PassBoxVisibilityDouble.Visibility == Visibility.Visible)
+            {
+                String stringPath = "/Resources/eyeNo.png";
+                Uri imageUri = new Uri(stringPath, UriKind.Relative);
+                BitmapImage imageBitmap = new BitmapImage(imageUri);
+
+                PassBoxVisibilityDouble.Visibility = Visibility.Hidden;
+                PassBoxNoVisibilityDouble.Visibility = Visibility.Visible;
+                PassBoxNoVisibilityDouble.Password = PassBoxVisibilityDouble.Text;
+
+
+                PassBoxButtonVisibilityDouble.Source = imageBitmap;
+            }
+
+            else
+            {
+                String stringPath2 = "/Resources/eye.png";
+                Uri imageUri2 = new Uri(stringPath2, UriKind.Relative);
+                BitmapImage imageBitmap2 = new BitmapImage(imageUri2);
+
+                PassBoxVisibilityDouble.Visibility = Visibility.Visible;
+                PassBoxNoVisibilityDouble.Visibility = Visibility.Collapsed;
+                PassBoxVisibilityDouble.Text = PassBoxNoVisibilityDouble.Password;
+
+                PassBoxButtonVisibilityDouble.Source = imageBitmap2;
             }
         }
     }
