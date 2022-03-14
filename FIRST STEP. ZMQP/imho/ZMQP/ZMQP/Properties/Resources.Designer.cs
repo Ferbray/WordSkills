@@ -83,15 +83,9 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< Updated upstream
-        internal static System.Drawing.Bitmap eye {
-            get {
-                object obj = ResourceManager.GetObject("eye", resourceCulture);
-=======
         internal static System.Drawing.Bitmap console_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("console_removebg_preview", resourceCulture);
->>>>>>> Stashed changes
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -99,15 +93,29 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< Updated upstream
+        internal static System.Drawing.Bitmap eye {
+            get {
+                object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eyeNo {
             get {
                 object obj = ResourceManager.GetObject("eyeNo", resourceCulture);
-=======
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap friends_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("friends_removebg_preview", resourceCulture);
->>>>>>> Stashed changes
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

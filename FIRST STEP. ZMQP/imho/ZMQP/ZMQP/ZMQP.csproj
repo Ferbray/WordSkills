@@ -139,6 +139,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -188,12 +189,10 @@
     <Resource Include="Resources\UpsizeActive-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
     <Resource Include="Resources\eye.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\eyeNo.png" />
-=======
     <Resource Include="Resources\hamburger.png" />
   </ItemGroup>
   <ItemGroup>
@@ -210,7 +209,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\console-removebg-preview.png" />
->>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

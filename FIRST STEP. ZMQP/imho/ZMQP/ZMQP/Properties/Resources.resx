@@ -124,19 +124,18 @@
   <data name="close_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< Updated upstream
   <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyeNo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyeNo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+	<data name="eyeNo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\Resources\eyeNo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+	</data>
   <data name="console_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\console-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="friends_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\friends-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> Stashed changes
+
   </data>
   <data name="gradient" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gradient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
