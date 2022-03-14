@@ -1,105 +1,31 @@
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\bin\Debug\ZMQP.exe.config
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\bin\Debug\ZMQP.exe
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\bin\Debug\ZMQP.pdb
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.AssemblyReference.cache
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.SuggestedBindingRedirects.cache
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\MainWindow.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\Windows\Auth.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\App.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.cache
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.lref
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\MainWindow.baml
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\Windows\Auth.baml
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.g.resources
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.Properties.Resources.resources
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.GenerateResource.cache
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CoreCompileInputs.cache
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.exe
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\PRACTICE\ZMQP\ZMQP\obj\Debug\ZMQP.pdb
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.exe.config
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.exe
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.pdb
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.AssemblyReference.cache
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.SuggestedBindingRedirects.cache
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\MainWindow.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Auth.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\App.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.cache
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.lref
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\MainWindow.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Auth.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.g.resources
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.Properties.Resources.resources
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.GenerateResource.cache
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CoreCompileInputs.cache
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.exe
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.pdb
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Login.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Login.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.exe.config
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.exe
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.pdb
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.AssemblyReference.cache
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.SuggestedBindingRedirects.cache
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\MainWindow.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Friends.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Library.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MainPage.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.g.cs
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Login.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Auth.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.g.cs
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\App.g.cs
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.cache
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.lref
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\App.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\MainWindow.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Friends.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Library.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MainPage.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Login.baml
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Auth.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.g.resources
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.Properties.Resources.resources
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.GenerateResource.cache
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CoreCompileInputs.cache
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.exe
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.pdb
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.baml
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.baml
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.g.cs
-C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.baml
-<<<<<<< Updated upstream
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.exe.config
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.exe
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\ZMQP.pdb
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.AssemblyReference.cache
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.SuggestedBindingRedirects.cache
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\MainWindow.g.cs
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.g.cs
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.g.cs
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Login.g.cs
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.g.cs
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\App.g.cs
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.cache
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP_MarkupCompile.lref
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\MainWindow.baml
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Profile.baml
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\ApplicationTemplate.baml
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Login.baml
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\Registration.baml
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.g.resources
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.Properties.Resources.resources
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.GenerateResource.cache
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CoreCompileInputs.cache
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.exe
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.pdb
-C:\Gagaev\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\App.baml
-=======
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MainPage.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MainPage.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Friends.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Library.g.cs
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Friends.baml
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Library.baml
->>>>>>> Stashed changes
-C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\App.baml

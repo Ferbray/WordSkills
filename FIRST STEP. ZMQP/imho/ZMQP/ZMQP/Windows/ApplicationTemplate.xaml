@@ -32,67 +32,67 @@
                 </Border.Background>
                 <Grid Name="HamburgerMenu" Width="300">
                     <Grid Name="HamburgerMenuVisibility" Visibility="Visible">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="100"/>
-                        <RowDefinition Height="200"/>
-                        <RowDefinition Height="300"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" HorizontalAlignment="Center">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock FontSize="45" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Normal" TextDecorations="{x:Null}" Grid.Row="0">
-                            <TextBlock.Foreground>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FFF3F2F2"/>
-                                    <GradientStop Color="#FF2205B3" Offset="1"/>
-                                </LinearGradientBrush>
-                            </TextBlock.Foreground>ZMQP</TextBlock>
-                        <Image Width="20" Height="20" Grid.Column="1" Source="/Resources/hamburger.png" Cursor="Hand" MouseDown="Image_MouseDown"></Image>
-                        <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" ></Line>
-                    </Grid>
-                    <Grid Grid.Row="1" >
                         <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="300"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Меню</TextBlock>
-                        <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_1">Главная</TextBlock>
-                        <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown">Профиль</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Библиотека</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Друзья</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Настройки</TextBlock>
-                        <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
-                    </Grid>
+                        <Grid Grid.Row="0" HorizontalAlignment="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="45" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Normal" TextDecorations="{x:Null}" Grid.Row="0">
+                                <TextBlock.Foreground>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFF3F2F2"/>
+                                        <GradientStop Color="#FF2205B3" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </TextBlock.Foreground>ZMQP</TextBlock>
+                            <Image Width="20" Height="20" Grid.Column="1" Source="/Resources/hamburger.png" Cursor="Hand" MouseDown="Image_MouseDown"></Image>
+                            <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" ></Line>
+                        </Grid>
+                        <Grid Grid.Row="1" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition Height="10"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Меню</TextBlock>
+                            <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_1">Главная</TextBlock>
+                            <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown">Профиль</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Библиотека</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Друзья</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Настройки</TextBlock>
+                            <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
+                        </Grid>
 
-                    <Grid Grid.Row="2">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition Height="10"/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Жанры</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0">Экшен</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0">RPG</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Стратегии</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Симуляторы</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Головоломки</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="6" Margin="30,0,0,0">Забавы</TextBlock>
-                        <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="7" Margin="30,0,0,0">Образовательные</TextBlock>
-                        
-                    </Grid>
+                        <Grid Grid.Row="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition Height="10"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Жанры</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0">Экшен</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0">RPG</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Стратегии</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Симуляторы</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Головоломки</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="6" Margin="30,0,0,0">Забавы</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="7" Margin="30,0,0,0">Образовательные</TextBlock>
+
+                        </Grid>
                     </Grid>
                     <Grid Name="HamburgerMenuHidden" Visibility="Hidden">
                         <Grid.RowDefinitions>
@@ -165,7 +165,7 @@
                                 <Image Grid.Column="1" Width="20" Height="15" Name="ToolBarButtonRes" MouseDown="ToolBarButtonRes_MouseDown">
                                     <Image.Style>
                                         <Style TargetType="{x:Type Image}">
-                                    <Setter Property="Source" Value="/Resources/UpsizeNonActive-removebg-preview.png"/>
+                                            <Setter Property="Source" Value="/Resources/ResizeNonActive-removebg-preview.png"/>
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonRes}" Value="True">
                                                     <Setter Property="Source" Value="/Resources/UpsizeActive-removebg-preview.png"></Setter>
@@ -199,53 +199,88 @@
 
                         </Grid>
                         <Border Grid.Row="1" BorderThickness="0,0,0,1" BorderBrush="#FF1F1F1F">
-                        <Grid >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,0">
-                                
+                            <Grid >
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <Image Source="/Resources/search-removebg-preview.png" Width="20" Height="20" Grid.Column="0"></Image>
-                                <TextBox Grid.Column="1" Width="200" Height="30" Background="{x:Null}" CaretBrush="#FFC80303" Foreground="#FF909090" BorderBrush="#FF2205B3" BorderThickness="0,0,0,1" Initialized="TextBox_Initialized" FontWeight="Normal" VerticalContentAlignment="Center"/>
-                            </Grid>
-                            <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,40,0">
-                                <Grid>
+                                <Grid Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,0">
+
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="40"/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <Grid Grid.Column="0" Width="40">
-                                        <Image Source="/Resources/photo_2022-01-07_17-08-19 (2).jpg" Width="40">
-                                            <Image.Clip>
-                                                <EllipseGeometry Center="20, 20" RadiusX="20" RadiusY="20" />
-                                            </Image.Clip>
-                                        </Image>
-                                    </Grid>
-                                    <Grid Grid.Column="1" Margin="15,0,0,0" Height="16">
+                                    <Image Source="/Resources/search-removebg-preview.png" Width="20" Height="20" Grid.Column="0"></Image>
+                                    <TextBox Grid.Column="1" Width="200" Height="30" Background="{x:Null}" CaretBrush="#FFC80303" Foreground="#FF909090" BorderBrush="#FF2205B3" BorderThickness="0,0,0,1" Initialized="TextBox_Initialized" FontWeight="Normal" VerticalContentAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,40,0">
+                                    <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition/>
-                                            <ColumnDefinition Width="20"/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0">paranoic  </TextBlock>
-                                        <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">▼</TextBlock>
+                                        <Grid Grid.Column="0" Width="40">
+                                            <Image Source="/Resources/photo_2022-01-07_17-08-19 (2).jpg" Width="40">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="20, 20" RadiusX="20" RadiusY="20" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <Grid Grid.Column="1" Margin="15,0,0,0" Height="16" MouseDown="Grid_MouseDown_1">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="20"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0">paranoic</TextBlock>
+                                            <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">▼</TextBlock>
+                                        </Grid>
+
                                     </Grid>
                                 </Grid>
                             </Grid>
-                        </Grid>
                         </Border>
+
                     </Grid>
+                    <Border Width="120" Height="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,90,45,0" CornerRadius="15" Visibility="Hidden" x:Name="HambMenuV2" Panel.ZIndex="555">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF340037"/>
+                                <GradientStop Color="#FF250A33" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
+                            <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_1">Главная</TextBlock>
+                            </Border>
+                            <Border Grid.Row="1" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_2" >Профиль</TextBlock>
+                            </Border>
+                            <Border Grid.Row="2" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" >Библиотека</TextBlock>
+                            </Border>
+                            <Border Grid.Row="3" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" >Друзья</TextBlock>
+                            </Border>
+                            <Border Grid.Row="4" BorderThickness="0,0,0,1" CornerRadius="15" BorderBrush="#FF3E3E3E">
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" >Настройки</TextBlock>
+                            </Border>
+                        </Grid>
+                    </Border>
                     <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Grid.Row="2"></Frame>
+
                 </Grid>
-                
+
             </Border>
-           
+
         </Grid>
-    
+
     </Border>
-    
+
 </Window>

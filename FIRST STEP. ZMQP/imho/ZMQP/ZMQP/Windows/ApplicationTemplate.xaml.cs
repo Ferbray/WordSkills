@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace ZMQP.Windows
 {
@@ -68,18 +69,29 @@ namespace ZMQP.Windows
         private void TextBlock_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.MainPage();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+
             if (HamburgerMenu.Width == 50)
             {
+                doubleAnimation.From = 50;
+                doubleAnimation.To = 300;
+                doubleAnimation.Duration = TimeSpan.FromSeconds(0.245);
+                HamburgerMenu.BeginAnimation(Grid.WidthProperty, doubleAnimation);
                 HamburgerMenu.Width = 300;
                 HamburgerMenuVisibility.Visibility = Visibility.Visible;
                 HamburgerMenuHidden.Visibility = Visibility.Hidden;
             }
             else
             {
+                doubleAnimation.From = 300;
+                doubleAnimation.To = 50;
+                doubleAnimation.Duration = TimeSpan.FromSeconds(0.245);
+                HamburgerMenu.BeginAnimation(Grid.WidthProperty, doubleAnimation);
                 HamburgerMenu.Width = 50;
                 HamburgerMenu.HorizontalAlignment = HorizontalAlignment.Right;
                 HamburgerMenuVisibility.Visibility = Visibility.Hidden;
@@ -95,6 +107,30 @@ namespace ZMQP.Windows
         private void Image_MouseDown_2(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Profile();
+        }
+
+        private void Grid_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+
+            if (HambMenuV2.Visibility == Visibility.Hidden)
+            {
+                doubleAnimation.From = 0;
+                doubleAnimation.To = 150;
+                doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
+                HambMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
+                HambMenuV2.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                HambMenuV2.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void TextBlock_MouseDown_2(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Profile();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
     }
 }
