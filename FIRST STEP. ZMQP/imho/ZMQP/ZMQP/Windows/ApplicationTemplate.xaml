@@ -67,7 +67,7 @@
                             <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown">Профиль</TextBlock>
                             <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Библиотека</TextBlock>
                             <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Друзья</TextBlock>
-                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0">Настройки</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0" MouseDown="TextBlock_MouseDown_3">Настройки</TextBlock>
                             <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
                         </Grid>
 
@@ -269,7 +269,7 @@
                                 <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" >Друзья</TextBlock>
                             </Border>
                             <Border Grid.Row="4" BorderThickness="0,0,0,1" CornerRadius="15" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" >Настройки</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_4" >Настройки</TextBlock>
                             </Border>
                         </Grid>
                     </Border>

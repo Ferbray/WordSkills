@@ -132,5 +132,15 @@ namespace ZMQP.Windows
             MainFrame.Content = new Pages.Profile();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
+
+        private void TextBlock_MouseDown_3(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Settings();
+        }
+
+        private void TextBlock_MouseDown_4(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Settings();
+        }
     }
 }
