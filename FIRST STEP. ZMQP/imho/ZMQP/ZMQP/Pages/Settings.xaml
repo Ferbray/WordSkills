@@ -17,10 +17,10 @@
         <TextBlock Grid.Row="1" FontSize="24" Foreground="#FF8C8C8C">Настройки</TextBlock>
         <Grid Grid.Row="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="60"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
@@ -38,7 +38,7 @@
                 <ComboBox Width="150" Height="20" Grid.Column="1" Background="{x:Null}"></ComboBox>
             </Grid>
             <Grid Grid.Row="3" HorizontalAlignment="Left">
-                <Border CornerRadius="2" Width="100" Height="30" BorderThickness="1" Background="Transparent">
+                <Border CornerRadius="2" Width="100" Height="30" BorderThickness="1" Background="Transparent" MouseDown="Border_MouseDown">
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF8A8A8A">Выйти</TextBlock>
                     <Border.Style>
                         <Style TargetType="Border">

@@ -13,6 +13,7 @@
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <ScrollViewer Grid.Row="1"></ScrollViewer>
+        <ScrollViewer Grid.Row="1">
+        </ScrollViewer>
     </Grid>
 </Page>
