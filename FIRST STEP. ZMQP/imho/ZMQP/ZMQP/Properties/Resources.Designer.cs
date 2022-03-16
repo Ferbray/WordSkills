@@ -63,6 +63,46 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap about_active_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("about_active_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap about_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("about_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap achiv_active_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("achiv_active_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap achiv_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("achiv_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
@@ -113,9 +153,49 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap friend_active_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("friend_active_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap friend_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("friend_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap friends_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("friends_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap game_active_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("game_active_profile_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap game_profile_bar {
+            get {
+                object obj = ResourceManager.GetObject("game_profile_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +303,9 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ResizeActive_removebg_preview {
+        internal static System.Drawing.Bitmap ResizeNonActive {
             get {
-                object obj = ResourceManager.GetObject("ResizeActive_removebg_preview", resourceCulture);
+                object obj = ResourceManager.GetObject("ResizeNonActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +313,9 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ResizeNonActive_removebg_preview {
+        internal static System.Drawing.Bitmap search_active_head_bar {
             get {
-                object obj = ResourceManager.GetObject("ResizeNonActive_removebg_preview", resourceCulture);
+                object obj = ResourceManager.GetObject("search_active_head_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +323,9 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap search {
+        internal static System.Drawing.Bitmap search_head_bar {
             get {
-                object obj = ResourceManager.GetObject("search", resourceCulture);
+                object obj = ResourceManager.GetObject("search_head_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,19 +343,9 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap UpsizeActive_removebg_preview {
+        internal static System.Drawing.Bitmap UpsizeActive {
             get {
-                object obj = ResourceManager.GetObject("UpsizeActive_removebg_preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap UpsizeNonActive_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("UpsizeNonActive_removebg_preview", resourceCulture);
+                object obj = ResourceManager.GetObject("UpsizeActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
