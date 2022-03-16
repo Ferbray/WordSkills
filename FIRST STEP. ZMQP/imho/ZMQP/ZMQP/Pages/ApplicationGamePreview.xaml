@@ -1,0 +1,61 @@
+﻿<Page x:Class="ZMQP.Pages.ApplicationGamePreview"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZMQP.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="ApplicationGamePreview">
+
+    <Grid>
+        <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+            <TextBlock Foreground="#FF8C8C8C" FontSize="24" Grid.Row="0">Grand Theft Auto 5</TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                    <Image Source="/Resources/DefaultGameBg.png" Grid.Column="0" HorizontalAlignment="Left">
+
+                    </Image>
+                    <Grid Grid.Column="1" Height="200" Margin="10">
+                        <ScrollViewer>
+                            <TextBlock TextWrapping="Wrap" Foreground="#FF777777" FontSize="16">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam non quam lacus suspendisse faucibus. Eget nullam non nisi est sit. At tempor commodo ullamcorper a lacus. At volutpat diam ut venenatis tellus in metus. Massa id neque aliquam vestibulum morbi. Ultrices sagittis orci a scelerisque purus semper eget duis at. Vitae justo eget magna fermentum iaculis eu non. Risus ultricies tristique nulla aliquet enim tortor at auctor. Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Lorem sed risus ultricies tristique. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Senectus et netus et malesuada fames ac turpis. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Et malesuada fames ac turpis. At augue eget arcu dictum varius duis at consectetur. In nibh mauris cursus mattis molestie a iaculis. At tellus at urna condimentum mattis pellentesque id nibh tortor. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit.
+                                
+                            </TextBlock>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20">
+                    <TextBlock Text="Играть" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"></TextBlock>
+                    <Border.Style>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" Value="Red"></Setter>
+
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+
+
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

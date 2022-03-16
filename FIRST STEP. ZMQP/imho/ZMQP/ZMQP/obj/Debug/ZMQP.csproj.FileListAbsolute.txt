@@ -64,3 +64,5 @@ C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\S
 C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Settings.baml
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Settings.g.cs
 C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Settings.baml
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\ApplicationGamePreview.g.cs
+C:\Users\PARANOIC\Documents\fuckscsh\EDUCATION\THEORY\FIRST STEP. ZMQP\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\ApplicationGamePreview.baml

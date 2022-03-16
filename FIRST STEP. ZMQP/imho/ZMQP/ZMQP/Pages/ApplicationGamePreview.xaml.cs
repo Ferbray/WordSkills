@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace ZMQP.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для ApplicationGamePreview.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class ApplicationGamePreview : Page
     {
-        public MainPage()
+        public ApplicationGamePreview()
         {
             InitializeComponent();
-            
-        }
-
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.NavigationService.Navigate(new Pages.ApplicationGamePreview());
         }
     }
 }

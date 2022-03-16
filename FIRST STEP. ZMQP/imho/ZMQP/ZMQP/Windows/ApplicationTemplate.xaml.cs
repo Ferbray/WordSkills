@@ -23,7 +23,7 @@ namespace ZMQP.Windows
         public ApplicationTemplate()
         {
             InitializeComponent();
-            Manager.MainFrame = MainFrame;
+            MainFrame.Content = new Pages.MainPage();
         }
 
         private void ToolBarButtonMin_MouseDown(object sender, MouseButtonEventArgs e)
@@ -44,10 +44,6 @@ namespace ZMQP.Windows
             }
         }
 
-        private void TextBox_Initialized(object sender, EventArgs e)
-        {
-            (sender as TextBox).Text = "Search...";
-        }
 
         private void ToolBarButtonRes_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -136,11 +132,50 @@ namespace ZMQP.Windows
         private void TextBlock_MouseDown_3(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Settings();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
 
         private void TextBlock_MouseDown_4(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Settings();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            SearchText.Text = "";
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if ((sender as TextBox).Text.Length == 0 )
+            {
+                SearchText.Text = "Search...";
+            }
+        }
+
+        private void TextBlock_MouseDown_5(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Library();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void TextBlock_MouseDown_6(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Library();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void TextBlock_MouseDown_7(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Friends();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void TextBlock_MouseDown_8(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Friends();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
     }
 }

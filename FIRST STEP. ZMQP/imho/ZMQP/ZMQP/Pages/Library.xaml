@@ -9,6 +9,62 @@
       Title="Library">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1">
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Foreground="#FF929292" FontSize="22" Margin="10">Мои игры</TextBlock>
+
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" >
+                    <Grid Width="200" Height="150"  Margin="10" Cursor="Hand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Игра рукой с неваляшкой</TextBlock>
+                    </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">XVideos</TextBlock>
+                    </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">PornHub</TextBlock>
+                    </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Johnny Sins</TextBlock>
+                    </Grid>
+                    
+                </WrapPanel>
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>
