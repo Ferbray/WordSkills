@@ -24,5 +24,11 @@ namespace ZMQP.Pages
         {
             InitializeComponent();
         }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
     }
 }

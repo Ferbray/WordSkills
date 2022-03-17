@@ -78,7 +78,7 @@
                                 </Border>
                             </Grid>
                         </Grid>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">paranoic</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Name</TextBlock>
                     </Grid>
 
                     <Grid Width="250" Height="150"  Margin="10" Cursor="Hand">
@@ -137,7 +137,7 @@
                                 </Border>
                             </Grid>
                         </Grid>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">paranoic</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Name</TextBlock>
                     </Grid>
 
                     <Grid Width="250" Height="150"  Margin="10" Cursor="Hand">
@@ -196,7 +196,7 @@
                                 </Border>
                             </Grid>
                         </Grid>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">paranoic</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Name</TextBlock>
                     </Grid>
 
                     <Grid Width="250" Height="150"  Margin="10" Cursor="Hand">
@@ -255,7 +255,7 @@
                                 </Border>
                             </Grid>
                         </Grid>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">paranoic</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Name</TextBlock>
                     </Grid>
                 </WrapPanel>
             </Grid>

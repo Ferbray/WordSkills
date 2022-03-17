@@ -26,7 +26,7 @@ namespace ZMQP.Pages
             
         }
 
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ShowGameDescription(object sender, MouseButtonEventArgs e)
         {
             this.NavigationService.Navigate(new Pages.ApplicationGamePreview());
         }

@@ -30,7 +30,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">ПАБАДЖИ</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
                     </Grid>
                     <Grid Width="200" Height="150"  Margin="10">
                         <Grid.RowDefinitions>
@@ -40,7 +40,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">ФОРТИНАТИ</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
                     </Grid>
                     <Grid Width="200" Height="150"  Margin="10">
                         <Grid.RowDefinitions>
@@ -50,7 +50,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">ХАЙПЕР ИКИС ИКСИ ИКИС </TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
                     </Grid>
                     <Grid Width="200" Height="150"  Margin="10">
                         <Grid.RowDefinitions>
@@ -60,8 +60,49 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Flatout</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
                     </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
+                    </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
+                    </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
+                    </Grid>
+                    <Grid Width="200" Height="150"  Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+
+                        </Image>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">My Sample Game Title</TextBlock>
+                    </Grid>
+                    
                     
                 </WrapPanel>
             </Grid>

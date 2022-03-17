@@ -21,8 +21,8 @@
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Foreground="#FF929292" FontSize="22" Margin="10">Все игры</TextBlock>
                    
-                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" >
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Center" >
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -32,7 +32,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -42,7 +42,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -52,7 +52,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -62,7 +62,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -72,7 +72,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -82,7 +82,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -92,7 +92,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -102,7 +102,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -112,7 +112,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -122,7 +122,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -132,7 +132,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -142,7 +142,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -152,7 +152,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -162,7 +162,7 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
+                    <Grid Width="200" Height="150"  Margin="10" MouseDown="ShowGameDescription" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition/>
@@ -172,16 +172,8 @@
                         </Image>
                         <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
                     </Grid>
-                    <Grid Width="200" Height="150"  Margin="10" MouseDown="Grid_MouseDown" Cursor="Hand">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="100"/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
+                    
 
-                        </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Sample Game Title</TextBlock>
-                    </Grid>
                 </WrapPanel>
             </Grid>
         </ScrollViewer>
