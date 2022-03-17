@@ -24,5 +24,30 @@ namespace ZMQP.Pages
         {
             InitializeComponent();
         }
+
+        private void GameProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void FriendProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void AchivProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void AboutProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void EditProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

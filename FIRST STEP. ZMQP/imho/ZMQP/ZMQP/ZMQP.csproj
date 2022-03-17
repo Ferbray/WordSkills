@@ -149,11 +149,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <Resource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    </Resource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -181,25 +181,13 @@
     <Resource Include="Resources\close_active.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\ResizeNonActive-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\gradient.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\search-removebg-preview.png" />
+    <Resource Include="Resources\search-head-bar.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\photo_2022-01-07_17-08-19 %282%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ResizeActive-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\UpsizeNonActive-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\UpsizeActive-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\eye.png" />
@@ -209,22 +197,38 @@
     <Resource Include="Resources\hamburger.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\friends-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\settings-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\home__1_-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\user-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\console-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\DefaultGameBg.png" />
+    <Resource Include="Resources\ResizeNonActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UpsizeActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\search-active-head-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\game-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\about-active-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\about-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\achiv-active-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\achiv-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\friend-active-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\friend-profile-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\game-active-profile-bar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
