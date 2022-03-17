@@ -30,7 +30,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Игра рукой с неваляшкой</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">ПАБАДЖИ</TextBlock>
                     </Grid>
                     <Grid Width="200" Height="150"  Margin="10">
                         <Grid.RowDefinitions>
@@ -40,7 +40,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">XVideos</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">ФОРТИНАТИ</TextBlock>
                     </Grid>
                     <Grid Width="200" Height="150"  Margin="10">
                         <Grid.RowDefinitions>
@@ -50,7 +50,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">PornHub</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">ХАЙПЕР ИКИС ИКСИ ИКИС </TextBlock>
                     </Grid>
                     <Grid Width="200" Height="150"  Margin="10">
                         <Grid.RowDefinitions>
@@ -60,7 +60,7 @@
                         <Image Source="/Resources/DefaultGameBg.png" Stretch="Fill">
 
                         </Image>
-                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Johnny Sins</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" FontFamily="Cascadia Mono" TextWrapping="Wrap" Style="{StaticResource MenuCategory}">Flatout</TextBlock>
                     </Grid>
                     
                 </WrapPanel>
