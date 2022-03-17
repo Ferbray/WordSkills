@@ -44,5 +44,10 @@ namespace ZMQP.Pages
         {
 
         }
+
+        private void EditProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

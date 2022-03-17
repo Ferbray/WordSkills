@@ -36,17 +36,12 @@ namespace ZMQP.Windows
             this.Close();
         }
 
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ToolBarGrid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
             }
-        }
-
-        private void TextBox_Initialized(object sender, EventArgs e)
-        {
-            (sender as TextBox).Text = "Search...";
         }
 
         private void ToolBarButtonRes_MouseDown(object sender, MouseButtonEventArgs e)
@@ -61,18 +56,7 @@ namespace ZMQP.Windows
             }
         }
 
-        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Profile();
-        }
-
-        private void TextBlock_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.MainPage();
-            HambMenuV2.Visibility = Visibility.Hidden;
-        }
-
-        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ImageHamburgerButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DoubleAnimation doubleAnimation = new DoubleAnimation();
 
@@ -145,14 +129,22 @@ namespace ZMQP.Windows
             }
         }
 
-        private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolHome_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.MainPage();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void Image_MouseDown_2(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolProfile_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Profile();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void HamburgerToolSettings_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Settings();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
 
         private void Grid_MouseDown_1(object sender, MouseButtonEventArgs e)
@@ -173,30 +165,10 @@ namespace ZMQP.Windows
             }
         }
 
-        private void TextBlock_MouseDown_2(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Profile();
-            HambMenuV2.Visibility = Visibility.Hidden;
-        }
-
-        private void TextBlock_MouseDown_3(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Settings();
-        }
-
-        private void TextBlock_MouseDown_4(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Settings();
-        }
 
         private void SearchHeadBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
-        }
-
-        private void TextBlock_MouseDown_5(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.MainPage();
         }
     }
 }

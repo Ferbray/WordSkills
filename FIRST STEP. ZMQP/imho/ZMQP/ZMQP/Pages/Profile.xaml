@@ -54,7 +54,7 @@
                             <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF00611C" FontSize="18">В сети</TextBlock>
                         </Grid>
                         <Grid Grid.Row="2">
-                            <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Cursor="Hand" MouseDown="EditProfileBar_MouseDown" >
                                 <TextBlock Text="Редактировать" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                                 <Border.Style>
                                     <Style TargetType="{x:Type Border}">
