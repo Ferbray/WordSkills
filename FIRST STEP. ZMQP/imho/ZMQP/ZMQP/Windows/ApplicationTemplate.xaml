@@ -279,10 +279,10 @@
                                 <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolProfile_MouseDown" >Профиль</TextBlock>
                             </Border>
                             <Border Grid.Row="2" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_6" >Библиотека</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolLibrary_MouseDown">Библиотека</TextBlock>
                             </Border>
                             <Border Grid.Row="3" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_8" >Друзья</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolFriends_MouseDown" >Друзья</TextBlock>
                             </Border>
                             <Border Grid.Row="4" BorderThickness="0,0,0,3" CornerRadius="5" BorderBrush="#FF3E3E3E">
                                 <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolSettings_MouseDown" >Настройки</TextBlock>

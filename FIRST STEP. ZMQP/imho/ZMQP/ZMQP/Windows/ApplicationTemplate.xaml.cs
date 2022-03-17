@@ -185,5 +185,16 @@ namespace ZMQP.Windows
             }
         }
 
+        private void HamburgerToolLibrary_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Library();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void HamburgerToolFriends_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Friends();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
     }
 }
