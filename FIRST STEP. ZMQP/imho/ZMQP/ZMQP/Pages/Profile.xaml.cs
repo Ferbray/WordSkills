@@ -27,12 +27,12 @@ namespace ZMQP.Pages
 
         private void GameProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Pages.Library());
         }
 
         private void FriendProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Pages.Friends());
         }
 
         private void AchivProfileBar_MouseDown(object sender, MouseButtonEventArgs e)

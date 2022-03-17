@@ -230,5 +230,14 @@
   <ItemGroup>
     <Resource Include="Resources\game-active-profile-bar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\about-profile-bar2.png" />
+    <Resource Include="Resources\console-removebg-preview.png" />
+    <Resource Include="Resources\friends-removebg-preview.png" />
+    <Resource Include="Resources\home__1_-removebg-preview.png" />
+    <Resource Include="Resources\search-active-head-bar2.png" />
+    <Resource Include="Resources\settings-removebg-preview.png" />
+    <Resource Include="Resources\user-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

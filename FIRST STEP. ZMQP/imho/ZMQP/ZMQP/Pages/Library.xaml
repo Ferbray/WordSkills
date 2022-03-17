@@ -21,7 +21,7 @@
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Foreground="#FF929292" FontSize="22" Margin="10">Мои игры</TextBlock>
 
-                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" >
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Center" >
                     <Grid Width="200" Height="150"  Margin="10" Cursor="Hand">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>

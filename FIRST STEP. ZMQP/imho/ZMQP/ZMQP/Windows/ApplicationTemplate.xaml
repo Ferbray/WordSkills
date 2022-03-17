@@ -65,8 +65,8 @@
                             <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Меню</TextBlock>
                             <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolHome_MouseDown">Главная</TextBlock>
                             <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolProfile_MouseDown">Профиль</TextBlock>
-                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0">Библиотека</TextBlock>
-                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0">Друзья</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0" MouseDown="HamburgerToolLibrary_MouseDown" >Библиотека</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0" MouseDown="HamburgerToolFriends_MouseDown">Друзья</TextBlock>
                             <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0" MouseDown="HamburgerToolSettings_MouseDown">Настройки</TextBlock>
                             <Line X1="-8" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
                         </Grid>
@@ -114,8 +114,8 @@
                             </Grid.RowDefinitions>
                             <Image Width="20" Height="20" x:Name="HomeHamburgerButton" Source="/Resources/home__1_-removebg-preview.png" Cursor="Hand" Grid.Row="0" MouseDown="HamburgerToolHome_MouseDown"></Image>
                             <Image Width="20" Height="20" x:Name="ProfileHamburgerButton" Source="/Resources/user-removebg-preview.png" Cursor="Hand" Grid.Row="1" MouseDown="HamburgerToolProfile_MouseDown"></Image>
-                            <Image Width="20" Height="20" x:Name="LibraryHamburgerButton" Source="/Resources/console-removebg-preview.png" Cursor="Hand" Grid.Row="2" Margin="0,7,0,0"></Image>
-                            <Image Width="20" Height="20" x:Name="FriendsHamburgerButton" Source="/Resources/friends-removebg-preview.png" Cursor="Hand" Grid.Row="3" Margin="0,4,0,0"></Image>
+                            <Image Width="20" Height="20" x:Name="LibraryHamburgerButton" Source="/Resources/console-removebg-preview.png" Cursor="Hand" Grid.Row="2" Margin="0,7,0,0" MouseDown="HamburgerToolLibrary_MouseDown"></Image>
+                            <Image Width="20" Height="20" x:Name="FriendsHamburgerButton" Source="/Resources/friends-removebg-preview.png" Cursor="Hand" Grid.Row="3" Margin="0,4,0,0" MouseDown="HamburgerToolFriends_MouseDown"></Image>
                             <Image Width="20" Height="20" x:Name="SettingsHamburgerButton" Source="/Resources/settings-removebg-preview.png" Cursor="Hand" Grid.Row="4" Margin="0,7,0,0" MouseDown="HamburgerToolSettings_MouseDown"></Image>
                             <Line X1="7" Y1="0" X2="33" Y2="0" x:Name="Line2HamburgerButton" VerticalAlignment="Top" Stroke="#FF252424" Grid.Row="6" Visibility="Hidden" Margin="0,7,7,0"></Line>
                         </Grid>
@@ -242,7 +242,7 @@
                                                 </Image.Clip>
                                             </Image>
                                         </Grid>
-                                        <Grid Grid.Column="1" Margin="15,0,0,0" Height="16" MouseDown="Grid_MouseDown_1">
+                                        <Grid Grid.Column="1" Margin="15,0,0,0" Height="16" MouseDown="HamburgerMenuVisible">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition/>
                                                 <ColumnDefinition Width="20"/>
@@ -257,7 +257,10 @@
                         </Border>
 
                     </Grid>
-                    <Border Width="120" Height="150" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden" Margin="0,90,45,0" CornerRadius="5" x:Name="HambMenuV2" Panel.ZIndex="555">
+                    <Grid  Panel.ZIndex="555" Visibility="Hidden" x:Name="HambMenuV2" Width="130" Height="250" VerticalAlignment="Top" HorizontalAlignment="Right"  Margin="0,40,45,0" MouseLeave="HamburgerMenuHidden" Background="Transparent">
+
+
+                        <Border Width="120" Height="150" CornerRadius="5" x:Name="BorderMenuV2">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF340037"/>
@@ -289,6 +292,7 @@
                             </Border>
                         </Grid>
                     </Border>
+                    </Grid>
                     <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Grid.Row="2"></Frame>
 
                 </Grid>

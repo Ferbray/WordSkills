@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Threading;
 
 namespace ZMQP.Windows
 {
@@ -147,24 +148,6 @@ namespace ZMQP.Windows
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void Grid_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-            DoubleAnimation doubleAnimation = new DoubleAnimation();
-
-            if (HambMenuV2.Visibility == Visibility.Hidden)
-            {
-                doubleAnimation.From = 0;
-                doubleAnimation.To = 150;
-                doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
-                HambMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
-                HambMenuV2.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                HambMenuV2.Visibility = Visibility.Hidden;
-            }
-        }
-
 
         private void SearchHeadBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -196,5 +179,30 @@ namespace ZMQP.Windows
             MainFrame.Content = new Pages.Friends();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
+
+        private void HamburgerMenuVisible(object sender, MouseEventArgs e)
+        {
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+
+            doubleAnimation.From = 0;
+            doubleAnimation.To = 150;
+            doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
+            BorderMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
+            HambMenuV2.Visibility = Visibility.Visible;
+            
+        }
+
+        private void HamburgerMenuHidden(object sender, MouseEventArgs e)
+        {
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+
+            doubleAnimation.From = 150;
+            doubleAnimation.To = 0;
+            doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
+            BorderMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
+
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
     }
 }
