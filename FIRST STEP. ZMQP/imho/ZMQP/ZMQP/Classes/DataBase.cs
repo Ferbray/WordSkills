@@ -54,8 +54,21 @@ namespace ZMQP.Classes
 
             if (!isExist)
             {
+
+                int fk = 0;
+
+                while (reader.Read())
+                {
+                    string name = reader.GetString(1);
+                    string emaildb = reader.GetString(2);
+                    int id = reader.GetInt32(0);
+                    if (name == login || emaildb == email)
+                    {
+                        fk = id;
+                    }
+                }
+
                 reader.Close();
-               
                 cmd.CommandText = $"INSERT INTO Users (Login, Email, Password) VALUES ('{login}', '{email}', '{password}')";
                 cmd.ExecuteNonQuery();
             }
@@ -93,5 +106,20 @@ namespace ZMQP.Classes
         }
 
        
+        public void GoOnline()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"UPDATE Profile SET Status=4 WHERE IDUser='{ID}'";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+        }
+
+        public void GoOffline()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"UPDATE Profile SET Status=0 WHERE IDUser='{ID}'";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+        }
     }
 }

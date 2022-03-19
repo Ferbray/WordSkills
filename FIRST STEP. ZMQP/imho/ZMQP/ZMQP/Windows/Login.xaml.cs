@@ -88,6 +88,7 @@ namespace ZMQP.Windows
             if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
             {
                 Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                database.GoOnline();
                 this.Close();
                 at.Show();
             }
