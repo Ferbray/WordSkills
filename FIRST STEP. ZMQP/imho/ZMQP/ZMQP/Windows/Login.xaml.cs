@@ -50,14 +50,6 @@ namespace ZMQP.Windows
             this.Close();
         }
 
-        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-            this.Close();
-            at.Show();
-        }
-
-
         private void PassBoxButtonVisibility_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (PassBoxVisibility.Visibility == Visibility.Visible)
@@ -85,6 +77,26 @@ namespace ZMQP.Windows
 
                 PassBoxButtonVisibility.Source = imageBitmap2;
             }
+        }
+
+        private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+            Classes.DataBase database = new Classes.DataBase();
+
+            database.openConnection();
+            if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
+            {
+                Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                this.Close();
+                at.Show();
+            }
+            else
+            {
+                ErrorText.Visibility = Visibility.Visible;
+            }
+
+            database.closeConnection();
         }
 
 

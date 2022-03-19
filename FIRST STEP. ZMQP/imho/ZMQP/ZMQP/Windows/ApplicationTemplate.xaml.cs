@@ -177,5 +177,10 @@ namespace ZMQP.Windows
             MainFrame.Content = new Pages.Friends();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
+
+        private void SetLogin(object sender, EventArgs e)
+        {
+            ProfileName.Text = Classes.DataBase.Login;
+        }
     }
 }

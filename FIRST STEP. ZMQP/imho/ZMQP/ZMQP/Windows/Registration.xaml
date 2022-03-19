@@ -92,7 +92,7 @@
                         <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Логин:</TextBlock>
-                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
+                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}" Name="Login">
                         <TextBox.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF949494"/>
@@ -109,7 +109,7 @@
                         <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Email:</TextBlock>
-                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}">
+                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}" Name="Email">
                         <TextBox.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF949494"/>
@@ -208,7 +208,7 @@
                     <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494">Есть аккаунт, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Войти</Hyperlink></TextBlock>
                  </Grid>
                 <Grid Grid.Row="6">
-                    <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="RegistrateNewUser">
                         <TextBlock Text="Зарегистрироваться" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                         <Border.Style>
                             <Style TargetType="{x:Type Border}">

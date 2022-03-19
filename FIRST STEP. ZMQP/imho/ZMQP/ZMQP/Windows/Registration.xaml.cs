@@ -108,5 +108,18 @@ namespace ZMQP.Windows
                 PassBoxButtonVisibilityDouble.Source = imageBitmap2;
             }
         }
+
+        private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
+        {
+            Classes.DataBase database = new Classes.DataBase();
+            Windows.Login login = new Windows.Login();
+            
+            database.openConnection();
+            database.createNewUser(Login.Text, Email.Text, PassBoxNoVisibility.Password);
+            database.closeConnection();
+
+            this.Close();
+            login.Show();
+        }
     }
 }

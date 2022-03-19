@@ -87,6 +87,7 @@
                         <RowDefinition Height="30"/>
                         <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Foreground="#FFBD0505" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Bahnschrift" FontSize="16" Visibility="Hidden" Name="ErrorText">Введены некорректные данные</TextBlock>
                     <TextBlock Grid.Row="1" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" FontSize="22">Вход</TextBlock>
 
                     <Grid Grid.Row="2" HorizontalAlignment="Center">
@@ -167,7 +168,7 @@
                         </CheckBox>
                     </Grid>
                     <Grid Grid.Row="5">
-                        <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="Border_MouseDown">
+                        <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="Verification_MouseDown">
                             <TextBlock Text="Войти" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                             <Border.Style>
                                 <Style TargetType="{x:Type Border}">
