@@ -30,7 +30,7 @@ namespace ZMQP.Classes
             }
         }
         //Регистрируем нового пользователя
-        public void createNewUser(string login, string email, string password)
+        public bool createNewUser(string login, string email, string password)
         {
             bool isExist = false;
 
@@ -54,24 +54,12 @@ namespace ZMQP.Classes
 
             if (!isExist)
             {
-
-                int fk = 0;
-
-                while (reader.Read())
-                {
-                    string name = reader.GetString(1);
-                    string emaildb = reader.GetString(2);
-                    int id = reader.GetInt32(0);
-                    if (name == login || emaildb == email)
-                    {
-                        fk = id;
-                    }
-                }
-
                 reader.Close();
                 cmd.CommandText = $"INSERT INTO Users (Login, Email, Password) VALUES ('{login}', '{email}', '{password}')";
                 cmd.ExecuteNonQuery();
             }
+            
+            return isExist;
         }
         //Проверка введеных данных
         public bool VerificationUser(string login, string password)

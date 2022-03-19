@@ -115,11 +115,17 @@ namespace ZMQP.Windows
             Windows.Login login = new Windows.Login();
             
             database.openConnection();
-            database.createNewUser(Login.Text, Email.Text, PassBoxNoVisibility.Password);
-            database.closeConnection();
+            if (!database.createNewUser(Login.Text, Email.Text, PassBoxNoVisibility.Password))
+            {
+                database.closeConnection();
 
-            this.Close();
-            login.Show();
+                this.Close();
+                login.Show();
+            }
+            else
+            {
+                Error.Visibility = Visibility.Visible;
+            }
         }
     }
 }

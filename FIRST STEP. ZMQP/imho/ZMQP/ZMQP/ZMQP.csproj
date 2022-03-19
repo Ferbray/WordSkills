@@ -227,5 +227,8 @@
   <ItemGroup>
     <Resource Include="Resources\DefaultGameBg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\games\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,5 +24,15 @@ namespace ZMQP.Pages
         {
             InitializeComponent();
         }
+
+        private void ProfileNickName(object sender, EventArgs e)
+        {
+            (sender as TextBlock).Text = Classes.DataBase.Login;
+        }
+
+        private void ProfileIDs(object sender, EventArgs e)
+        {
+            (sender as TextBlock).Text = "#" + Classes.DataBase.ID.ToString();
+        }
     }
 }

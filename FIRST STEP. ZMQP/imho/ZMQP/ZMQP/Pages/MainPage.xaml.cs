@@ -30,5 +30,38 @@ namespace ZMQP.Pages
         {
             this.NavigationService.Navigate(new Pages.ApplicationGamePreview());
         }
+
+        private void LoadGame(object sender, EventArgs e)
+        {
+            Grid grid = new Grid();
+            grid.Background = new SolidColorBrush(Colors.Transparent);
+            grid.Width = 200;
+            grid.Height = 150;
+            grid.Cursor = Cursors.Hand;
+            grid.MouseDown += ShowGameDescription;
+            RowDefinitionCollection rowDefinitions = grid.RowDefinitions;
+            rowDefinitions.Add(new RowDefinition());
+            rowDefinitions.Add(new RowDefinition());
+
+            Image image = new Image();
+            Uri uri = new Uri("/Resources/DefaultGameBg.png", UriKind.Relative);
+            image.Source = new BitmapImage(uri);
+            
+
+            TextBlock textBlock = new TextBlock();
+            textBlock.FontSize = 16;
+            textBlock.VerticalAlignment = VerticalAlignment.Center;
+            textBlock.TextWrapping = TextWrapping.Wrap;
+            textBlock.Text = "dslfnajsdnkansfjvadnfkjv";
+
+            grid.Children.Add(image);
+            grid.Children.Add(textBlock);
+            Grid.SetRow(image, 0);
+            Grid.SetRow(textBlock, 1);
+
+            MainPlace.Children.Add(grid);
+
+        }
+
     }
 }

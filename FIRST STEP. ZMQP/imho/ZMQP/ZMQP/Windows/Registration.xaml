@@ -224,7 +224,9 @@
                     </Border>
                 </Grid>
             </Grid>
+                
         </Grid>
+            <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,25" Visibility="Hidden" Name="Error">Логин или email уже используются</TextBlock>
     </Grid>
     </Border>
 </Window>
