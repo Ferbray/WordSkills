@@ -12,7 +12,7 @@ namespace ZMQP.Classes
         public static int ID;
         public static string Login;
         //Строка подключения (ШАБЛОН: Data Source=Имя сервера; Initial Catalog=Имя базы данных; Integrated Security: True (Проверка подлинности))
-        SqlConnection conn = new SqlConnection(@"Data Source=MOBL-12; Initial Catalog=ZMQP; Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UGB2T6S; Initial Catalog=ZMQP; Integrated Security=True");
         //Открываем подключение
         public void openConnection()
         {
@@ -100,6 +100,41 @@ namespace ZMQP.Classes
             cmd.CommandText = $"UPDATE Profile SET Status=4 WHERE IDUser='{ID}'";
             cmd.Connection = conn;
             cmd.ExecuteNonQuery();
+        }
+        //Возвращает количество пользователей
+        public int CountUsers()
+        {
+            int count = 0;
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT COUNT (*) FROM Users";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            string res = cmd.ExecuteScalar().ToString();
+            count = int.Parse(res);
+            return count;
+        }
+
+        public string[] Users()
+        {
+            int j = -1;
+            int i = CountUsers();
+            string[] res = new string[i];
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT Login FROM Users";
+            cmd.Connection = conn;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string login = reader["Login"].ToString();
+                res[j + 1] = login;
+
+                j += 1;
+            }
+            return res;
         }
 
         public void GoOffline()

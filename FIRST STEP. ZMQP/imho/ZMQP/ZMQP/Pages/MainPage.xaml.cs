@@ -33,33 +33,44 @@ namespace ZMQP.Pages
 
         private void LoadGame(object sender, EventArgs e)
         {
-            Grid grid = new Grid();
-            grid.Background = new SolidColorBrush(Colors.Transparent);
-            grid.Width = 200;
-            grid.Height = 150;
-            grid.Cursor = Cursors.Hand;
-            grid.MouseDown += ShowGameDescription;
-            RowDefinitionCollection rowDefinitions = grid.RowDefinitions;
-            rowDefinitions.Add(new RowDefinition());
-            rowDefinitions.Add(new RowDefinition());
+            for (int i = 0; i < 10; i++)
+            {
+                Grid grid = new Grid();
+                grid.Background = new SolidColorBrush(Colors.Transparent);
+                grid.Width = 200;
+                grid.Height = 150;
+                grid.Cursor = Cursors.Hand;
+                grid.MouseDown += ShowGameDescription;
+                RowDefinition row1 = new RowDefinition();
+                RowDefinition row2 = new RowDefinition();
+                row1.Height = new GridLength(100, GridUnitType.Star);
+                row2.Height = new GridLength(50, GridUnitType.Star);
+                grid.Margin = new Thickness(20);
 
-            Image image = new Image();
-            Uri uri = new Uri("/Resources/DefaultGameBg.png", UriKind.Relative);
-            image.Source = new BitmapImage(uri);
-            
+                Image image = new Image();
+                Uri uri = new Uri("/Resources/DefaultGameBg.png", UriKind.Relative);
+                image.Stretch = Stretch.Fill;
+                image.Source = new BitmapImage(uri);
 
-            TextBlock textBlock = new TextBlock();
-            textBlock.FontSize = 16;
-            textBlock.VerticalAlignment = VerticalAlignment.Center;
-            textBlock.TextWrapping = TextWrapping.Wrap;
-            textBlock.Text = "dslfnajsdnkansfjvadnfkjv";
 
-            grid.Children.Add(image);
-            grid.Children.Add(textBlock);
-            Grid.SetRow(image, 0);
-            Grid.SetRow(textBlock, 1);
+                TextBlock textBlock = new TextBlock();
+                textBlock.FontSize = 16;
+                textBlock.VerticalAlignment = VerticalAlignment.Center;
+                textBlock.TextWrapping = TextWrapping.Wrap;
+                textBlock.Text = "Dota 2";
+                textBlock.FontFamily = new FontFamily("Cascadia Mono");
+                textBlock.Style = (Style)FindResource("MenuCategory");
 
-            MainPlace.Children.Add(grid);
+                grid.RowDefinitions.Add(row1);
+
+                grid.Children.Add(image);
+                grid.RowDefinitions.Add(row2);
+                grid.Children.Add(textBlock);
+                Grid.SetRow(image, 0);
+                Grid.SetRow(textBlock, 1);
+
+                MainPlace.Children.Add(grid);
+            }
 
         }
 

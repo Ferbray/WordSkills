@@ -81,14 +81,14 @@ namespace ZMQP.Windows
 
         private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            
+
             Classes.DataBase database = new Classes.DataBase();
 
             database.openConnection();
             if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
             {
                 Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-                database.GoOnline();
+                /*database.GoOnline();*/
                 this.Close();
                 at.Show();
             }

@@ -113,7 +113,7 @@ namespace ZMQP.Windows
         {
             Classes.DataBase database = new Classes.DataBase();
             Windows.Login login = new Windows.Login();
-            
+
             database.openConnection();
             if (!database.createNewUser(Login.Text, Email.Text, PassBoxNoVisibility.Password))
             {
@@ -126,6 +126,7 @@ namespace ZMQP.Windows
             {
                 Error.Visibility = Visibility.Visible;
             }
+
         }
     }
 }
