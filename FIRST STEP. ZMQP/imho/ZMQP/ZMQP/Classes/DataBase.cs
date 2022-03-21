@@ -137,6 +137,59 @@ namespace ZMQP.Classes
             return res;
         }
 
+        public int CountGames()
+        {
+            int count = 0;
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT COUNT (*) FROM Games";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            string res = cmd.ExecuteScalar().ToString();
+            count = int.Parse(res);
+            return count;
+        }
+
+        public string[] Games()
+        {
+            int g = -1;
+            int i = CountGames();
+            string[] res = new string[i];
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT * FROM Games";
+            cmd.Connection = conn;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                
+                string elem = "";
+
+                string company = reader["TitleCompany"].ToString();
+                string game = reader["TitleGame"].ToString();
+                string photo = reader["Photo"].ToString();
+                string description = reader["Description"].ToString();
+                string type = reader["Type"].ToString();
+                string link = reader["DownloadLink"].ToString();
+
+                elem += company + "|";
+                elem += game + "|";
+                elem += photo + "|";
+                elem += description + "|";
+                elem += type + "|";
+                elem += link + "|";
+
+
+
+                g += 1;
+
+                res[g] = elem;
+            }
+            return res;
+        }
+
         public void GoOffline()
         {
             SqlCommand cmd = new SqlCommand();

@@ -33,8 +33,12 @@ namespace ZMQP.Pages
 
         private void LoadGame(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
+            Classes.DataBase database = new Classes.DataBase();
+            database.openConnection();
+            string[] games = database.Games();
+            foreach (string game in games)
             {
+                string[] gameInfo = game.Split('|');
                 Grid grid = new Grid();
                 grid.Background = new SolidColorBrush(Colors.Transparent);
                 grid.Width = 200;
@@ -48,16 +52,16 @@ namespace ZMQP.Pages
                 grid.Margin = new Thickness(20);
 
                 Image image = new Image();
-                Uri uri = new Uri("/Resources/DefaultGameBg.png", UriKind.Relative);
+                ImageSource bitmapImage = new BitmapImage(new Uri(Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length-9) + gameInfo[2], UriKind.Absolute));
                 image.Stretch = Stretch.Fill;
-                image.Source = new BitmapImage(uri);
+                image.Source = bitmapImage;
 
 
                 TextBlock textBlock = new TextBlock();
                 textBlock.FontSize = 16;
                 textBlock.VerticalAlignment = VerticalAlignment.Center;
                 textBlock.TextWrapping = TextWrapping.Wrap;
-                textBlock.Text = "Dota 2";
+                textBlock.Text = gameInfo[1];
                 textBlock.FontFamily = new FontFamily("Cascadia Mono");
                 textBlock.Style = (Style)FindResource("MenuCategory");
 
@@ -71,6 +75,7 @@ namespace ZMQP.Pages
 
                 MainPlace.Children.Add(grid);
             }
+            database.closeConnection();
 
         }
 

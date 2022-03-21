@@ -120,6 +120,7 @@ namespace ZMQP.Pages
 
                 FriendsPlace.Children.Add(grid);
             }
+            database.closeConnection();
         }
     }
 }
