@@ -28,7 +28,7 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
                             <RowDefinition Height="50"/>
-                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="70"/>
                             <RowDefinition Height="300"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
@@ -54,7 +54,7 @@
                             <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF00611C" FontSize="18">В сети</TextBlock>
                         </Grid>
                         <Grid Grid.Row="2">
-                            <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Cursor="Hand" MouseDown="EditProfileBar_MouseDown" >
                                 <TextBlock Text="Редактировать" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                                 <Border.Style>
                                     <Style TargetType="{x:Type Border}">
@@ -71,45 +71,86 @@
 
                             </Border>
                         </Grid>
-                        <Grid Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <Grid Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                                <ColumnDefinition Width="70"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
+                                <RowDefinition Height="90"></RowDefinition>
+                                <RowDefinition Height="68"></RowDefinition>
                             </Grid.RowDefinitions>
-                            <Grid Grid.Row="0" Margin="10">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock VerticalAlignment="Center"  FontSize="20" Grid.Column="0" Style="{StaticResource MenuCategory}">Друзья:</TextBlock>
-                                <TextBlock VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="20" Grid.Column="1" FontWeight="Normal" FontStyle="Italic">-22</TextBlock>
-                            </Grid>
-                            <Grid Grid.Row="1" Margin="10">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock VerticalAlignment="Center" FontSize="20" Grid.Column="0" Style="{StaticResource MenuCategory}">Игры:</TextBlock>
-                                <TextBlock VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="20" Grid.Column="1" FontWeight="Normal" FontStyle="Italic">-22</TextBlock>
-                            </Grid>
-                            <Grid Grid.Row="2" Margin="10">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock VerticalAlignment="Center" FontSize="20" Grid.Column="0" Style="{StaticResource MenuCategory}">Достижения:</TextBlock>
-                                <TextBlock VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="20" Grid.Column="1" FontWeight="Normal" FontStyle="Italic">-22</TextBlock>
-                            </Grid>
-                            <Grid Grid.Row="3" Margin="10">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock VerticalAlignment="Center" FontSize="20" Grid.Column="0" Style="{StaticResource MenuCategory}">Что-то еще:</TextBlock>
-                                <TextBlock VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="20" Grid.Column="1" FontWeight="Normal" FontStyle="Italic">-22</TextBlock>
-                            </Grid>
+
+                            <Border Grid.Column="0" Grid.Row="0" BorderBrush="#FF2205B3" BorderThickness="1" Margin="0,0,20,20">
+                                <Border.Style>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="BorderBrush" Value="Red"></Setter>
+
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <Image Width="64" Height="64" Name="FriendProfileBar" MouseDown="FriendProfileBar_MouseDown" Cursor="Hand">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/Resources/friend-profile-bar.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=FriendProfileBar}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/friend-active-profile-bar.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Border>
+
+                            <Border Grid.Column="1" Grid.Row="0" BorderBrush="#FF2205B3" BorderThickness="1" Margin="0,0,0,20">
+                                <Image Width="64" Height="64" Name="GameProfileBar" MouseDown="GameProfileBar_MouseDown" Cursor="Hand">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/Resources/game-profile-bar.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=GameProfileBar}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/game-active-profile-bar.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Border>
+
+                            <Border Grid.Column="0" Grid.Row="1" BorderBrush="#FF2205B3" BorderThickness="1" Margin="0,0,20,0">
+                                <Image Width="64" Height="64" Name="AchivProfileBar" MouseDown="AchivProfileBar_MouseDown" Cursor="Hand">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/Resources/achiv-profile-bar.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=AchivProfileBar}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/achiv-active-profile-bar.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Border>
+
+                            <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF2205B3" BorderThickness="1">
+                                <Image Width="64" Height="64" Name="AboutProfileBar" MouseDown="AboutProfileBar_MouseDown" Cursor="Hand">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/Resources/about-profile-bar.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=AboutProfileBar}" Value="True">
+                                                    <Setter Property="Source" Value="/Resources/about-active-profile-bar.png"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Border>
                         </Grid>
                     </Grid>
                     

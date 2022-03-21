@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Threading;
 
 namespace ZMQP.Windows
 {
@@ -36,14 +37,13 @@ namespace ZMQP.Windows
             this.Close();
         }
 
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ToolBarGrid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
             }
         }
-
 
         private void ToolBarButtonRes_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -57,18 +57,7 @@ namespace ZMQP.Windows
             }
         }
 
-        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Profile();
-        }
-
-        private void TextBlock_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.MainPage();
-            HambMenuV2.Visibility = Visibility.Hidden;
-        }
-
-        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ImageHamburgerButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DoubleAnimation doubleAnimation = new DoubleAnimation();
 
@@ -80,7 +69,30 @@ namespace ZMQP.Windows
                 HamburgerMenu.BeginAnimation(Grid.WidthProperty, doubleAnimation);
                 HamburgerMenu.Width = 300;
                 HamburgerMenuVisibility.Visibility = Visibility.Visible;
-                HamburgerMenuHidden.Visibility = Visibility.Hidden;
+
+                ImageHamburgerButton.Visibility = Visibility.Hidden;
+                LineHamburgerButton.Visibility = Visibility.Hidden;
+                Line2HamburgerButton.Visibility = Visibility.Hidden;
+                GridHamburger.Margin = new Thickness(15, 30, 0, 0);
+                GridHamburger.HorizontalAlignment = HorizontalAlignment.Left;
+
+                foreach(var i in GridHamburger.RowDefinitions)
+                {
+                    i.Height = new GridLength(30);
+                }
+
+                HomeHamburgerButton.Height = 20;
+                HomeHamburgerButton.Width = 20;
+                HomeHamburgerButton.Margin = new Thickness(0);
+                ProfileHamburgerButton.Height = 20;
+                ProfileHamburgerButton.Width = 20;
+                ProfileHamburgerButton.Margin = new Thickness(0);
+                LibraryHamburgerButton.Height = 20;
+                LibraryHamburgerButton.Width = 20;
+                LibraryHamburgerButton.Margin = new Thickness(0);
+                SettingsHamburgerButton.Height = 20;
+                SettingsHamburgerButton.Width = 20;
+                SettingsHamburgerButton.Margin = new Thickness(0);
             }
             else
             {
@@ -91,51 +103,53 @@ namespace ZMQP.Windows
                 HamburgerMenu.Width = 50;
                 HamburgerMenu.HorizontalAlignment = HorizontalAlignment.Right;
                 HamburgerMenuVisibility.Visibility = Visibility.Hidden;
-                HamburgerMenuHidden.Visibility = Visibility.Visible;
+
+                ImageHamburgerButton.Visibility = Visibility.Visible;
+                LineHamburgerButton.Visibility = Visibility.Visible;
+                Line2HamburgerButton.Visibility = Visibility.Visible;
+                GridHamburger.Margin = new Thickness(0);
+                GridHamburger.HorizontalAlignment = HorizontalAlignment.Center;
+
+                foreach (var i in GridHamburger.RowDefinitions)
+                {
+                    i.Height = new GridLength(0.18, GridUnitType.Star);
+                }
+
+                HomeHamburgerButton.Height = 25;
+                HomeHamburgerButton.Width = 25;
+                HomeHamburgerButton.Margin = new Thickness(0);
+                ProfileHamburgerButton.Height = 25;
+                ProfileHamburgerButton.Width = 25;
+                ProfileHamburgerButton.Margin = new Thickness(0);
+                LibraryHamburgerButton.Height = 25;
+                LibraryHamburgerButton.Width = 25;
+                LibraryHamburgerButton.Margin = new Thickness(0);
+                SettingsHamburgerButton.Height = 25;
+                SettingsHamburgerButton.Width = 25;
+                SettingsHamburgerButton.Margin = new Thickness(0);
             }
         }
 
-        private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolHome_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.MainPage();
+            HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void Image_MouseDown_2(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Profile();
-        }
-
-        private void Grid_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-            DoubleAnimation doubleAnimation = new DoubleAnimation();
-
-            if (HambMenuV2.Visibility == Visibility.Hidden)
-            {
-                doubleAnimation.From = 0;
-                doubleAnimation.To = 150;
-                doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
-                HambMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
-                HambMenuV2.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                HambMenuV2.Visibility = Visibility.Hidden;
-            }
-        }
-
-        private void TextBlock_MouseDown_2(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolProfile_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Profile();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void TextBlock_MouseDown_3(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolSettings_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Settings();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void TextBlock_MouseDown_4(object sender, MouseButtonEventArgs e)
+
+        private void SearchHeadBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Settings();
             HambMenuV2.Visibility = Visibility.Hidden;
@@ -154,33 +168,47 @@ namespace ZMQP.Windows
             }
         }
 
-        private void TextBlock_MouseDown_5(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolLibrary_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Library();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void TextBlock_MouseDown_6(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new Pages.Library();
-            HambMenuV2.Visibility = Visibility.Hidden;
-        }
-
-        private void TextBlock_MouseDown_7(object sender, MouseButtonEventArgs e)
+        private void HamburgerToolFriends_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new Pages.Friends();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-        private void TextBlock_MouseDown_8(object sender, MouseButtonEventArgs e)
+        private void HamburgerMenuVisible(object sender, MouseEventArgs e)
         {
-            MainFrame.Content = new Pages.Friends();
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+
+            doubleAnimation.From = 0;
+            doubleAnimation.To = 150;
+            doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
+            BorderMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
+            HambMenuV2.Visibility = Visibility.Visible;
+            
+        }
+
+        private void HamburgerMenuHidden(object sender, MouseEventArgs e)
+        {
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+
+            doubleAnimation.From = 150;
+            doubleAnimation.To = 0;
+            doubleAnimation.Duration = TimeSpan.FromSeconds(0.1);
+            BorderMenuV2.BeginAnimation(Grid.HeightProperty, doubleAnimation);
+
             HambMenuV2.Visibility = Visibility.Hidden;
         }
+
 
         private void SetLogin(object sender, EventArgs e)
         {
             ProfileName.Text = Classes.DataBase.Login;
         }
+
     }
 }

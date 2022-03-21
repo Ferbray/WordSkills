@@ -42,33 +42,33 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock FontSize="45" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Normal" TextDecorations="{x:Null}" Grid.Row="0">
+                            <TextBlock FontSize="45" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" Cursor="Hand" HorizontalAlignment="Center" FontStyle="Normal" TextDecorations="{x:Null}" Grid.Row="0" MouseDown="HamburgerToolHome_MouseDown">
                                 <TextBlock.Foreground>
                                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                         <GradientStop Color="#FFF3F2F2"/>
                                         <GradientStop Color="#FF2205B3" Offset="1"/>
                                     </LinearGradientBrush>
                                 </TextBlock.Foreground>ZMQP</TextBlock>
-                            <Image Width="20" Height="20" Grid.Column="1" Source="/Resources/hamburger.png" Cursor="Hand" MouseDown="Image_MouseDown"></Image>
+                            <Image Width="20" Height="20" Grid.Column="1" Source="/Resources/hamburger.png" Cursor="Hand" MouseDown="ImageHamburgerButton_MouseDown"></Image>
                             <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" ></Line>
                         </Grid>
-                        <Grid Grid.Row="1" >
+                        <Grid Margin="20,0,0,0" Grid.Row="1" >
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
                                 <RowDefinition Height="10"/>
                             </Grid.RowDefinitions>
                             <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" Grid.Row="0" Margin="30,0,0,0">Меню</TextBlock>
-                            <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_1">Главная</TextBlock>
-                            <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown">Профиль</TextBlock>
-                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0" MouseDown="TextBlock_MouseDown_5">Библиотека</TextBlock>
-                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0" MouseDown="TextBlock_MouseDown_7">Друзья</TextBlock>
-                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0" MouseDown="TextBlock_MouseDown_3">Настройки</TextBlock>
-                            <Line X1="30" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
+                            <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolHome_MouseDown">Главная</TextBlock>
+                            <TextBlock FontSize="14" VerticalAlignment="Center" Grid.Row="2" Margin="30,0,0,0" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolProfile_MouseDown">Профиль</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="3" Margin="30,0,0,0" MouseDown="HamburgerToolLibrary_MouseDown" >Библиотека</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="4" Margin="30,0,0,0" MouseDown="HamburgerToolFriends_MouseDown">Друзья</TextBlock>
+                            <TextBlock Style="{StaticResource MenuCategory}" FontSize="14" VerticalAlignment="Center" Grid.Row="5" Margin="30,0,0,0" MouseDown="HamburgerToolSettings_MouseDown">Настройки</TextBlock>
+                            <Line X1="-8" Y1="0" X2="270" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
                         </Grid>
 
                         <Grid Grid.Row="2">
@@ -94,30 +94,30 @@
 
                         </Grid>
                     </Grid>
-                    <Grid Name="HamburgerMenuHidden" Visibility="Hidden">
+                    <Grid Visibility="Visible">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
-                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="600"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0" HorizontalAlignment="Center">
-                            <Image Width="20" Height="20" Grid.Row="0" Source="/Resources/hamburger.png" Cursor="Hand" MouseDown="Image_MouseDown"></Image>
-                            <Line X1="0" Y1="0" X2="30" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" ></Line>
+                            <Image Width="20" Height="20" Grid.Row="0" Source="/Resources/hamburger.png" Cursor="Hand" MouseDown="ImageHamburgerButton_MouseDown" x:Name="ImageHamburgerButton"  Visibility="Hidden"></Image>
+                            <Line X1="0" Y1="0" X2="30" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" x:Name="LineHamburgerButton" Visibility="Hidden"></Line>
                         </Grid>
-                        <Grid Grid.Row="1" >
+                        <Grid Grid.Row="1" Margin="15,26,0,0" HorizontalAlignment="Left" x:Name="GridHamburger">
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
                                 <RowDefinition Height="10"/>
                             </Grid.RowDefinitions>
-                            <Image Width="20" Height="20" Source="/Resources/home__1_-removebg-preview.png" Cursor="Hand" Grid.Row="0" MouseDown="Image_MouseDown_1"></Image>
-                            <Image Width="20" Height="20" Source="/Resources/user-removebg-preview.png" Cursor="Hand" Grid.Row="1" MouseDown="Image_MouseDown_2"></Image>
-                            <Image Width="20" Height="20" Source="/Resources/console-removebg-preview.png" Cursor="Hand" Grid.Row="2"></Image>
-                            <Image Width="20" Height="20" Source="/Resources/friends-removebg-preview.png" Cursor="Hand" Grid.Row="3"></Image>
-                            <Image Width="20" Height="20" Source="/Resources/settings-removebg-preview.png" Cursor="Hand" Grid.Row="4"></Image>
-                            <Line X1="10" Y1="0" X2="40" Y2="0" VerticalAlignment="Bottom" Stroke="#FF252424" Grid.Row="6"></Line>
+                            <Image Width="20" Height="20" x:Name="HomeHamburgerButton" Source="/Resources/home__1_-removebg-preview.png" Cursor="Hand" Grid.Row="0" MouseDown="HamburgerToolHome_MouseDown"></Image>
+                            <Image Width="20" Height="20" x:Name="ProfileHamburgerButton" Source="/Resources/user-removebg-preview.png" Cursor="Hand" Grid.Row="1" MouseDown="HamburgerToolProfile_MouseDown"></Image>
+                            <Image Width="20" Height="20" x:Name="LibraryHamburgerButton" Source="/Resources/console-removebg-preview.png" Cursor="Hand" Grid.Row="2" Margin="0,7,0,0" MouseDown="HamburgerToolLibrary_MouseDown"></Image>
+                            <Image Width="20" Height="20" x:Name="FriendsHamburgerButton" Source="/Resources/friends-removebg-preview.png" Cursor="Hand" Grid.Row="3" Margin="0,4,0,0" MouseDown="HamburgerToolFriends_MouseDown"></Image>
+                            <Image Width="20" Height="20" x:Name="SettingsHamburgerButton" Source="/Resources/settings-removebg-preview.png" Cursor="Hand" Grid.Row="4" Margin="0,7,0,0" MouseDown="HamburgerToolSettings_MouseDown"></Image>
+                            <Line X1="7" Y1="0" X2="33" Y2="0" x:Name="Line2HamburgerButton" VerticalAlignment="Top" Stroke="#FF252424" Grid.Row="6" Visibility="Hidden" Margin="0,7,7,0"></Line>
                         </Grid>
 
                     </Grid>
@@ -139,7 +139,7 @@
                             <RowDefinition Height="70"/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
+                        <Grid Grid.Row="0" Background="Transparent" MouseDown="ToolBarGrid_MouseDown">
                             <Grid HorizontalAlignment="Right" Margin="0,5,15,0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="20"/>
@@ -165,10 +165,10 @@
                                 <Image Grid.Column="1" Width="20" Height="15" Name="ToolBarButtonRes" MouseDown="ToolBarButtonRes_MouseDown">
                                     <Image.Style>
                                         <Style TargetType="{x:Type Image}">
-                                            <Setter Property="Source" Value="/Resources/ResizeNonActive-removebg-preview.png"/>
+                                            <Setter Property="Source" Value="/Resources/ResizeNonActive.png"/>
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonRes}" Value="True">
-                                                    <Setter Property="Source" Value="/Resources/UpsizeActive-removebg-preview.png"></Setter>
+                                                    <Setter Property="Source" Value="/Resources/UpsizeActive.png"></Setter>
                                                 </DataTrigger>
                                             </Style.Triggers>
                                         </Style>
@@ -210,9 +210,24 @@
                                         <ColumnDefinition Width="40"/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <Image Source="/Resources/search-removebg-preview.png" Width="20" Height="20" Grid.Column="0"></Image>
                                     <TextBox Grid.Column="1" Width="200" Height="30" Background="{x:Null}" CaretBrush="#FFC80303" Foreground="#FF909090" BorderBrush="#FF2205B3" BorderThickness="0,0,0,1" FontWeight="Normal" VerticalContentAlignment="Bottom" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" />
                                     <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FF7B7B7B" Name="SearchText" Margin="0,12,0,0" Panel.ZIndex="-2">Search...</TextBlock>
+                                    <Image Grid.Column="0" Width="20" Height="20" Name="SearchHeadBar" MouseDown="SearchHeadBar_MouseDown" Cursor="Hand" Margin="0,5,0,0">
+                                        <Image.Style>
+                                            <Style TargetType="{x:Type Image}">
+                                                <Setter Property="Source" Value="/Resources/search-head-bar.png"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=SearchHeadBar}" Value="True">
+                                                        <Setter Property="Source" Value="/Resources/search-active-head-bar.png"></Setter>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+
+                                        <Image.Effect>
+                                            <BlurEffect Radius="1"></BlurEffect>
+                                        </Image.Effect>
+                                    </Image>
                                 </Grid>
                                 <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,40,0">
                                     <Grid>
@@ -227,7 +242,7 @@
                                                 </Image.Clip>
                                             </Image>
                                         </Grid>
-                                        <Grid Grid.Column="1" Margin="15,0,0,0" Height="16" MouseDown="Grid_MouseDown_1">
+                                        <Grid Grid.Column="1" Margin="15,0,0,0" Height="16" MouseDown="HamburgerMenuVisible">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition/>
                                                 <ColumnDefinition Width="20"/>
@@ -242,7 +257,10 @@
                         </Border>
 
                     </Grid>
-                    <Border Width="120" Height="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,90,45,0" CornerRadius="15" Visibility="Hidden" x:Name="HambMenuV2" Panel.ZIndex="555">
+                    <Grid  Panel.ZIndex="555" Visibility="Hidden" x:Name="HambMenuV2" Width="130" Height="250" VerticalAlignment="Top" HorizontalAlignment="Right"  Margin="0,40,45,0" MouseLeave="HamburgerMenuHidden" Background="Transparent">
+
+
+                        <Border Width="120" Height="150" CornerRadius="5" x:Name="BorderMenuV2">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF340037"/>
@@ -258,22 +276,23 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Border Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
-                            <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_1">Главная</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolHome_MouseDown">Главная</TextBlock>
                             </Border>
                             <Border Grid.Row="1" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_2" >Профиль</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolProfile_MouseDown" >Профиль</TextBlock>
                             </Border>
                             <Border Grid.Row="2" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_6" >Библиотека</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolLibrary_MouseDown">Библиотека</TextBlock>
                             </Border>
                             <Border Grid.Row="3" BorderThickness="0,0,0,1" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_8" >Друзья</TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolFriends_MouseDown" >Друзья</TextBlock>
                             </Border>
-                            <Border Grid.Row="4" BorderThickness="0,0,0,1" CornerRadius="15" BorderBrush="#FF3E3E3E">
-                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="TextBlock_MouseDown_4" >Настройки</TextBlock>
+                            <Border Grid.Row="4" BorderThickness="0,0,0,3" CornerRadius="5" BorderBrush="#FF3E3E3E">
+                                <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource MenuCategory}" MouseDown="HamburgerToolSettings_MouseDown" >Настройки</TextBlock>
                             </Border>
                         </Grid>
                     </Border>
+                    </Grid>
                     <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Grid.Row="2"></Frame>
 
                 </Grid>

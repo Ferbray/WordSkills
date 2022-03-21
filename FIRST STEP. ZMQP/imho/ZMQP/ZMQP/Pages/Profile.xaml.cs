@@ -25,6 +25,7 @@ namespace ZMQP.Pages
             InitializeComponent();
         }
 
+
         private void ProfileNickName(object sender, EventArgs e)
         {
             (sender as TextBlock).Text = Classes.DataBase.Login;
@@ -33,6 +34,31 @@ namespace ZMQP.Pages
         private void ProfileIDs(object sender, EventArgs e)
         {
             (sender as TextBlock).Text = "#" + Classes.DataBase.ID.ToString();
+
+        private void GameProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Pages.Library());
+        }
+
+        private void FriendProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Pages.Friends());
+        }
+
+        private void AchivProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void AboutProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void EditProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+
         }
     }
 }
