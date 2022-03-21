@@ -28,6 +28,8 @@ namespace ZMQP.Pages
 
         private void ShowGameDescription(object sender, MouseButtonEventArgs e)
         {
+            string title = (sender as TextBlock).Text;
+            Classes.DataBase.GameTitle = title;
             this.NavigationService.Navigate(new Pages.ApplicationGamePreview());
         }
 
@@ -44,7 +46,6 @@ namespace ZMQP.Pages
                 grid.Width = 200;
                 grid.Height = 150;
                 grid.Cursor = Cursors.Hand;
-                grid.MouseDown += ShowGameDescription;
                 RowDefinition row1 = new RowDefinition();
                 RowDefinition row2 = new RowDefinition();
                 row1.Height = new GridLength(100, GridUnitType.Star);
@@ -64,6 +65,7 @@ namespace ZMQP.Pages
                 textBlock.Text = gameInfo[1];
                 textBlock.FontFamily = new FontFamily("Cascadia Mono");
                 textBlock.Style = (Style)FindResource("MenuCategory");
+                textBlock.MouseDown += ShowGameDescription;
 
                 grid.RowDefinitions.Add(row1);
 

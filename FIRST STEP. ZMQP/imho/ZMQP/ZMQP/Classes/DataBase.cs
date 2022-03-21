@@ -11,6 +11,7 @@ namespace ZMQP.Classes
     {
         public static int ID;
         public static string Login;
+        public static string GameTitle;
         //Строка подключения (ШАБЛОН: Data Source=Имя сервера; Initial Catalog=Имя базы данных; Integrated Security: True (Проверка подлинности))
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UGB2T6S; Initial Catalog=ZMQP; Integrated Security=True");
         //Открываем подключение
@@ -188,6 +189,11 @@ namespace ZMQP.Classes
                 res[g] = elem;
             }
             return res;
+        }
+
+        public void SetChoosenGame(string title)
+        {
+            DataBase.GameTitle = title;
         }
 
         public void GoOffline()
