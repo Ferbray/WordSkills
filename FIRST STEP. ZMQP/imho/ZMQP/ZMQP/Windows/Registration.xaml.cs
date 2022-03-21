@@ -111,9 +111,12 @@ namespace ZMQP.Windows
 
         private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
         {
-            Classes.DataBase database = new Classes.DataBase();
+            //Classes.DataBase database = new Classes.DataBase();
             Windows.Login login = new Windows.Login();
 
+            this.Close();
+            login.Show();
+/*
             database.openConnection();
             if (!database.createNewUser(Login.Text, Email.Text, PassBoxNoVisibility.Password))
             {
@@ -125,7 +128,7 @@ namespace ZMQP.Windows
             else
             {
                 Error.Visibility = Visibility.Visible;
-            }
+            }*/
 
         }
     }

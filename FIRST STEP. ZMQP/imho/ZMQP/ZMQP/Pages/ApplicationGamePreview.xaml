@@ -20,15 +20,14 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
-            <TextBlock Foreground="#FF8C8C8C" FontSize="24" Grid.Row="0">Grand Theft Auto 5</TextBlock>
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                    <Image Source="/Resources/DefaultGameBg.png" Grid.Column="0" HorizontalAlignment="Left">
-
-                    </Image>
+                <TextBlock x:Name="NameGame" Foreground="#FF8C8C8C" FontSize="24" Grid.Row="0">Grand Theft Auto 5</TextBlock>
+                    <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/Resources/DefaultGameBg.png"></Image>
+                    <WebBrowser Source="D:/MyFiles/GitHub/FIRST STEP. ZMQP/imho/ZMQP/ZMQP/Resources/cacodima-cacodemon.gif" Height="Auto" Visibility="Visible"></WebBrowser>
                     <Grid Grid.Column="1" Height="200" Margin="10">
                         <ScrollViewer>
                             <TextBlock TextWrapping="Wrap" Foreground="#FF777777" FontSize="16">
@@ -39,7 +38,7 @@
                         </ScrollViewer>
                     </Grid>
                 </Grid>
-                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20">
+                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20" MouseDown="Border_MouseDown">
                     <TextBlock Text="Играть" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"></TextBlock>
                     <Border.Style>
                         <Style TargetType="{x:Type Border}">
@@ -52,8 +51,6 @@
                             </Style.Triggers>
                         </Style>
                     </Border.Style>
-
-
                 </Border>
             </Grid>
         </Grid>

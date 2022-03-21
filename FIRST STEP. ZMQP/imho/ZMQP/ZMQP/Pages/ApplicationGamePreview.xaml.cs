@@ -24,5 +24,11 @@ namespace ZMQP.Pages
         {
             InitializeComponent();
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NameGame.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF2205B3"));
+        }
+
     }
 }

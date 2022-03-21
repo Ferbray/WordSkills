@@ -27,9 +27,9 @@ namespace ZMQP.Pages
 
         private void LoadedFriends(object sender, RoutedEventArgs e)
         {
-            Classes.DataBase database = new Classes.DataBase();
+/*            Classes.DataBase database = new Classes.DataBase();
             database.openConnection();
-            string[] users = database.Users();
+            string[] users = database.Users();*//*
             foreach (string user in users)
             {
                 //Начальный грид
@@ -119,7 +119,7 @@ namespace ZMQP.Pages
                 actionGrid.Children.Add(actBorder);
 
                 FriendsPlace.Children.Add(grid);
-            }
+            }*/
         }
     }
 }
