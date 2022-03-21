@@ -34,7 +34,7 @@ namespace ZMQP.Pages
         private void ProfileIDs(object sender, EventArgs e)
         {
             (sender as TextBlock).Text = "#" + Classes.DataBase.ID.ToString();
-
+        }
         private void GameProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.NavigationService.Navigate(new Pages.Library());
