@@ -223,9 +223,29 @@ namespace ZMQP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gifdaniil {
+            get {
+                object obj = ResourceManager.GetObject("gifdaniil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gradient {
             get {
                 object obj = ResourceManager.GetObject("gradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gta5 {
+            get {
+                object obj = ResourceManager.GetObject("gta5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

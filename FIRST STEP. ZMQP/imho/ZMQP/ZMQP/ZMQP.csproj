@@ -246,5 +246,11 @@
   <ItemGroup>
     <Resource Include="Resources\cacodima-cacodemon.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gta5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gifdaniil.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ZMQP.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
-      Title="Profile">
+      Title="Profile" Loaded="Page_Loaded">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -158,13 +158,8 @@
                 
             </Grid>
         </Grid>
-        <Grid Grid.Column="1" Margin="0,160,0,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <TextBlock Foreground="#FFBEBEBE" FontSize="12" TextWrapping="Wrap" Margin="20,20,20,20" Grid.Row="0">Но едва Владимир выехал за околицу в поле, как поднялся ветер и сделалась такая метель, что он ничего не взвидел. В одну минуту дорогу занесло; окрестность исчезла во мгле мутной и желтоватой, сквозь которую летели белые хлопья снегу; небо слилося с землею.</TextBlock>
-            <Line X1="30" Y1="0" X2="220" Y2="0" VerticalAlignment="Bottom" Stroke="#FF484848" Grid.Row="1" StrokeThickness="1"></Line>
-        </Grid>
+        <WrapPanel Grid.Column="1" MaxWidth="1000" MaxHeight="500" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,120,0,0">
+            <Image x:Name="GifDanilprofile"></Image>
+        </WrapPanel>
     </Grid>
 </Page>
