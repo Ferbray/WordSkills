@@ -16,15 +16,34 @@ using System.Windows.Shapes;
 namespace ZMQP.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Friends.xaml
+    /// Логика взаимодействия для FindFriends.xaml
     /// </summary>
-    public partial class Friends : Page
+    public partial class FindFriends : Page
     {
-        public Friends()
+        public FindFriends()
         {
             InitializeComponent();
         }
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            SearchText.Text = "";
+        }
 
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if ((sender as TextBox).Text.Length == 0)
+            {
+                SearchText.Text = "Search...";
+            }
+        }
+
+        private void AppendFriend(object sender, RoutedEventArgs e)
+        {
+            Classes.DataBase database = new Classes.DataBase();
+            database.openConnection();
+            string id = (sender as Border).Name;
+            database.AddFriend(id.Remove(0,2));
+        }
         private void LoadedFriends(object sender, RoutedEventArgs e)
         {
             Classes.DataBase database = new Classes.DataBase();
@@ -54,6 +73,7 @@ namespace ZMQP.Pages
                 NickName.TextWrapping = TextWrapping.Wrap;
                 NickName.Style = (Style)FindResource("MenuCategory");
                 NickName.Text = user;
+                NickName.Name = "NickName";
                 //колонки для грида
                 subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                 subGrid.ColumnDefinitions.Add(new ColumnDefinition());
@@ -96,9 +116,11 @@ namespace ZMQP.Pages
 
                 Border actBorder = new Border();
                 actBorder.Style = (Style)FindResource("ButtonStyle");
+                actBorder.Name = "ID" + database.getID(user).ToString();
+                actBorder.MouseDown += AppendFriend;
 
                 TextBlock actText = new TextBlock();
-                actText.Text = "Действия";
+                actText.Text = "Добавить";
                 actText.Style = (Style)FindResource("ButtonText");
                 actBorder.Child = actText;
 
@@ -123,9 +145,6 @@ namespace ZMQP.Pages
             database.closeConnection();
         }
 
-        private void FindFriends(object sender, MouseButtonEventArgs e)
-        {
-            this.NavigationService.Navigate(new Pages.FindFriends());
-        }
     }
+
 }

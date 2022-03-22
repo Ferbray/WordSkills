@@ -13,7 +13,7 @@ namespace ZMQP.Classes
         public static string Login;
         public static string GameTitle;
         //Строка подключения (ШАБЛОН: Data Source=Имя сервера; Initial Catalog=Имя базы данных; Integrated Security: True (Проверка подлинности))
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UGB2T6S; Initial Catalog=ZMQP; Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=MOBL-12; Initial Catalog=ZMQP; Integrated Security=True");
         //Открываем подключение
         public void openConnection()
         {
@@ -94,7 +94,13 @@ namespace ZMQP.Classes
             return isExist;
         }
 
-       
+        public void AddFriend(string idFriend)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"INSERT INTO Friendship (IDUser, IDUserFriend) VALUES ('{ID}', '{idFriend}');";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+        }
         public void GoOnline()
         {
             SqlCommand cmd = new SqlCommand();
@@ -135,9 +141,72 @@ namespace ZMQP.Classes
 
                 j += 1;
             }
+            reader.Close();
             return res;
         }
 
+        public int CountFriends(int id)
+        {
+            int count = 0;
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT COUNT (*) FROM Friendship WHERE IDUser='{id}'";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            string res = cmd.ExecuteScalar().ToString();
+            count = int.Parse(res);
+            return count;
+        }
+
+        public int[] Friends(int id)
+        {
+            int j = -1;
+            int i = CountFriends(id);
+            int[] res = new int[i];
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT * FROM Friendship";
+            cmd.Connection = conn;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int login = int.Parse(reader["IDUser"].ToString());
+                res[j + 1] = login;
+
+                j += 1;
+            }
+            reader.Close();
+            return res;
+        }
+
+        public int getID(string name)
+        {
+            int id = 0;
+            int j = -1;
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = $"SELECT * FROM Users";
+            cmd.Connection = conn;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string IDS = reader["ID User"].ToString();
+                string login = reader["Login"].ToString();
+       
+
+                j += 1;
+                if (login == name)
+                {
+                    id = int.Parse(IDS);
+                    break;
+                }
+            }
+            reader.Close();
+            return id;
+        }
         public int CountGames()
         {
             int count = 0;
