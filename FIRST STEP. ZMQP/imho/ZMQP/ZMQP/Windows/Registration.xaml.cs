@@ -23,7 +23,12 @@ namespace ZMQP.Windows
         public Registration()
         {
             InitializeComponent();
-
+            Login.MaxLength = 25;
+            Email.MaxLength = 25;
+            PassBoxVisibility.MaxLength = 25;
+            PassBoxNoVisibility.MaxLength = 25;
+            PassBoxVisibilityDouble.MaxLength = 25;
+            PassBoxNoVisibilityDouble.MaxLength = 25;
         }
 
         private void ToolBarButtonClose_MouseDown(object sender, MouseButtonEventArgs e)
@@ -112,18 +117,44 @@ namespace ZMQP.Windows
 
         private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
         {
-            using (UserContext db = new UserContext()) {
+            error_reg.Text = "";
+            if (
+                Login.Text.Length >= 5 &&
+                Email.Text.Length >= 5 &&
+                PassBoxVisibility.Text.Length >= 5 &&
+                PassBoxNoVisibility.Password.Length >= 5 &&
+                PassBoxVisibilityDouble.Text.Length >= 5 &&
+                PassBoxNoVisibilityDouble.Password.Length >= 5)
+            {
+                if (
+                    PassBoxVisibility.Text == PassBoxVisibilityDouble.Text ||
+                    PassBoxNoVisibility.Password == PassBoxNoVisibilityDouble.Password ||
+                    PassBoxVisibility.Text == PassBoxNoVisibilityDouble.Password ||
+                    PassBoxNoVisibility.Password == PassBoxVisibilityDouble.Text
+                )
+                {
+                    using (UserContext db = new UserContext())
+                    {
 
-                User user1 = new User { 
-                    Login = Login.Text, 
-                    Email = Email.Text, 
-                    Password = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password 
-                };
-                db.Users.Add(user1);
-                db.SaveChanges();
-                Windows.Login login = new Windows.Login();
-                this.Close();
-                login.Show();
+                        User user1 = new User
+                        {
+                            Login = Login.Text,
+                            Email = Email.Text,
+                            Password = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password,
+                            IsAdmin = 0
+                        };
+                        db.Users.Add(user1);
+                        db.SaveChanges();
+                        Windows.Login login = new Windows.Login();
+                        this.Close();
+                        login.Show();
+                    }
+                }
+                error_reg.Text = "Поля паролей не схожи";
+            }
+            else
+            {
+                error_reg.Text = "Все поля должны быть больше 5, \n но меньше 16 символов";
             }
         }
     }

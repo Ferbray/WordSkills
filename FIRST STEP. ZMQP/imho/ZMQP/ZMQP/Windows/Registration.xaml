@@ -17,115 +17,116 @@
             </Border.Effect>
         </Border>
 
-    
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="300"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
-                <Grid HorizontalAlignment="Right" Margin="0,5,5,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="20"/>
-                        <ColumnDefinition Width="30"/>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Width="20" Height="20" Name="ToolBarButtonMin" MouseDown="ToolBarButtonMin_MouseDown">
-                        <Image.Style>
-                            <Style TargetType="{x:Type Image}">
-                                <Setter Property="Source" Value="/Resources/minus.png"/>
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
-                                        <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Image.Style>
 
-                            <Image.Effect>
-                                <BlurEffect Radius="1"></BlurEffect>
-                            </Image.Effect>
-                        </Image>
-                    <Image Grid.Column="1" Width="20" Height="20" Name="ToolBarButtonClose" MouseDown="ToolBarButtonClose_MouseDown">
-                        <Image.Style>
-                            <Style TargetType="{x:Type Image}">
-                                <Setter Property="Source" Value="/Resources/close.png"/>
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonClose}" Value="True">
-                                        <Setter Property="Source" Value="/Resources/close_active.png"></Setter>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Image.Style>
-
-                            <Image.Effect>
-                                <BlurEffect Radius="1"></BlurEffect>
-                            </Image.Effect>
-                        </Image>
-
-                </Grid>
-                
-            </Grid>
-            <Grid Grid.Row="1">
-                <TextBlock FontSize="85" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="76" FontStyle="Normal" TextDecorations="{x:Null}" Width="280">
-                    <TextBlock.Foreground>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FFF3F2F2"/>
-                            <GradientStop Color="#FF2205B3" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TextBlock.Foreground>ZMQP</TextBlock>
-            </Grid>
-            <Grid Grid.Row="2">
+            <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="360"/>
                 </Grid.RowDefinitions>
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494" FontSize="22">Регистрация</TextBlock>
-                <Grid Grid.Row="1" HorizontalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="200"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Логин:</TextBlock>
-                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}" x:Name="Login">
-                        <TextBox.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF949494"/>
-                                <GradientStop Color="#FF2205B3" Offset="1"/>
-                            </LinearGradientBrush>
-                        </TextBox.BorderBrush>
+                <Grid Grid.Row="0" Background="Transparent" MouseDown="Grid_MouseDown">
+                    <Grid HorizontalAlignment="Right" Margin="0,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Width="20" Height="20" Name="ToolBarButtonMin" MouseDown="ToolBarButtonMin_MouseDown">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="/Resources/minus.png"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonMin}" Value="True">
+                                            <Setter Property="Source" Value="/Resources/minus_active.png"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
 
-                    </TextBox>
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
+                        <Image Grid.Column="1" Width="20" Height="20" Name="ToolBarButtonClose" MouseDown="ToolBarButtonClose_MouseDown">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="/Resources/close.png"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=ToolBarButtonClose}" Value="True">
+                                            <Setter Property="Source" Value="/Resources/close_active.png"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+
+                            <Image.Effect>
+                                <BlurEffect Radius="1"></BlurEffect>
+                            </Image.Effect>
+                        </Image>
+
+                    </Grid>
 
                 </Grid>
-                <Grid Grid.Row="2" HorizontalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="200"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Email:</TextBlock>
-                    <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}" x:Name="Email">
-                        <TextBox.BorderBrush>
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="85" FontFamily="../Resources/#Radon" FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="76" FontStyle="Normal" TextDecorations="{x:Null}" Width="280">
+                        <TextBlock.Foreground>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF949494"/>
+                                <GradientStop Color="#FFF3F2F2"/>
                                 <GradientStop Color="#FF2205B3" Offset="1"/>
                             </LinearGradientBrush>
-                        </TextBox.BorderBrush>
-
-                    </TextBox>
-
+                        </TextBlock.Foreground>ZMQP</TextBlock>
                 </Grid>
-                <Grid Grid.Row="3" HorizontalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="200"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Пароль:</TextBlock>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494" FontSize="22">Регистрация</TextBlock>
+                    <Grid Grid.Row="1" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Логин:</TextBlock>
+                        <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}" x:Name="Login">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                        </TextBox>
+
+                    </Grid>
+                    <Grid Grid.Row="2" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Email:</TextBlock>
+                        <TextBox Grid.Column="1" Style="{StaticResource InputFormBox}" x:Name="Email">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF949494"/>
+                                    <GradientStop Color="#FF2205B3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                        </TextBox>
+
+                    </Grid>
+                    <Grid Grid.Row="3" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Пароль:</TextBlock>
 
                         <TextBox Grid.Column="1" x:Name="PassBoxVisibility" Visibility="Collapsed" Style="{StaticResource InputFormBox}">
                             <TextBox.BorderBrush>
@@ -143,7 +144,7 @@
                                     <GradientStop Color="#FF2205B3" Offset="1"/>
                                 </LinearGradientBrush>
                             </PasswordBox.BorderBrush>
-                    </PasswordBox>
+                        </PasswordBox>
 
                         <Image Grid.Column="1" Source="/Resources/eyeNo.png" HorizontalAlignment="Right" x:Name="PassBoxButtonVisibility" MouseDown="PassBoxButtonVisibility_MouseDown" Margin="0,-10,0,0" Width="25" Height="25">
                             <Image.Style>
@@ -161,14 +162,14 @@
                                 <BlurEffect Radius="1"></BlurEffect>
                             </Image.Effect>
                         </Image>
-                
-                </Grid>
-                <Grid Grid.Row="4" HorizontalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="200"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Еще раз:</TextBlock>
+
+                    </Grid>
+                    <Grid Grid.Row="4" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Еще раз:</TextBlock>
                         <TextBox Grid.Column="1" x:Name="PassBoxVisibilityDouble" Visibility="Collapsed" Style="{StaticResource InputFormBox}">
                             <TextBox.BorderBrush>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -203,30 +204,32 @@
                                 <BlurEffect Radius="1"></BlurEffect>
                             </Image.Effect>
                         </Image>
-                </Grid>
-                <Grid Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494">Есть аккаунт, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Войти</Hyperlink></TextBlock>
-                 </Grid>
-                <Grid Grid.Row="6">
-                    <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="RegistrateNewUser">
-                        <TextBlock Text="Зарегистрироваться" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-                        <Border.Style>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="BorderBrush" Value="Red"></Setter>
+                    </Grid>
+                    <Grid Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494">Есть аккаунт, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Войти</Hyperlink></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="6">
+                        <Border Width="150" Height="30" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="RegistrateNewUser">
+                            <TextBlock Text="Зарегистрироваться" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                            <Border.Style>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BorderBrush" Value="Red"></Setter>
 
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Border.Style>
-                    </Border>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="7">
+                        <TextBlock x:Name="error_reg" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    </Grid>
                 </Grid>
+
             </Grid>
-                
         </Grid>
-            <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,25" Visibility="Hidden" Name="Error">Логин или email уже используются</TextBlock>
-    </Grid>
     </Border>
 </Window>

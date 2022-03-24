@@ -24,7 +24,9 @@ namespace ZMQP.Windows
         public Login()
         {
             InitializeComponent();
-
+            LoginBox.MaxLength = 25;
+            PassBoxVisibility.MaxLength = 25;
+            PassBoxNoVisibility.MaxLength = 25;
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
