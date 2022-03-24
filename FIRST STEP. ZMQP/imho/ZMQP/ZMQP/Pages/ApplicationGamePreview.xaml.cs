@@ -26,7 +26,7 @@ namespace ZMQP.Pages
         
         }
 
-        private string[] infoGame(string title)
+        /*private string[] infoGame(string title)
         {
             string[] info = new string[2];
             Classes.DataBase database = new Classes.DataBase();
@@ -42,21 +42,21 @@ namespace ZMQP.Pages
                 }
             }
             return info;
-        }
+        }*/
         private void GameTitleLoaded(object sender, RoutedEventArgs e)
         {
-            (sender as TextBlock).Text = Classes.DataBase.GameTitle;
+            (sender as TextBlock).Text = "Dota 2";
             
         }
 
         private void DescriptionLoaded(object sender, RoutedEventArgs e)
         {
-            (sender as TextBlock).Text = infoGame(Classes.DataBase.GameTitle)[1];
+           /* (sender as TextBlock).Text = infoGame(Classes.DataBase.GameTitle)[1];*/
         }
 
         private void PicturePreviewLoaded(object sender, RoutedEventArgs e)
         {
-            (sender as Image).Source = new BitmapImage(new Uri(Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 9) + infoGame(Classes.DataBase.GameTitle)[0], UriKind.Absolute));
+           /* (sender as Image).Source = new BitmapImage(new Uri(Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 9) + infoGame(Classes.DataBase.GameTitle)[0], UriKind.Absolute));*/
         }
     }
 }

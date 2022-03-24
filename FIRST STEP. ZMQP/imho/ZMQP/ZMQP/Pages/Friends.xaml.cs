@@ -27,7 +27,7 @@ namespace ZMQP.Pages
 
         private void LoadedFriends(object sender, RoutedEventArgs e)
         {
-            Classes.DataBase database = new Classes.DataBase();
+           /* Classes.DataBase database = new Classes.DataBase();
             database.openConnection();
             string[] users = database.Users();
             foreach (string user in users)
@@ -120,7 +120,7 @@ namespace ZMQP.Pages
 
                 FriendsPlace.Children.Add(grid);
             }
-            database.closeConnection();
+            database.closeConnection();*/
         }
 
         private void FindFriends(object sender, MouseButtonEventArgs e)

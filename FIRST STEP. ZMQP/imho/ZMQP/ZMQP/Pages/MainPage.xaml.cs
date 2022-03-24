@@ -28,14 +28,14 @@ namespace ZMQP.Pages
 
         private void ShowGameDescription(object sender, MouseButtonEventArgs e)
         {
-            string title = (sender as TextBlock).Text;
+           /* string title = (sender as TextBlock).Text;
             Classes.DataBase.GameTitle = title;
-            this.NavigationService.Navigate(new Pages.ApplicationGamePreview());
+            this.NavigationService.Navigate(new Pages.ApplicationGamePreview());*/
         }
 
         private void LoadGame(object sender, EventArgs e)
         {
-            Classes.DataBase database = new Classes.DataBase();
+         /*   Classes.DataBase database = new Classes.DataBase();
             database.openConnection();
             string[] games = database.Games();
             foreach (string game in games)
@@ -77,7 +77,7 @@ namespace ZMQP.Pages
 
                 MainPlace.Children.Add(grid);
             }
-            database.closeConnection();
+            database.closeConnection();*/
 
         }
 

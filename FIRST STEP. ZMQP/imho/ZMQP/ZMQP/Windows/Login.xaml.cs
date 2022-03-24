@@ -82,22 +82,26 @@ namespace ZMQP.Windows
         private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
-            Classes.DataBase database = new Classes.DataBase();
+            /* Classes.DataBase database = new Classes.DataBase();
 
-            database.openConnection();
-            if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
-            {
-                Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-                /*database.GoOnline();*/
-                this.Close();
-                at.Show();
-            }
-            else
-            {
-                ErrorText.Visibility = Visibility.Visible;
-            }
+             database.openConnection();
+             if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
+             {
+                 Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                 *//*database.GoOnline();*//*
+                 this.Close();
+                 at.Show();
+             }
+             else
+             {
+                 ErrorText.Visibility = Visibility.Visible;
+             }
 
-            database.closeConnection();
+             database.closeConnection();*/
+
+            Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+            this.Close();
+            at.Show();
         }
 
 

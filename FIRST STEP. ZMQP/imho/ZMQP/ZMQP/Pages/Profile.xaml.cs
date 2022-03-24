@@ -28,12 +28,12 @@ namespace ZMQP.Pages
 
         private void ProfileNickName(object sender, EventArgs e)
         {
-            (sender as TextBlock).Text = Classes.DataBase.Login;
+           /* (sender as TextBlock).Text = Classes.DataBase.Login;*/
         }
 
         private void ProfileIDs(object sender, EventArgs e)
         {
-            (sender as TextBlock).Text = "#" + Classes.DataBase.ID.ToString();
+          /*  (sender as TextBlock).Text = "#" + Classes.DataBase.ID.ToString();*/
         }
         private void GameProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
