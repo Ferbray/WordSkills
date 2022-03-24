@@ -99,7 +99,7 @@ namespace ZMQP.Pages
         {
             if (_bitmap == null)
             {
-                _bitmap = new Bitmap("C:/Gagaev/WordSkills/FIRST STEP. ZMQP/imho/ZMQP/ZMQP/Resources/gifdaniil.gif");
+                _bitmap = new Bitmap("D:/MyFiles/GitHub/FIRST STEP. ZMQP/imho/ZMQP/ZMQP/Resources/gifdaniil.gif");
             }
             IntPtr handle = IntPtr.Zero;
             handle = _bitmap.GetHbitmap();

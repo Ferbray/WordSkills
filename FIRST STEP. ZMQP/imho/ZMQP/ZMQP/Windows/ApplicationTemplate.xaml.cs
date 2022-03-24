@@ -207,7 +207,6 @@ namespace ZMQP.Windows
 
         private void SetLogin(object sender, EventArgs e)
         {
-            //ProfileName.Text = Classes.DataBase.Login;
         }
 
     }

@@ -96,7 +96,7 @@
                             <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Логин:</TextBlock>
-                        <TextBox Name="LoginBox" Grid.Column="1" Style="{StaticResource InputFormBox}">
+                        <TextBox x:Name="LoginBox" Grid.Column="1" Style="{StaticResource InputFormBox}">
                             <TextBox.BorderBrush>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#FF949494"/>
@@ -189,6 +189,7 @@
                 </Grid>
                 <Grid Grid.Row="4" HorizontalAlignment="Center">
                     <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494">Нет аккаунта, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Зарегистрироваться</Hyperlink></TextBlock>
+                    <TextBlock x:Name="error_entry" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40"/>
                 </Grid>
             </Grid>
         </Grid>

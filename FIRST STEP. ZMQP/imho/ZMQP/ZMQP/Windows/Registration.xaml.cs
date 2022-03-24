@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ZMQP.Classes;
 
 namespace ZMQP.Windows
 {
@@ -111,25 +112,19 @@ namespace ZMQP.Windows
 
         private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
         {
-            //Classes.DataBase database = new Classes.DataBase();
-            Windows.Login login = new Windows.Login();
+            using (UserContext db = new UserContext()) {
 
-            this.Close();
-            login.Show();
-/*
-            database.openConnection();
-            if (!database.createNewUser(Login.Text, Email.Text, PassBoxNoVisibility.Password))
-            {
-                database.closeConnection();
-
+                User user1 = new User { 
+                    Login = Login.Text, 
+                    Email = Email.Text, 
+                    Password = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password 
+                };
+                db.Users.Add(user1);
+                db.SaveChanges();
+                Windows.Login login = new Windows.Login();
                 this.Close();
                 login.Show();
             }
-            else
-            {
-                Error.Visibility = Visibility.Visible;
-            }*/
-
         }
     }
 }

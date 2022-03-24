@@ -130,3 +130,8 @@ C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.g.resources
 C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CoreCompileInputs.cache
 C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.exe
 C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.pdb
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.dll
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.xml
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CopyComplete

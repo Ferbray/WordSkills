@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZMQP.Classes;
 
 namespace ZMQP.Windows
 {
@@ -23,6 +24,7 @@ namespace ZMQP.Windows
         public Login()
         {
             InitializeComponent();
+
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -81,35 +83,20 @@ namespace ZMQP.Windows
 
         private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
-            //Classes.DataBase database = new Classes.DataBase();
-
-            //database.openConnection();
-            Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-            /*database.GoOnline();*/
-            this.Close();
-            at.Show();
-
-/*            if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
+            using (UserContext db = new UserContext())
             {
-                Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-                *//*database.GoOnline();*//*
-                this.Close();
-                at.Show();
+                var users = db.Users;
+                foreach (User u in users)
+                {
+                    if (u.Login == LoginBox.Text && (PassBoxVisibility.Text == u.Password || PassBoxNoVisibility.Password == u.Password))
+                    {
+                        Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                        this.Close();
+                        at.Show();
+                    }
+                }
+                error_entry.Text = "Не верный логин или пароль";
             }
-            else
-            {
-                ErrorText.Visibility = Visibility.Visible;
-            }
-            database.closeConnection();*/
         }
-
-
-
-        /*
-       private void TextBox_GotFocus(object sender, RoutedEventArgs e)
-       {
-           (sender as TextBox).BorderBrush = new SolidColorBrush(Color.FromRgb(177, 1, 1));
-       }*/
     }
 }
