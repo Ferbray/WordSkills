@@ -11,7 +11,7 @@ namespace ZMQP.Classes
     public class UserContext: DbContext
     {
         public UserContext()
-            : base("Users")
+            : base("DbConnection")
         { }
 
         public DbSet<User> Users { get; set; }
@@ -22,6 +22,6 @@ namespace ZMQP.Classes
         public string Login { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public int isModerator { get; set; }
+        public int isAdmin { get; set; }
     }
 }

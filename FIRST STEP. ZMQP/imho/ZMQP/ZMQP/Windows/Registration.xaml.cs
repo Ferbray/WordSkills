@@ -112,17 +112,58 @@ namespace ZMQP.Windows
 
         private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
         {
+
+
             using (UserContext db = new UserContext())
             {
+                bool isExist = false;
+                bool isRight = true;
+                var users = db.Users.ToList();
 
-                User user1 = new User {ID = 1, Login = "qwerty", Email = "zxc@mail.ru", Password = "12345", isModerator = 0 };
-                db.Users.Add(user1);
-                db.SaveChanges();
+                foreach (var user in users)
+                {
+                    if (user.Login == Login.Text && user.Email == Email.Text)
+                    {
+                        isExist = true;
+                        break;
+                    }
+                }
+
+                if (Login.Text.Length < 5 || Email.Text.Length < 5 || PassBoxNoVisibility.Password.Length < 5)
+                {
+                    isRight = false;
+                }
+
+                if (!isRight)
+                {
+                    
+                }
+
+                else
+                {
+                    if (!isExist)
+                    {
+                        User user1 = new User
+                        {
+                            Login = Login.Text,
+                            Email = Email.Text,
+                            Password = (PassBoxNoVisibility.Visibility == Visibility) ? PassBoxNoVisibility.Password : PassBoxVisibility.Text
+                        };
+                        db.Users.Add(user1);
+                        db.SaveChanges();
 
 
-                Windows.Login login = new Windows.Login();
-                this.Close();
-                login.Show();
+                        Windows.Login login = new Windows.Login();
+                        this.Close();
+                        login.Show();
+                    }
+
+                    else
+                    {
+
+                    }
+                }
+                
             }
 
         }
