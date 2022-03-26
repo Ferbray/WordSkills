@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZMQP.Classes;
+
 
 namespace ZMQP.Pages
 {
@@ -45,11 +47,10 @@ namespace ZMQP.Pages
             database.AddFriend(id.Remove(0,2));*/
         }
         private void LoadedFriends(object sender, RoutedEventArgs e)
-        {/*
-            Classes.DataBase database = new Classes.DataBase();
-            database.openConnection();
-            string[] users = database.Users();
-            foreach (string user in users)
+        {
+            UserContext db = new UserContext();
+            var users = db.Users.ToList();
+            foreach (var user in users)
             {
                 //Начальный грид
                 Grid grid = new Grid();
@@ -72,7 +73,7 @@ namespace ZMQP.Pages
                 NickName.FontFamily = new FontFamily("Cascadia Mono");
                 NickName.TextWrapping = TextWrapping.Wrap;
                 NickName.Style = (Style)FindResource("MenuCategory");
-                NickName.Text = user;
+                NickName.Text = user.Login;
                 NickName.Name = "NickName";
                 //колонки для грида
                 subGrid.ColumnDefinitions.Add(new ColumnDefinition());
@@ -116,7 +117,7 @@ namespace ZMQP.Pages
 
                 Border actBorder = new Border();
                 actBorder.Style = (Style)FindResource("ButtonStyle");
-                actBorder.Name = "ID" + database.getID(user).ToString();
+                actBorder.Name = "ID" + user.ID;
                 actBorder.MouseDown += AppendFriend;
 
                 TextBlock actText = new TextBlock();
@@ -142,7 +143,6 @@ namespace ZMQP.Pages
 
                 FriendsPlace.Children.Add(grid);
             }
-            database.closeConnection();*/
         }
 
     }

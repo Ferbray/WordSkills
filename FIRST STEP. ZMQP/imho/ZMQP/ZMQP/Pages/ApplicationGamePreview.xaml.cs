@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZMQP.Classes;
 
 namespace ZMQP.Pages
 {
@@ -26,37 +27,35 @@ namespace ZMQP.Pages
         
         }
 
-        /*private string[] infoGame(string title)
+        private List<string> infoGame(string title)
         {
-            string[] info = new string[2];
-            Classes.DataBase database = new Classes.DataBase();
-            database.openConnection();
-            string[] games = database.Games();
-            foreach (string game in games)
+            List<string> info = new List<string>();
+            GamesContext db = new GamesContext();
+            var games = db.Games.ToList();
+            foreach (var game in games)
             {
-                string[] gameInfo = game.Split('|');
-                if (gameInfo[1] == title)
+                if (game.TitleGame == title)
                 {
-                    info[0] = gameInfo[2];
-                    info[1] = gameInfo[3];
+                    info.Add(game.Photo);
+                    info.Add(game.Description);
                 }
             }
             return info;
-        }*/
+        }
         private void GameTitleLoaded(object sender, RoutedEventArgs e)
         {
-            (sender as TextBlock).Text = "Dota 2";
-            
+            (sender as TextBlock).Text = Classes.Hndr.title;
+
         }
 
         private void DescriptionLoaded(object sender, RoutedEventArgs e)
         {
-           /* (sender as TextBlock).Text = infoGame(Classes.DataBase.GameTitle)[1];*/
+            (sender as TextBlock).Text = infoGame(Classes.Hndr.title)[1];
         }
 
         private void PicturePreviewLoaded(object sender, RoutedEventArgs e)
         {
-           /* (sender as Image).Source = new BitmapImage(new Uri(Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 9) + infoGame(Classes.DataBase.GameTitle)[0], UriKind.Absolute));*/
+            (sender as Image).Source = new BitmapImage(new Uri(Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.Length - 9) + infoGame(Classes.Hndr.title)[0], UriKind.Absolute));
         }
     }
 }
