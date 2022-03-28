@@ -83,21 +83,86 @@ namespace ZMQP.Windows
             }
         }
 
-        private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
+        private bool CheckLengthField(bool check_field)
+        {
+            bool flag_visibility = false;
+
+            if (
+                (PassBoxVisibility.Visibility == Visibility.Visible && PassBoxVisibility.Text.Length >= 5) ||
+                (PassBoxVisibility.Visibility == Visibility.Collapsed && PassBoxNoVisibility.Password.Length >= 5))
+            {
+                flag_visibility = true;
+            }
+
+            if (
+                (LoginBox.Text.Length >= 5 || LoginBox.Text == "GIS" || LoginBox.Text == "zmqp") &&
+                flag_visibility &&
+                check_field)
+            {
+                error_entry.Text = "";
+                return true;
+            }    
+            if (check_field)
+                error_entry.Text = "Все поля должны быть больше 5, \n но меньше 16 символов";
+            return false;
+
+        }
+
+        private bool CheckIndenticalUser(bool check_field)
         {
             using (UserContext db = new UserContext())
             {
                 var users = db.Users;
                 foreach (User u in users)
                 {
-                    if (u.Login == LoginBox.Text && (PassBoxVisibility.Text == u.Password || PassBoxNoVisibility.Password == u.Password))
+                    if (
+                        u.Login == LoginBox.Text && 
+                        (PassBoxVisibility.Text == u.Password || PassBoxNoVisibility.Password == u.Password) && 
+                        check_field)
                     {
-                        Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-                        this.Close();
-                        at.Show();
+                        error_entry.Text = "";
+                        return true;
                     }
                 }
-                error_entry.Text = "Не верный логин или пароль";
+                if (check_field)
+                    error_entry.Text = "Не верный логин или пароль";
+                return false;
+            }
+        }
+
+        private int GetID()
+        {
+            int id = 0;
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+                foreach (User u in users)
+                {
+                    if (u.Login == LoginBox.Text)
+                    {
+                        id = u.Id;
+                        break;
+                    }
+                }
+            }
+            return id;
+        }
+
+        private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            bool check_field = CheckLengthField(true);
+            check_field = CheckIndenticalUser(check_field);
+
+            if (check_field == true)
+            {
+                using (UserContext db = new UserContext())
+                {
+                    Classes.UserHandler.ID = GetID();
+                    Classes.UserHandler.Login = LoginBox.Text;
+                    Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                    this.Close();
+                    at.Show();
+                }
             }
         }
     }

@@ -16,9 +16,6 @@ using System.Threading;
 
 namespace ZMQP.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для ApplicationTemplate.xaml
-    /// </summary>
     public partial class ApplicationTemplate : Window
     {
         public ApplicationTemplate()
@@ -207,6 +204,7 @@ namespace ZMQP.Windows
 
         private void SetLogin(object sender, EventArgs e)
         {
+            ProfileName.Text = Classes.UserHandler.Login;
         }
 
     }

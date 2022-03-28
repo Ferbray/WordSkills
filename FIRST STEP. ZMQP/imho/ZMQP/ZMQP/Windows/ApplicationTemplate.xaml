@@ -247,7 +247,7 @@
                                                 <ColumnDefinition/>
                                                 <ColumnDefinition Width="20"/>
                                             </Grid.ColumnDefinitions>
-                                            <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Initialized="SetLogin" Text="{Binding Source=Classes.Database,Path=Login}" Name="ProfileName"></TextBlock>
+                                            <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Initialized="SetLogin" x:Name="ProfileName"></TextBlock>
                                             <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">▼</TextBlock>
                                         </Grid>
 

@@ -10,8 +10,7 @@ namespace ZMQP.Classes
 {
     public class UserContext : DbContext
     {
-        public UserContext() : base("DbConnection")
-        { }
+        public UserContext() : base("DbConnection") { }
 
         public DbSet<User> Users { get; set; }
     }

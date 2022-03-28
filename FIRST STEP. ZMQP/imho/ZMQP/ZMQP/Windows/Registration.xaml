@@ -188,7 +188,7 @@
                             </PasswordBox.BorderBrush>
                         </PasswordBox>
 
-                        <Image Grid.Column="1" Source="/Resources/eyeNo.png" HorizontalAlignment="Right" Name="PassBoxButtonVisibilityDouble" MouseDown="PassBoxButtonVisibilityDouble_MouseDown" Margin="0,-10,0,0" Width="25" Height="25">
+                        <Image Grid.Column="1" Source="/Resources/eyeNo.png" HorizontalAlignment="Right" Name="PassBoxButtonVisibilityDouble" MouseDown="PassBoxButtonVisibility_MouseDown" Margin="0,-10,0,0" Width="25" Height="25">
                             <Image.Style>
                                 <Style TargetType="{x:Type Image}">
                                     <Setter Property="Source" Value="/Resources/minus.png"/>
