@@ -1,4 +1,4 @@
-﻿<Page x:Class="ZMQP.Pages.Friends"
+﻿<Page x:Class="ZMQP.Pages.RequestFriends"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ZMQP.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
-      Title="Friends">
+      Title="RequestFriends">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -29,8 +29,8 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Border Width="150" Height="30" Grid.Column="0" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand" MouseDown="ShowRequests" >
-                            <TextBlock Text="Запросы" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <Border Width="150" Height="30" Grid.Column="0" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand" MouseDown="ShowResponse">
+                            <TextBlock Text="Входящие" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                             <Border.Style>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
@@ -45,8 +45,8 @@
 
 
                         </Border>
-                        <Border Width="150" Height="30" Grid.Column="1" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand" MouseDown="FindFriends" >
-                            <TextBlock Text="Найти друга" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <Border Width="150" Height="30" Grid.Column="1" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand" MouseDown="ShowRequests" >
+                            <TextBlock Text="Исходящие" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                             <Border.Style>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
@@ -62,11 +62,12 @@
 
                         </Border>
                     </Grid>
-                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="QWEZXC">Друзья</TextBlock>
-                    
+                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="ResponseRequestsText"></TextBlock>
+
                 </Grid>
-                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="FriendsPlace" Loaded="LoadedFriends">
-                    
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="RequestPlace" Loaded="LoadResponse"/>
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="ResponsePlace" Visibility="Hidden" Loaded="LoadRequests">
+
                 </WrapPanel>
             </Grid>
         </ScrollViewer>

@@ -82,16 +82,35 @@ namespace ZMQP.Pages
             }
         }
 
-
-        private void AppendFriend(object sender, RoutedEventArgs e)
+        private bool isExistingRequest(int id, int idFriend)
         {
-            using (FriendshipContext db = new FriendshipContext())
+
+            using (RequestsContext db = new RequestsContext())
+            {
+                var friends = db.Requests;
+
+                foreach (var friend in friends)
+                {
+                    if (friend.IDUser == id && idFriend == friend.IDFriend)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        }
+
+
+        private void SendRequest(object sender, RoutedEventArgs e)
+        {
+            using (RequestsContext db = new RequestsContext())
             {
                 
-                Friendship friendship = new Friendship();
-                friendship.IDUser = Classes.Hndr.id;
-                friendship.IDFriend = GetFriendId((sender as Border).Name);
-                db.Friendships.Add(friendship);
+                Request request = new Request();
+                request.IDUser = Classes.Hndr.id;
+                request.IDFriend = GetFriendId((sender as Border).Name);
+                db.Requests.Add(request);
                 db.SaveChanges();
 
                 FindFriends ff = new FindFriends();
@@ -196,9 +215,14 @@ namespace ZMQP.Pages
                     actBorder.MouseDown += RemoveFriend;
                     actText.Text = "Удалить";
                 }
+                else if (isExistingRequest(Classes.Hndr.id, user.ID))
+                {
+                    actText.Text = "Отправлено";
+                }
+
                 else
                 {
-                    actBorder.MouseDown += AppendFriend;
+                    actBorder.MouseDown += SendRequest;
                     actText.Text = "Добавить";
                 }
                 actText.Style = (Style)FindResource("ButtonText");

@@ -183,5 +183,10 @@ namespace ZMQP.Pages
         {
             this.NavigationService.Navigate(new Pages.FindFriends());
         }
+
+        private void ShowRequests(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Pages.RequestFriends());
+        }
     }
 }
