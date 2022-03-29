@@ -19,8 +19,29 @@
                     <RowDefinition Height="50"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Foreground="#FF929292" FontSize="22" Margin="10">Друзья</TextBlock>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="QWEZXC">Друзья</TextBlock>
+                    <Border Width="150" Height="30" Grid.Column="1" Background="#00000000" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand" MouseDown="FindFriends" >
+                        <TextBlock Text="Найти друга" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <Border.Style>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderBrush" Value="Red"></Setter>
 
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+
+
+                    </Border>
+                </Grid>
                 <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="FriendsPlace" Loaded="LoadedFriends">
                     
                 </WrapPanel>

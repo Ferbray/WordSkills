@@ -69,14 +69,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Classes\User.cs" />
-    <Compile Include="Classes\Friends.cs" />
-    <Compile Include="Classes\UserHandler.cs" />
+    <Compile Include="Classes\Friendship.cs" />
+    <Compile Include="Classes\Games.cs" />
+    <Compile Include="Classes\Hndr.cs" />
+    <Compile Include="Classes\Users.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ApplicationGamePreview.xaml.cs">
       <DependentUpon>ApplicationGamePreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FindFriends.xaml.cs">
+      <DependentUpon>FindFriends.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Friends.xaml.cs">
       <DependentUpon>Friends.xaml</DependentUpon>
@@ -109,6 +113,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ApplicationGamePreview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FindFriends.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

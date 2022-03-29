@@ -49,7 +49,7 @@
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock VerticalAlignment="Center" Foreground="#FF8E8E8E" FontSize="24" Grid.Column="0" Initialized="ProfileNickName"></TextBlock>
-                                <TextBlock VerticalAlignment="Bottom" Foreground="#FF454545" FontSize="16" Grid.Column="1" FontWeight="Bold" Initialized="ProfileIDs"></TextBlock>
+                                <TextBlock  Foreground="#FF454545" FontSize="22" Grid.Column="1" VerticalAlignment="Center" FontWeight="Bold" Initialized="ProfileIDs"></TextBlock>
                             </Grid>
                             <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF00611C" FontSize="18">В сети</TextBlock>
                         </Grid>

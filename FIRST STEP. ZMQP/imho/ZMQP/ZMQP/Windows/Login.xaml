@@ -96,7 +96,7 @@
                             <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="#FF949494">Логин:</TextBlock>
-                        <TextBox x:Name="LoginBox" Grid.Column="1" Style="{StaticResource InputFormBox}">
+                        <TextBox Name="LoginBox" Grid.Column="1" Style="{StaticResource InputFormBox}">
                             <TextBox.BorderBrush>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#FF949494"/>
@@ -187,9 +187,9 @@
                     </Grid>
 
                 </Grid>
-                <Grid Grid.Row="4" HorizontalAlignment="Center">
-                    <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494">Нет аккаунта, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Зарегистрироваться</Hyperlink></TextBlock>
-                    <TextBlock x:Name="error_entry" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40"/>
+                <Grid Grid.Row="4" >
+                    <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494" HorizontalAlignment="Center">Нет аккаунта, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Зарегистрироваться</Hyperlink></TextBlock>
+                    <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,50" Visibility="Hidden" Name="IdentityError"></TextBlock>
                 </Grid>
             </Grid>
         </Grid>
