@@ -110,6 +110,7 @@ namespace ZMQP.Pages
                         //Начальный грид
                         Grid grid = new Grid
                         {
+
                             Background = new SolidColorBrush(Colors.Transparent),
                             Width = 250,
                             Height = 150,
