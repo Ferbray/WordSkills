@@ -210,7 +210,7 @@ namespace ZMQP.Windows
 
         private void HamburgerToolAdmin_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MainFrame.Content = new Pages.Library();
+            MainFrame.Content = new Pages.Admin();
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 

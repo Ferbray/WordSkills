@@ -177,3 +177,5 @@ C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\ob
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CopyComplete
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\FindFriends.g.cs
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\FindFriends.baml
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Admin.g.cs
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Admin.baml
