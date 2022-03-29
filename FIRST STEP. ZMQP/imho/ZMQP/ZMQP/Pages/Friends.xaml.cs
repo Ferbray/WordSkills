@@ -34,22 +34,78 @@ namespace ZMQP.Pages
 
                 foreach (var user in users)
                 {
-                    if (user.Id == Id)
+                    if (user.ID == Id)
                         return user.Login;
                 }
                 return null;
             }
         }
 
+        private void RemoveFriend(object sender, RoutedEventArgs e)
+        {
+            using (FriendshipContext db = new FriendshipContext())
+            {
+                var friends = db.Friendships;
+                foreach (var friend in friends)
+                {
+                    if (Classes.Hndr.id == friend.IDUser && GetFriendId((sender as Border).Name) == friend.IDFriend)
+                    {
+                        db.Friendships.Remove(friend);
+                    }
+                }
+                db.SaveChanges();
+                this.NavigationService.Navigate(new Pages.FindFriends());
+            }
+        }
+
+        private int GetFriendId(string login)
+        {
+            using (UserContext db = new UserContext())
+            {
+
+                var users = db.Users;
+                foreach (var user in users)
+                {
+                    if (user.ID == int.Parse(login.Remove(0, 2)))
+                    {
+                        return user.ID;
+                    }
+                }
+            }
+
+            return 0;
+        }
+
+        private bool isExistingFriendship(int id, int idFriend)
+        {
+
+            using (FriendshipContext db = new FriendshipContext())
+            {
+                Friendship friendship = new Friendship();
+                friendship.IDUser = id;
+                var friends = db.Friendships;
+
+                foreach (var friend in friends)
+                {
+                    if (idFriend == friend.IDFriend)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        }
+
         private void LoadedFriends(object sender, RoutedEventArgs e)
         {
-            using (FriendsContext db = new FriendsContext())
+            using (FriendshipContext db = new FriendshipContext())
             {
-                var users = db.UserFriends;
+                var users = db.Friendships;
 
                 foreach (var user in users)
                 {
-                    if (user.UserID == Classes.UserHandler.ID)
+                    if (user.IDUser == Classes.Hndr.id)
                     {
                         //Начальный грид
                         Grid grid = new Grid
@@ -75,7 +131,7 @@ namespace ZMQP.Pages
                             FontFamily = new FontFamily("Cascadia Mono"),
                             TextWrapping = TextWrapping.Wrap,
                             Style = (Style)FindResource("MenuCategory"),
-                            Text = GetName(user.UserID)
+                            Text = GetName(user.IDUser)
                         };
 
                         //колонки для грида
@@ -135,7 +191,7 @@ namespace ZMQP.Pages
 
                         TextBlock actText = new TextBlock
                         {
-                            Text = "Действия",
+                            Text = isExistingFriendship(Classes.Hndr.id, user.IDUser) ? "Действия" : "Удалить",
                             Style = (Style)FindResource("ButtonText")
                         };
                         actBorder.Child = actText;
