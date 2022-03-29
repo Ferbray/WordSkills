@@ -12,9 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Drawing;
-using System.Windows.Interop;
-using System.Windows.Threading;
 
 namespace ZMQP.Pages
 {
@@ -23,23 +20,20 @@ namespace ZMQP.Pages
     /// </summary>
     public partial class Profile : Page
     {
-        Bitmap _bitmap;
-        BitmapSource _source;
         public Profile()
         {
             InitializeComponent();
-            Loaded += new RoutedEventHandler(Page_Loaded);
         }
 
 
         private void ProfileNickName(object sender, EventArgs e)
         {
-           /*(sender as TextBlock).Text = Classes.DataBase.Login;*/
+           (sender as TextBlock).Text = Classes.Hndr.login;
         }
 
         private void ProfileIDs(object sender, EventArgs e)
         {
-            /*(sender as TextBlock).Text = "#" + Classes.DataBase.ID.ToString();*/
+           (sender as TextBlock).Text = "#" + Classes.Hndr.id.ToString();
         }
         private void GameProfileBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -65,46 +59,6 @@ namespace ZMQP.Pages
         {
 
 
-        }
-
-        private void WrapPanel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            _source = GetSource();
-            GifDanilprofile.Source = _source;
-            ImageAnimator.Animate(_bitmap, OnFrameChanged);
-        }
-
-        private void OnFrameChanged(object sender, EventArgs e)
-        {
-            Dispatcher.BeginInvoke(DispatcherPriority.Normal,
-                                    new Action(FrameUpdatedCallback));
-        }
-
-        private void FrameUpdatedCallback()
-        {
-            ImageAnimator.UpdateFrames();
-            if (_source != null)
-                _source.Freeze();
-            _source = GetSource();
-            GifDanilprofile.Source = _source;
-            InvalidateVisual();
-        }
-
-        private BitmapSource GetSource()
-        {
-            if (_bitmap == null)
-            {
-                _bitmap = new Bitmap("D:/MyFiles/GitHub/FIRST STEP. ZMQP/imho/ZMQP/ZMQP/Resources/gifdaniil.gif");
-            }
-            IntPtr handle = IntPtr.Zero;
-            handle = _bitmap.GetHbitmap();
-            return Imaging.CreateBitmapSourceFromHBitmap(
-                    handle, IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
         }
     }
 }

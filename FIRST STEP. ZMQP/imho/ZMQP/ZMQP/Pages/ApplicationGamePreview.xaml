@@ -20,24 +20,24 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
-                <TextBlock x:Name="NameGame" Foreground="#FF8C8C8C" FontSize="24" Grid.Row="0">Grand Theft Auto 5</TextBlock>
-                    <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Image Source="/Resources/DefaultGameBg.png"></Image>
+                <TextBlock Foreground="#FF8C8C8C" FontSize="24" FontFamily="Cascadia Mono" Grid.Row="0" Loaded="GameTitleLoaded"></TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" HorizontalAlignment="Left" Height="350" Loaded="PicturePreviewLoaded" >
+
+                    </Image>
                     <Grid Grid.Column="1" Height="200" Margin="10">
                         <ScrollViewer>
-                            <TextBlock TextWrapping="Wrap" Foreground="#FF777777" FontSize="16">
-                                
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam non quam lacus suspendisse faucibus. Eget nullam non nisi est sit. At tempor commodo ullamcorper a lacus. At volutpat diam ut venenatis tellus in metus. Massa id neque aliquam vestibulum morbi. Ultrices sagittis orci a scelerisque purus semper eget duis at. Vitae justo eget magna fermentum iaculis eu non. Risus ultricies tristique nulla aliquet enim tortor at auctor. Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Lorem sed risus ultricies tristique. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Senectus et netus et malesuada fames ac turpis. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Et malesuada fames ac turpis. At augue eget arcu dictum varius duis at consectetur. In nibh mauris cursus mattis molestie a iaculis. At tellus at urna condimentum mattis pellentesque id nibh tortor. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit.
-                                
+                            <TextBlock TextWrapping="Wrap" Foreground="#FF777777" FontFamily="Cascadia Mono" FontSize="16" Loaded="DescriptionLoaded">
+                             
                             </TextBlock>
                         </ScrollViewer>
                     </Grid>
                 </Grid>
-                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20" MouseDown="Border_MouseDown">
+                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20">
                     <TextBlock Text="Играть" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"></TextBlock>
                     <Border.Style>
                         <Style TargetType="{x:Type Border}">
@@ -50,6 +50,8 @@
                             </Style.Triggers>
                         </Style>
                     </Border.Style>
+
+
                 </Border>
             </Grid>
         </Grid>
