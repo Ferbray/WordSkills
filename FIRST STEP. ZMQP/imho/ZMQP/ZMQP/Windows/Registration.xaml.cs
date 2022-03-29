@@ -178,7 +178,7 @@ namespace ZMQP.Windows
                         Login = Login.Text,
                         Email = Email.Text,
                         Password = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password,
-                        IsAdmin = 0
+                        isAdmin = 0
                     };
                     db.Users.Add(user1);
                     db.SaveChanges();

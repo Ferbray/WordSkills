@@ -140,7 +140,7 @@ namespace ZMQP.Windows
                 {
                     if (u.Login == LoginBox.Text)
                     {
-                        id = u.Id;
+                        id = u.ID;
                         break;
                     }
                 }
@@ -157,8 +157,8 @@ namespace ZMQP.Windows
             {
                 using (UserContext db = new UserContext())
                 {
-                    Classes.UserHandler.ID = GetID();
-                    Classes.UserHandler.Login = LoginBox.Text;
+                    Classes.Hndr.id = GetID();
+                    Classes.Hndr.login = LoginBox.Text;
                     Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
                     this.Close();
                     at.Show();
