@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -110,33 +112,113 @@ namespace ZMQP.Windows
             }
         }
 
-        private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
+        private bool CheckExist()
         {
-
+            bool isExist = false;
 
             using (UserContext db = new UserContext())
             {
-                bool isExist = false;
-                bool isRight = true;
+                
                 var users = db.Users.ToList();
 
                 foreach (var user in users)
                 {
-                    if (user.Login == Login.Text && user.Email == Email.Text)
+                    if (user.Login == Login.Text || user.Email == Email.Text)
                     {
                         isExist = true;
                         break;
                     }
                 }
 
-                if (Login.Text.Length < 5 || Email.Text.Length < 5 || PassBoxNoVisibility.Password.Length < 5)
-                {
-                    isRight = false;
-                }
+            }
 
+            return isExist;
+        }
+
+        private bool CheckLength()
+        {
+            bool isRight = true;
+
+            if (Login.Text.Length < 5 || Email.Text.Length < 5 || PassBoxNoVisibility.Password.Length < 5 || PassBoxVisibility.Text.Length < 5)
+            {
+                isRight = false;
+            }
+
+            return isRight;
+        }
+
+        private bool IdenticalPassword()
+        {
+            bool isIdentity = false;
+
+            if (PassBoxNoVisibility.Visibility == Visibility.Visible & PassBoxNoVisibilityDouble.Visibility == Visibility.Visible)
+            {
+                if (PassBoxNoVisibility.Password == PassBoxNoVisibilityDouble.Password) isIdentity = true;
+            }
+
+            else if (PassBoxNoVisibility.Visibility == Visibility.Visible & PassBoxNoVisibilityDouble.Visibility == Visibility.Collapsed)
+            {
+                if (PassBoxNoVisibility.Password == PassBoxVisibilityDouble.Text) isIdentity = true;
+            }
+
+            else if (PassBoxNoVisibility.Visibility == Visibility.Collapsed & PassBoxNoVisibilityDouble.Visibility == Visibility.Visible)
+            {
+                if (PassBoxVisibility.Text == PassBoxNoVisibilityDouble.Password) isIdentity = true;
+            }
+
+            else if(PassBoxNoVisibility.Visibility == Visibility.Collapsed & PassBoxNoVisibilityDouble.Visibility == Visibility.Collapsed)
+            {
+                if (PassBoxVisibility.Text == PassBoxVisibilityDouble.Text) isIdentity = true;
+            }
+
+            return isIdentity;
+        }
+
+        private bool CheckEmail(string email)
+        {
+            bool isTrue = true;
+
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                isTrue = false;
+            }
+
+            if (!email.Contains("@") || email.IndexOf("@") >= email.Length-1)
+            {
+                isTrue = false;
+            }
+
+            return isTrue;
+        }
+
+
+        private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
+        {
+
+
+            using (UserContext db = new UserContext())
+            {
+                bool isExist = CheckExist();
+                bool isRight = CheckLength();
+                var users = db.Users.ToList();
+
+               
                 if (!isRight)
                 {
-                    
+                    IdentityError.Text = "Все поля должны быть более 5 символов";
+                    IdentityError.Visibility = Visibility.Visible;
+                }
+
+                else if (!IdenticalPassword())
+                {
+                    IdentityError.Text = "Пароли не совпадают";
+                    IdentityError.Visibility = Visibility.Visible;
+                }
+
+                else if (!CheckEmail(Email.Text))
+                {
+                    IdentityError.Text = "Неверный ввод Email";
+                    IdentityError.Visibility = Visibility.Visible;
                 }
 
                 else
@@ -160,7 +242,8 @@ namespace ZMQP.Windows
 
                     else
                     {
-
+                        IdentityError.Text = "Такой аккаунт существует";
+                        IdentityError.Visibility = Visibility.Visible;
                     }
                 }
                 

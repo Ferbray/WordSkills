@@ -9,6 +9,7 @@ namespace ZMQP.Classes
     public class Hndr
     {
         public static string title;
+        public static string login;
         public static int id;
 
     }

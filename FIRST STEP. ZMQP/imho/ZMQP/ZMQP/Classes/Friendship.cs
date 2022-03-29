@@ -19,7 +19,7 @@ namespace ZMQP.Classes
 
     public class Friendship
     {
-        [Key]public int IDFriendShip { get; set; }
+        [Key] public int IDFriendship { get; set; }
         public int IDUser { get; set; }
         public int IDFriend { get; set; }
     }

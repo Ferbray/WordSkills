@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Core;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,13 +16,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ZMQP.Classes;
-
+using ZMQP.Windows;
+using System.Data.Entity.Infrastructure;
 
 namespace ZMQP.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для FindFriends.xaml
-    /// </summary>
+/// <summary>
+/// Логика взаимодействия для FindFriends.xaml
+/// </summary>
     public partial class FindFriends : Page
     {
         public FindFriends()
@@ -39,17 +43,83 @@ namespace ZMQP.Pages
             }
         }
 
+        private int GetFriendId(string login)
+        {
+            using (UserContext db = new UserContext())
+            {
+
+                var users = db.Users;
+                foreach (var user in users)
+{
+                    if (user.ID == int.Parse(login.Remove(0, 2)))
+                    {
+                        return user.ID;
+                    }
+                }
+            }
+
+            return 0;
+        }
+
+        private bool isExistingFriendship(int id, int idFriend)
+        {
+           
+            using (FriendshipContext db = new FriendshipContext())
+            {
+                Friendship friendship = new Friendship();
+                friendship.IDUser = id;
+                var friends = db.Friendships;
+
+                foreach (var friend in friends)
+                {
+                    if (idFriend == friend.IDFriend)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        }
+
+
         private void AppendFriend(object sender, RoutedEventArgs e)
         {
-           /* Classes.DataBase database = new Classes.DataBase();
-            database.openConnection();
-            string id = (sender as Border).Name;
-            database.AddFriend(id.Remove(0,2));*/
+            using (FriendshipContext db = new FriendshipContext())
+            {
+                
+                Friendship friendship = new Friendship();
+                friendship.IDUser = Classes.Hndr.id;
+                friendship.IDFriend = GetFriendId((sender as Border).Name);
+                db.Friendships.Add(friendship);
+                db.SaveChanges();
+
+                FindFriends ff = new FindFriends();
+                this.NavigationService.Navigate(new Pages.FindFriends());
+
+            }
+        }
+
+        private void RemoveFriend(object sender, RoutedEventArgs e)
+        {
+            using (FriendshipContext db = new FriendshipContext())
+            {
+                var friends = db.Friendships;
+                foreach (var friend in friends)
+                {
+                    if (Classes.Hndr.id == friend.IDUser && GetFriendId((sender as Border).Name) == friend.IDFriend)
+                    {
+                        db.Friendships.Remove(friend);
+                    }
+                }
+                db.SaveChanges();
+                this.NavigationService.Navigate(new Pages.FindFriends());
+            }
         }
         private void LoadedFriends(object sender, RoutedEventArgs e)
         {
             UserContext db = new UserContext();
-            var users = db.Users.ToList();
+            var users = db.Users;
             foreach (var user in users)
             {
                 //Начальный грид
@@ -114,14 +184,23 @@ namespace ZMQP.Pages
                 messText.Style = (Style)FindResource("ButtonText");
                 messBorder.Child = messText;
 
-
                 Border actBorder = new Border();
                 actBorder.Style = (Style)FindResource("ButtonStyle");
                 actBorder.Name = "ID" + user.ID;
-                actBorder.MouseDown += AppendFriend;
+                
+                
 
                 TextBlock actText = new TextBlock();
-                actText.Text = "Добавить";
+                if (isExistingFriendship(Classes.Hndr.id, user.ID))
+                {
+                    actBorder.MouseDown += RemoveFriend;
+                    actText.Text = "Удалить";
+                }
+                else
+                {
+                    actBorder.MouseDown += AppendFriend;
+                    actText.Text = "Добавить";
+                }
                 actText.Style = (Style)FindResource("ButtonText");
                 actBorder.Child = actText;
 

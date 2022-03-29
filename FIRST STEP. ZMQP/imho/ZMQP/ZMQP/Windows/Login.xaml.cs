@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZMQP.Classes;
 
 namespace ZMQP.Windows
 {
@@ -79,29 +80,87 @@ namespace ZMQP.Windows
             }
         }
 
+        private bool CheckLength()
+        {
+            bool isRight = true;
+            string pass = PassBoxNoVisibility.Password;
+
+            if (LoginBox.Text.Length < 5 || pass.Length < 5)
+            {
+                isRight = false;
+            }
+
+            return isRight;
+        }
+
+        private bool CheckExist()
+        {
+            bool isExist = false;
+            string pass = PassBoxNoVisibility.Password;
+
+            using (UserContext db = new UserContext())
+            {
+
+                var users = db.Users.ToList();
+
+                foreach (var user in users)
+                {
+                    if ((user.Login == LoginBox.Text && pass == user.Password))
+                    {
+                        isExist = true;
+                        break;
+                    }
+                }
+
+            }
+
+            return isExist;
+        }
+
+        private int GetId()
+        {
+            int id = 0;
+            using (UserContext db = new UserContext())
+            {
+
+                var users = db.Users.ToList();
+
+                foreach (var user in users)
+                {
+                    if ((user.Login == LoginBox.Text))
+                    {
+                        id = user.ID;
+                        break;
+                    }
+                }
+
+            }
+            return id;
+        }
+
         private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            if (!CheckExist())
+            {
+                IdentityError.Text = "Неверный логин или пароль!";
+                IdentityError.Visibility = Visibility.Visible;
+            }
 
-            /* Classes.DataBase database = new Classes.DataBase();
+            if (!CheckLength())
+            {
+                IdentityError.Text = "Длина логина и пароля должна быть более 5 символов!";
+                IdentityError.Visibility = Visibility.Visible;
+            }
+            if (CheckExist() && CheckLength())
+            {
 
-             database.openConnection();
-             if (database.VerificationUser(LoginBox.Text, PassBoxNoVisibility.Password))
-             {
-                 Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-                 *//*database.GoOnline();*//*
-                 this.Close();
-                 at.Show();
-             }
-             else
-             {
-                 ErrorText.Visibility = Visibility.Visible;
-             }
+                Classes.Hndr.id = GetId();
+                Classes.Hndr.login = LoginBox.Text;
+                Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                this.Close();
+                at.Show();
 
-             database.closeConnection();*/
-
-            Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-            this.Close();
-            at.Show();
+            }
         }
 
 

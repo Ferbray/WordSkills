@@ -205,10 +205,9 @@ namespace ZMQP.Windows
         }
 
 
-        private void SetLogin(object sender, EventArgs e)
+        private void SetName(object sender, EventArgs e)
         {
-            ProfileName.Text = "zmqp";
+            (sender as TextBlock).Text = Classes.Hndr.login;
         }
-
     }
 }
