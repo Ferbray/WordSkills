@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
 using System.Threading;
+using ZMQP.Classes;
 
 namespace ZMQP.Windows
 {
@@ -207,5 +208,46 @@ namespace ZMQP.Windows
             ProfileName.Text = Classes.Hndr.login;
         }
 
+        private void HamburgerToolAdmin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new Pages.Library();
+            HambMenuV2.Visibility = Visibility.Hidden;
+        }
+
+        private void HambMenuV2_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+
+                foreach (var user in users)
+                {
+                    if (user.ID == Classes.Hndr.id & user.isAdmin == 1)
+                    {
+                        HambMenuV2_2.RowDefinitions.Add(new RowDefinition());
+                        Border border = new Border
+                        {
+                            BorderBrush = (SolidColorBrush)new BrushConverter().ConvertFrom("#FF3E3E3E"),
+                            BorderThickness = new Thickness(0, 0, 0, 3),
+                        };
+
+                        setting_border.BorderThickness = new Thickness(0, 0, 0, 1);
+
+                        TextBlock admin_button = new TextBlock
+                        {
+                            Text = "Админка",
+                            FontSize = 14,
+                            VerticalAlignment = VerticalAlignment.Center,
+                            HorizontalAlignment = HorizontalAlignment.Center,
+                            Style = (Style)FindResource("MenuCategory"),
+                        };
+                        border.Child = admin_button;
+                        border.MouseDown += HamburgerToolAdmin_MouseDown;
+                        HambMenuV2_2.Children.Add(border);
+                        Grid.SetRow(border, 5);
+                    }
+                }
+            }
+        }
     }
 }
