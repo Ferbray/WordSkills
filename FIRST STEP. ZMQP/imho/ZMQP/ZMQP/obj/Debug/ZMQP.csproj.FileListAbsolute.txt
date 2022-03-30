@@ -179,3 +179,7 @@ D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\FindFriends.g.
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\FindFriends.baml
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Admin.g.cs
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Admin.baml
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\BanUser.g.cs
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MuteUser.g.cs
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\BanUser.baml
+D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MuteUser.baml

@@ -23,8 +23,9 @@ namespace ZMQP.Classes
         public string Email { get; set; }
         public string Password { get; set; }
         public int isAdmin { get; set; }
-
         public int isBan { get; set; }
         public int isMute { get; set; }
+        public string Photo { get; set; }
+        public string Description { get; set; }
     }
 }

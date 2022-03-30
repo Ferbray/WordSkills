@@ -17,11 +17,11 @@ using ZMQP.Classes;
 namespace ZMQP.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для BanUser.xaml
+    /// Логика взаимодействия для MuteUser.xaml
     /// </summary>
-    public partial class BanUser : Page
+    public partial class MuteUser : Page
     {
-        public BanUser()
+        public MuteUser()
         {
             InitializeComponent();
         }
@@ -59,7 +59,7 @@ namespace ZMQP.Pages
             using (UserContext db = new UserContext())
             {
                 var users = db.Users;
-
+                
                 foreach (var user in users)
                 {
                     if (check_field &&
@@ -69,23 +69,23 @@ namespace ZMQP.Pages
                     {
                         if (check_isMute)
                         {
-                            error_find.Text = user.isBan == 1 ? "Пользователь уже в бане" : "";
-                            user.isBan = 1;
+                            error_find.Text = user.isMute == 1 ? "Пользователь уже в муте" : "";
+                            user.isMute = 1;
                         }
 
                         else
                         {
-                            error_find.Text = user.isBan == 1 ? "" : "Пользователь не в бане";
-                            user.isBan = 0;
+                            error_find.Text = user.isMute == 1 ? "" : "Пользователь не в муте";
+                            user.isMute = 0;
                         }
+                        db.SaveChanges();
                     }
                 }
                 error_find.Text = "Такого пользователя не существует\nВозможно вы ошиблись";
-                db.SaveChanges();
             }
         }
 
-        private void BanUser_MouseDown(object sender, MouseButtonEventArgs e)
+        private void MuteUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
             bool check_field = CheckIsAdmin(true);
             check_field = CheckErrorField(true);
@@ -95,7 +95,7 @@ namespace ZMQP.Pages
             }
         }
 
-        private void UnBanUser_MouseDown(object sender, MouseButtonEventArgs e)
+        private void UnMuteUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
             bool check_field = CheckIsAdmin(true);
             check_field = CheckErrorField(true);

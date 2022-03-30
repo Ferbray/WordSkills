@@ -28,12 +28,36 @@ namespace ZMQP.Pages
 
         private void BanUser(object sender, MouseButtonEventArgs e)
         {
-            this.NavigationService.Navigate(new Pages.BanUser());
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+
+                foreach (var user in users)
+                {
+                    if (user.ID == Classes.Hndr.id & user.isAdmin == 1)
+                    {
+                        this.NavigationService.Navigate(new Pages.BanUser());
+                        break;
+                    }
+                }
+            }
         }
 
         private void MuteUser(object sender, MouseButtonEventArgs e)
         {
-            this.NavigationService.Navigate(new Pages.MuteUser());
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+
+                foreach (var user in users)
+                {
+                    if (user.ID == Classes.Hndr.id & user.isAdmin == 1)
+                    {
+                        this.NavigationService.Navigate(new Pages.MuteUser());
+                        break;
+                    }
+                }
+            }
         }
     }
 }

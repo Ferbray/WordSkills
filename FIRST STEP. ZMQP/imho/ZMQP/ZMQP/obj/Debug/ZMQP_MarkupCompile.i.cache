@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\App.xaml
-131135562083
+141375232011
 
-221429902567
+23264154435
 17-417721689
-MainWindow.xaml;Pages\Admin.xaml;Pages\ApplicationGamePreview.xaml;Pages\BanUser.xaml;Pages\FindFriends.xaml;Pages\Friends.xaml;Pages\Library.xaml;Pages\MainPage.xaml;Pages\Profile.xaml;Pages\Settings.xaml;Windows\ApplicationTemplate.xaml;Windows\Login.xaml;Windows\Registration.xaml;
+MainWindow.xaml;Pages\Admin.xaml;Pages\ApplicationGamePreview.xaml;Pages\BanUser.xaml;Pages\FindFriends.xaml;Pages\Friends.xaml;Pages\Library.xaml;Pages\MainPage.xaml;Pages\MuteUser.xaml;Pages\Profile.xaml;Pages\Settings.xaml;Windows\ApplicationTemplate.xaml;Windows\Login.xaml;Windows\Registration.xaml;
 
 True
 
