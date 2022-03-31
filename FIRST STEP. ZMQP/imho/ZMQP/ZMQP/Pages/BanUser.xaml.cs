@@ -36,10 +36,12 @@ namespace ZMQP.Pages
                 {
                     if (check_field & user.ID == Classes.Hndr.id & user.isAdmin == 1)
                     {
+                        error_find.Text = "";
                         return true;
                     }
                 }
             }
+            error_find.Text = "Вы не являетесь админом";
             return false;
         }
 
@@ -54,7 +56,7 @@ namespace ZMQP.Pages
             return false;
         }
 
-        private void CheckUserField(bool check_field, bool check_isMute)
+        private Tuple<int, int, int> CheckUserField(bool check_field)
         {
             using (UserContext db = new UserContext())
             {
@@ -67,42 +69,67 @@ namespace ZMQP.Pages
                     FindBox.Text == user.Login ||
                     FindBox.Text == user.Email))
                     {
-                        if (check_isMute)
-                        {
-                            error_find.Text = user.isBan == 1 ? "Пользователь уже в бане" : "";
-                            user.isBan = 1;
-                        }
-
-                        else
-                        {
-                            error_find.Text = user.isBan == 1 ? "" : "Пользователь не в бане";
-                            user.isBan = 0;
-                        }
+                        error_find.Text = "";
+                        return Tuple.Create(user.ID, user.isAdmin, user.isBan);
                     }
                 }
-                error_find.Text = "Такого пользователя не существует\nВозможно вы ошиблись";
+                error_find.Text = check_field ? "Такого пользователя не существует\nВозможно вы ошиблись" : error_find.Text;
+                return Tuple.Create(-1, -1, -1);
+            }
+        }
+
+        private void UnAndBanUser(int id, bool check_ban)
+        {
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+
+                foreach (var user in users)
+                {
+                    if (user.ID == id)
+                    {
+                        error_find.Text = check_ban ? $"Вы забанили {FindBox.Text}" : $"Вы разбанили {FindBox.Text}";
+                        error_find.Foreground = new SolidColorBrush(Colors.Green);
+                        user.isBan = check_ban ? 1 : 0;
+                        break;
+                    }
+                }
                 db.SaveChanges();
             }
         }
 
         private void BanUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            error_find.Foreground = new SolidColorBrush(Colors.Red);
             bool check_field = CheckIsAdmin(true);
             check_field = CheckErrorField(true);
-            if (check_field)
-            {
-                CheckUserField(check_field, true);
-            }
+            (int id, int isadmin, int isban) = CheckUserField(check_field);
+
+            if (id >= 0 && isadmin == 0 && isban == 0)
+                UnAndBanUser(id, true);
+
+            else if (isadmin > 0)
+                error_find.Text = "Вы пытаетесь забанить админа";
+
+            else if (isban == 1)
+                error_find.Text = "Пользователь в бане";
         }
 
         private void UnBanUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            error_find.Foreground = new SolidColorBrush(Colors.Red);
             bool check_field = CheckIsAdmin(true);
             check_field = CheckErrorField(true);
-            if (check_field)
-            {
-                CheckUserField(check_field, true);
-            }
+            (int id, int isadmin, int isban) = CheckUserField(check_field);
+
+            if (id >= 0 && isadmin == 0 && isban == 1)
+                UnAndBanUser(id, false);
+
+            else if (isadmin > 0)
+                error_find.Text = "Вы пытаетесь разбанить админа";
+
+            else if (isban == 0)
+                error_find.Text = "Пользователь не в бане";
         }
 
         private void FindUser_MouseDown(object sender, MouseButtonEventArgs e)

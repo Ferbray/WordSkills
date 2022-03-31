@@ -36,10 +36,12 @@ namespace ZMQP.Pages
                 {
                     if (check_field & user.ID == Classes.Hndr.id & user.isAdmin == 1)
                     {
+                        error_find.Text = "";
                         return true;
                     }
                 }
             }
+            error_find.Text = "Вы не являетесь админом";
             return false;
         }
 
@@ -54,12 +56,12 @@ namespace ZMQP.Pages
             return false;
         }
 
-        private void CheckUserField(bool check_field, bool check_isMute)
+        private Tuple<int, int, int> CheckUserField(bool check_field)
         {
             using (UserContext db = new UserContext())
             {
                 var users = db.Users;
-                
+
                 foreach (var user in users)
                 {
                     if (check_field &&
@@ -67,42 +69,67 @@ namespace ZMQP.Pages
                     FindBox.Text == user.Login ||
                     FindBox.Text == user.Email))
                     {
-                        if (check_isMute)
-                        {
-                            error_find.Text = user.isMute == 1 ? "Пользователь уже в муте" : "";
-                            user.isMute = 1;
-                        }
-
-                        else
-                        {
-                            error_find.Text = user.isMute == 1 ? "" : "Пользователь не в муте";
-                            user.isMute = 0;
-                        }
-                        db.SaveChanges();
+                        error_find.Text = "";
+                        return Tuple.Create(user.ID, user.isAdmin, user.isMute);
                     }
                 }
-                error_find.Text = "Такого пользователя не существует\nВозможно вы ошиблись";
+                error_find.Text = check_field ? "Такого пользователя не существует\nВозможно вы ошиблись" : error_find.Text;
+                return Tuple.Create(-1, -1, -1);
+            }
+        }
+
+        private void UnAndMuteUser(int id, bool check_mute)
+        {
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+
+                foreach (var user in users)
+                {
+                    if (user.ID == id)
+                    {
+                        error_find.Text = check_mute ? $"Вы замутили {FindBox.Text}": $"Вы размутили {FindBox.Text}";
+                        error_find.Foreground = new SolidColorBrush(Colors.Green);
+                        user.isMute = check_mute ? 1 : 0;
+                        break;
+                    }
+                }
+                db.SaveChanges();
             }
         }
 
         private void MuteUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            error_find.Foreground = new SolidColorBrush(Colors.Red);
             bool check_field = CheckIsAdmin(true);
             check_field = CheckErrorField(true);
-            if (check_field)
-            {
-                CheckUserField(check_field, true);
-            }
+            (int id, int isadmin, int ismute) = CheckUserField(check_field);
+
+            if (id >= 0 && isadmin == 0 && ismute == 0)
+                UnAndMuteUser(id, true);
+
+            else if (isadmin > 0)
+                error_find.Text = "Вы пытаетесь замутить админа";
+
+            else if (ismute == 1)
+                error_find.Text = "Пользователь в муте";
         }
 
         private void UnMuteUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            error_find.Foreground = new SolidColorBrush(Colors.Red);
             bool check_field = CheckIsAdmin(true);
             check_field = CheckErrorField(true);
-            if (check_field)
-            {
-                CheckUserField(check_field, true);
-            }
+            (int id, int isadmin, int ismute) = CheckUserField(check_field);
+
+            if (id >= 0 && isadmin == 0 && ismute == 1)
+                UnAndMuteUser(id, false);
+
+            else if (isadmin > 0)
+                error_find.Text = "Вы пытаетесь размутить админа";
+
+            else if (ismute == 0)
+                error_find.Text = "Пользователь не в муте";
         }
 
         private void FindUser_MouseDown(object sender, MouseButtonEventArgs e)
