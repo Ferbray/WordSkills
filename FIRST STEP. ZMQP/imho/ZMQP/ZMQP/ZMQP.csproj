@@ -294,6 +294,9 @@
   <ItemGroup>
     <Resource Include="Resources\gifdaniil.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\putin.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

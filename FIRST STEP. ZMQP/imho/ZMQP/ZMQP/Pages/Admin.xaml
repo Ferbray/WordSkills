@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock Foreground="#FF929292" FontSize="28" Grid.Column="0" Margin="135,10,0,0">Админка</TextBlock>
             <Border Width="150" Height="30" Grid.Column="0" Background="#00000000" BorderThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left" Cursor="Hand" MouseDown="BanUser" Margin="120,60,0,0">
-                <TextBlock Text="Забанить нигера" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Забанить" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                 <Border.Style>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>
@@ -33,7 +33,7 @@
                 </Border.Style>
             </Border>
             <Border Width="150" Height="30" Grid.Column="0" Background="#00000000" BorderThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left" Cursor="Hand" MouseDown="MuteUser" Margin="120,100,0,0">
-                <TextBlock Text="Замутить нигера" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Замутить" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                 <Border.Style>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>

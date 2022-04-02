@@ -108,7 +108,7 @@ namespace ZMQP.Windows
 
         }
 
-        private bool CheckIndenticalUser(bool check_field)
+        private Tuple<int, string,int> CheckIndenticalUser(bool check_field)
         {
             using (UserContext db = new UserContext())
             {
@@ -116,53 +116,40 @@ namespace ZMQP.Windows
                 foreach (User u in users)
                 {
                     if (
-                        u.Login == LoginBox.Text && 
+                        (LoginBox.Text == u.ID.ToString() || LoginBox.Text == u.Login || LoginBox.Text == u.Email) && 
                         (PassBoxVisibility.Text == u.Password || PassBoxNoVisibility.Password == u.Password) && 
                         check_field)
                     {
                         error_entry.Text = "";
-                        return true;
+                        return Tuple.Create(u.ID, u.Login, u.isBan);
                     }
                 }
                 if (check_field)
                     error_entry.Text = "Не верный логин или пароль";
-                return false;
+                return Tuple.Create(-1, "", -1);
             }
-        }
-
-        private int GetID()
-        {
-            int id = 0;
-            using (UserContext db = new UserContext())
-            {
-                var users = db.Users;
-                foreach (User u in users)
-                {
-                    if (u.Login == LoginBox.Text)
-                    {
-                        id = u.ID;
-                        break;
-                    }
-                }
-            }
-            return id;
         }
 
         private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
         {
             bool check_field = CheckLengthField(true);
-            check_field = CheckIndenticalUser(check_field);
+            (int id, string login, int isBan) = CheckIndenticalUser(check_field);
 
-            if (check_field == true)
+            if (id > 0 & login.Length > 0 & isBan == 0)
             {
                 using (UserContext db = new UserContext())
                 {
-                    Classes.Hndr.id = GetID();
-                    Classes.Hndr.login = LoginBox.Text;
+                    Classes.Hndr.id = id;
+                    Classes.Hndr.login = login;
                     Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
                     this.Close();
                     at.Show();
                 }
+            }
+
+            else if(isBan == 1)
+            {
+                error_entry.Text = "Вы забанены на проекте ZMQP";
             }
         }
     }

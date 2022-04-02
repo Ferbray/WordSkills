@@ -189,7 +189,7 @@
                 </Grid>
                 <Grid Grid.Row="4" >
                     <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494" HorizontalAlignment="Center">Нет аккаунта, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Зарегистрироваться</Hyperlink></TextBlock>
-                    <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,50" Visibility="Hidden" Name="error_entry"></TextBlock>
+                    <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,50" Visibility="Visible" Name="error_entry"></TextBlock>
                 </Grid>
             </Grid>
         </Grid>

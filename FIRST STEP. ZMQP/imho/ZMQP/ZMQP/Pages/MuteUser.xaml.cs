@@ -105,7 +105,7 @@ namespace ZMQP.Pages
             check_field = CheckErrorField(true);
             (int id, int isadmin, int ismute) = CheckUserField(check_field);
 
-            if (id >= 0 && isadmin == 0 && ismute == 0)
+            if (id > 0 && isadmin == 0 && ismute == 0)
                 UnAndMuteUser(id, true);
 
             else if (isadmin > 0)
@@ -122,7 +122,7 @@ namespace ZMQP.Pages
             check_field = CheckErrorField(true);
             (int id, int isadmin, int ismute) = CheckUserField(check_field);
 
-            if (id >= 0 && isadmin == 0 && ismute == 1)
+            if (id > 0 && isadmin == 0 && ismute == 1)
                 UnAndMuteUser(id, false);
 
             else if (isadmin > 0)
@@ -134,18 +134,6 @@ namespace ZMQP.Pages
 
         private void FindUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            using (UserContext db = new UserContext())
-            {
-                var users = db.Users;
-
-                foreach (var user in users)
-                {
-                    if (user.ID == Classes.Hndr.id & user.isAdmin == 1)
-                    {
-
-                    }
-                }
-            }
         }
 
         private void FindBox_GotFocus(object sender, RoutedEventArgs e)
