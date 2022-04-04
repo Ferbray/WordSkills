@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ZMQP.Classes;
+using ZMQP.Windows;
 
 namespace ZMQP.Pages
 {
@@ -26,65 +28,27 @@ namespace ZMQP.Pages
             InitializeComponent();
         }
 
-        private string GetNameFriend(int id)
-        {
-            UserContext uc = new UserContext();
-            var users = uc.Users.ToList();
-            foreach (var user in users)
-            {
-                if (user.ID == id)
-                {
-                    return user.Login;
-                }
-            }
-
-            return "Unknown";
-        }
-
-        private int GetFriendId(string login)
-        {
-            using (UserContext db = new UserContext())
-            {
-
-                var users = db.Users;
-                foreach (var user in users)
-                {
-                    if (user.ID == int.Parse(login.Remove(0, 2)))
-                    {
-                        return user.ID;
-                    }
-                }
-            }
-
-            return 0;
-        }
-
         private void RemoveFriend(object sender, RoutedEventArgs e)
         {
-            using (FriendshipContext db = new FriendshipContext())
-            {
-                var friends = db.Friendships;
-                foreach (var friend in friends)
-                {
-                    if (Classes.Hndr.id == friend.IDUser && GetFriendId((sender as Border).Name) == friend.IDFriend)
-                    {
-                        db.Friendships.Remove(friend);
-                    }
-                }
-                db.SaveChanges();
-                this.NavigationService.Navigate(new Pages.Friends());
-            }
+            NetWork.RemoveFriend(Hndr.id, int.Parse((sender as Border).Name.Remove(0, 2)));
+            this.NavigationService.Navigate(new Pages.Friends());
+        }
+
+        private void ShowProfile(object sender, RoutedEventArgs e)
+        {
+            Classes.Hndr.friendid = int.Parse((sender as TextBlock).Name.Remove(0, 2));
+
+            this.NavigationService.Navigate(new Pages.UserProfileTemplate());
         }
 
         private void LoadedFriends(object sender, RoutedEventArgs e)
         {
-            FriendshipContext db = new FriendshipContext();
-            var friends = db.Friendships.ToList();
-            foreach (var friend in friends)
-            {
-                if (friend.IDUser == Classes.Hndr.id)
+            var friends = NetWork.GetFriend(Hndr.id).Split('|');
+                foreach (var friend in friends)
                 {
 
+                    if (friend != "")
+                    {
                     //Начальный грид
                     Grid grid = new Grid();
                     grid.Background = new SolidColorBrush(Colors.Transparent);
@@ -106,16 +70,24 @@ namespace ZMQP.Pages
                     NickName.FontFamily = new FontFamily("Cascadia Mono");
                     NickName.TextWrapping = TextWrapping.Wrap;
                     NickName.Style = (Style)FindResource("MenuCategory");
-                    NickName.Text = GetNameFriend(friend.IDFriend);
+                    NickName.Text = friend;
+                    NickName.Name = "ID" + friend;
+                    NickName.MouseDown += ShowProfile;
                     //колонки для грида
                     subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     //Фото профиля aka Первый грид колумн
+
+                    var binaryData = Convert.FromBase64String(Hndr.photo);
+                    BitmapImage bi = new BitmapImage();
+                    bi.BeginInit();
+                    bi.StreamSource = new MemoryStream(binaryData);
+                    bi.EndInit();
                     Image image = new Image();
-                    Uri uri = new Uri("/Resources/photo_2022-01-07_17-08-19 (2).jpg", UriKind.Relative);
-                    image.Source = new BitmapImage(uri);
+                    image.Source = bi;
                     image.Width = 80;
                     image.Height = 80;
+                    image.Stretch = Stretch.Fill;
                     image.HorizontalAlignment = HorizontalAlignment.Left;
                     EllipseGeometry eg = new EllipseGeometry();
                     eg.Center = new Point(40, 40);
@@ -133,10 +105,10 @@ namespace ZMQP.Pages
                     actionGrid.RowDefinitions.Add(new RowDefinition());
 
                     TextBlock tb = new TextBlock();
-                    tb.Text = "В сети";
+                    tb.Text = NetWork.GetStatus(int.Parse(friend)) == 1 ? "Онлайн": "Офлайн";
                     tb.VerticalAlignment = VerticalAlignment.Center;
                     tb.FontSize = 14;
-                    tb.Foreground = new SolidColorBrush(Colors.Green);
+                    tb.Foreground = NetWork.GetStatus(int.Parse(friend)) == 1 ? new SolidColorBrush(Colors.Green) : new SolidColorBrush(Colors.Gray);
 
                     Border messBorder = new Border();
                     messBorder.Style = (Style)FindResource("ButtonStyle");
@@ -145,12 +117,12 @@ namespace ZMQP.Pages
                     messText.Text = "Сообщение";
                     messText.Style = (Style)FindResource("ButtonText");
                     messBorder.Child = messText;
-                    
+
 
                     Border actBorder = new Border();
                     actBorder.Style = (Style)FindResource("ButtonStyle");
                     actBorder.MouseDown += RemoveFriend;
-                    actBorder.Name = "ID" + friend.IDFriend;
+                    actBorder.Name = "ID" + friend;
 
                     TextBlock actText = new TextBlock();
                     actText.Text = "Удалить";
@@ -175,7 +147,6 @@ namespace ZMQP.Pages
 
                     FriendsPlace.Children.Add(grid);
                 }
-                
             }
         }
 

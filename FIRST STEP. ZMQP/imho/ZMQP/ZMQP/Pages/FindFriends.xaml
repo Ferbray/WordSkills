@@ -33,7 +33,7 @@
                         <ColumnDefinition Width="40"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="1" Width="300" Height="50" FontSize="20" Background="{x:Null}" CaretBrush="#FFC80303" Foreground="#FF909090" BorderBrush="#FF2205B3" BorderThickness="0,0,0,1" FontWeight="Normal" VerticalContentAlignment="Bottom" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" FontFamily="Bahnschrift" />
+                    <TextBox Grid.Column="1" Width="300" Height="50" FontSize="20" Background="{x:Null}" CaretBrush="#FFC80303" Foreground="#FF909090" BorderBrush="#FF2205B3" BorderThickness="0,0,0,1" FontWeight="Normal" VerticalContentAlignment="Bottom" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" FontFamily="Bahnschrift" KeyUp="TextBox_KeyUp" />
                     <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FF7B7B7B" Name="SearchText" Margin="2,20,0,0" FontSize="20" Panel.ZIndex="-2" FontFamily="Bahnschrift">Search...</TextBlock>
                     <Image Grid.Column="0" Width="30" Height="30" Name="SearchHeadBar" Cursor="Hand" Margin="0,20,0,0">
                         <Image.Style>

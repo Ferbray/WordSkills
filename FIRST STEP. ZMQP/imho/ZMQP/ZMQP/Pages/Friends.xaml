@@ -21,7 +21,7 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="170"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="1" Width="400" HorizontalAlignment="Right">
@@ -62,7 +62,7 @@
 
                         </Border>
                     </Grid>
-                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="QWEZXC">Друзья</TextBlock>
+                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="QWEZXC" Width="100" HorizontalAlignment="Left">Друзья</TextBlock>
                     
                 </Grid>
                 <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="FriendsPlace" Loaded="LoadedFriends">

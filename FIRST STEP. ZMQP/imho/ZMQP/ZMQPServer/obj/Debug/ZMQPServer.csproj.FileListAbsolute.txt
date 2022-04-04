@@ -1,0 +1,13 @@
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\ZMQPServer.exe.config
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\ZMQPServer.exe
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\ZMQPServer.pdb
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.AssemblyReference.cache
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.CoreCompileInputs.cache
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.exe
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.pdb
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.xml
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.CopyComplete

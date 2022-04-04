@@ -220,4 +220,10 @@
   <data name="gifdaniil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gifdaniil.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ChangeAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangeAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\static\profilelogo\25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

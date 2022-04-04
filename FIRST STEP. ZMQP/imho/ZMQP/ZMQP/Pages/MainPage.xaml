@@ -21,9 +21,7 @@
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Foreground="#FF929292" FontSize="22" Margin="10">Все игры</TextBlock>
                    
-                <WrapPanel Grid.Row="1" HorizontalAlignment="Center" Name="MainPlace" Loaded="LoadGame" >
-                   
-                </WrapPanel>
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Center" Name="MainPlace" Initialized="LoadGame" />
             </Grid>
         </ScrollViewer>
     </Grid>

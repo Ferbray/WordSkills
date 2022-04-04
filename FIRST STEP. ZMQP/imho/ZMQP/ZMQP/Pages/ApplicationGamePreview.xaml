@@ -26,7 +26,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" HorizontalAlignment="Left" Height="350" Loaded="PicturePreviewLoaded" >
+                    <Image Grid.Column="0" HorizontalAlignment="Left" Height="350" Loaded="PicturePreviewLoaded" Name="Prosto">
 
                     </Image>
                     <Grid Grid.Column="1" Height="200" Margin="10">
@@ -37,8 +37,8 @@
                         </ScrollViewer>
                     </Grid>
                 </Grid>
-                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20">
-                    <TextBlock Text="Играть" Name="enter" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"></TextBlock>
+                <Border Width="180" Height="50" Background="#00000000" BorderThickness="1" Grid.Row="2" HorizontalAlignment="Left" Margin="20" MouseDown="Action">
+                    <TextBlock Name="ActionWithGame" FontFamily="Bahnschrift" Foreground="#FF949494" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" LayoutUpdated="ActionWithGame_Loaded" ></TextBlock>
                     <Border.Style>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="BorderBrush" Value="#FF2205B3"></Setter>

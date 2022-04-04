@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,79 +43,38 @@ namespace ZMQP.Pages
 
         private void AcceptFriend(object sender, RoutedEventArgs e)
         {
-            using (FriendshipContext db = new FriendshipContext())
-            {
+            NetWork.AcceptFriend(Hndr.id, int.Parse((sender as Border).Name.Remove(0, 2)));
+            this.NavigationService.Navigate(new Pages.RequestFriends());
 
-                Friendship friendship = new Friendship();
-                friendship.IDUser = Classes.Hndr.id;
-                friendship.IDFriend = GetFriendId((sender as Border).Name);
-                db.Friendships.Add(friendship);
-                db.SaveChanges();
+        }
 
-                FindFriends ff = new FindFriends();
-                this.NavigationService.Navigate(new Pages.RequestFriends());
-
-            }
+        private void DeleteRequest(object sender, MouseButtonEventArgs e)
+        {
+            NetWork.DeleteRequest(Hndr.id, int.Parse((sender as Border).Name.Remove(0, 2)));
+            this.NavigationService.Navigate(new Pages.RequestFriends());
         }
 
         private void DeclineFriend(object sender, RoutedEventArgs e)
         {
-            using (RequestsContext db = new RequestsContext())
-            {
-                var friends = db.Requests;
-                foreach (var friend in friends)
-                {
-                    if (Classes.Hndr.id == friend.IDUser && GetFriendId((sender as Border).Name) == friend.IDFriend)
-                    {
-                        db.Requests.Remove(friend);
-                    }
-                }
-                db.SaveChanges();
-                this.NavigationService.Navigate(new Pages.Friends());
-            }
+            NetWork.DeleteFriend(Hndr.id, int.Parse((sender as Border).Name.Remove(0, 2)));
+            this.NavigationService.Navigate(new Pages.RequestFriends());
         }
 
-        private int GetFriendId(string login)
+        private void ShowProfile(object sender, RoutedEventArgs e)
         {
-            using (UserContext db = new UserContext())
-            {
+            Classes.Hndr.friendid = int.Parse((sender as TextBlock).Name.Remove(0, 2));
 
-                var users = db.Users;
-                foreach (var user in users)
-                {
-                    if (user.ID == int.Parse(login.Remove(0, 2)))
-                    {
-                        return user.ID;
-                    }
-                }
-            }
-
-            return 0;
-        }
-
-        private string GetNameFriend(int id)
-        {
-            UserContext uc = new UserContext();
-            var users = uc.Users.ToList();
-            foreach (var user in users)
-            {
-                if (user.ID == id)
-                {
-                    return user.Login;
-                }
-            }
-
-            return "Unknown";
+            this.NavigationService.Navigate(new Pages.UserProfileTemplate());
         }
 
         private void LoadResponse(object sender, RoutedEventArgs e)
         {
             ResponseRequestsText.Text = "Входящие";
-            RequestsContext db = new RequestsContext();
-            var users = db.Requests;
-            foreach (var user in users)
+            var friends = NetWork.GetResponse(Hndr.id).Split('|');
+            foreach (var friend in friends)
             {
-                if (user.IDFriend == Classes.Hndr.id)
+
+                if (friend != "")
                 {
                     //Начальный грид
                     Grid grid = new Grid();
@@ -137,17 +97,24 @@ namespace ZMQP.Pages
                     NickName.FontFamily = new FontFamily("Cascadia Mono");
                     NickName.TextWrapping = TextWrapping.Wrap;
                     NickName.Style = (Style)FindResource("MenuCategory");
-                    NickName.Text = GetNameFriend(user.IDUser);
-                    NickName.Name = "NickName";
+                    NickName.Text = NetWork.GetLogin(int.Parse(friend));
+                    NickName.Name = "ID" + friend.ToString();
+                    NickName.MouseDown += ShowProfile;
                     //колонки для грида
                     subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     //Фото профиля aka Первый грид колумн
+
+                    var binaryData = Convert.FromBase64String(Hndr.photo);
+                    BitmapImage bi = new BitmapImage();
+                    bi.BeginInit();
+                    bi.StreamSource = new MemoryStream(binaryData);
+                    bi.EndInit();
                     Image image = new Image();
-                    Uri uri = new Uri("/Resources/photo_2022-01-07_17-08-19 (2).jpg", UriKind.Relative);
-                    image.Source = new BitmapImage(uri);
+                    image.Source = bi;
                     image.Width = 80;
                     image.Height = 80;
+                    image.Stretch = Stretch.Fill;
                     image.HorizontalAlignment = HorizontalAlignment.Left;
                     EllipseGeometry eg = new EllipseGeometry();
                     eg.Center = new Point(40, 40);
@@ -165,10 +132,11 @@ namespace ZMQP.Pages
                     actionGrid.RowDefinitions.Add(new RowDefinition());
 
                     TextBlock tb = new TextBlock();
-                    tb.Text = "В сети";
+                    tb.Text = NetWork.GetStatus(int.Parse(friend)) == 1 ? "Онлайн" : "Офлайн";
                     tb.VerticalAlignment = VerticalAlignment.Center;
                     tb.FontSize = 14;
-                    tb.Foreground = new SolidColorBrush(Colors.Green);
+                    tb.Foreground = NetWork.GetStatus(int.Parse(friend)) == 1 ? new SolidColorBrush(Colors.Green) : new SolidColorBrush(Colors.Gray);
+
 
                     Border messBorder = new Border();
                     messBorder.Style = (Style)FindResource("ButtonStyle");
@@ -177,14 +145,14 @@ namespace ZMQP.Pages
                     messText.Text = "Принять";
                     messText.Style = (Style)FindResource("ButtonText");
 
-                    messBorder.Name = "ID" + user.IDUser;
+                    messBorder.Name = "ID" + friend;
                     messBorder.Child = messText;
                     messBorder.MouseDown += AcceptFriend;
 
                     Border actBorder = new Border();
                     actBorder.Style = (Style)FindResource("ButtonStyle");
-                    actBorder.Name = "ID" + user.IDUser;
-                    actBorder.MouseDown += DeclineFriend;
+                    actBorder.Name = "ID" + friend;
+                    actBorder.MouseDown += DeleteRequest;
 
 
 
@@ -215,16 +183,13 @@ namespace ZMQP.Pages
                 
         }
 
-
-
         private void LoadRequests(object sender, RoutedEventArgs e)
         {
-            ResponseRequestsText.Text = "Исходящие";
-            RequestsContext db = new RequestsContext();
-            var users = db.Requests;
-            foreach (var user in users)
+            var friends = NetWork.GetRequests(Hndr.id).Split('|');
+            foreach (var friend in friends)
             {
-                if (user.IDUser == Classes.Hndr.id)
+
+                if (friend != "")
                 {
                     //Начальный грид
                     Grid grid = new Grid();
@@ -247,17 +212,24 @@ namespace ZMQP.Pages
                     NickName.FontFamily = new FontFamily("Cascadia Mono");
                     NickName.TextWrapping = TextWrapping.Wrap;
                     NickName.Style = (Style)FindResource("MenuCategory");
-                    NickName.Text = GetNameFriend(user.IDFriend);
-                    NickName.Name = "NickName";
+                    NickName.Text = NetWork.GetLogin(int.Parse(friend));
+                    NickName.Name = "ID" + friend.ToString();
+                    NickName.MouseDown += ShowProfile;
                     //колонки для грида
                     subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     subGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     //Фото профиля aka Первый грид колумн
+
+                    var binaryData = Convert.FromBase64String(Hndr.photo);
+                    BitmapImage bi = new BitmapImage();
+                    bi.BeginInit();
+                    bi.StreamSource = new MemoryStream(binaryData);
+                    bi.EndInit();
                     Image image = new Image();
-                    Uri uri = new Uri("/Resources/photo_2022-01-07_17-08-19 (2).jpg", UriKind.Relative);
-                    image.Source = new BitmapImage(uri);
+                    image.Source = bi;
                     image.Width = 80;
                     image.Height = 80;
+                    image.Stretch = Stretch.Fill;
                     image.HorizontalAlignment = HorizontalAlignment.Left;
                     EllipseGeometry eg = new EllipseGeometry();
                     eg.Center = new Point(40, 40);
@@ -275,14 +247,14 @@ namespace ZMQP.Pages
                     actionGrid.RowDefinitions.Add(new RowDefinition());
 
                     TextBlock tb = new TextBlock();
-                    tb.Text = "В сети";
+                    tb.Text = NetWork.GetStatus(int.Parse(friend)) == 1 ? "Онлайн" : "Офлайн";
                     tb.VerticalAlignment = VerticalAlignment.Center;
                     tb.FontSize = 14;
-                    tb.Foreground = new SolidColorBrush(Colors.Green);
+                    tb.Foreground = NetWork.GetStatus(int.Parse(friend)) == 1 ? new SolidColorBrush(Colors.Green) : new SolidColorBrush(Colors.Gray);
 
                     Border actBorder = new Border();
                     actBorder.Style = (Style)FindResource("ButtonStyle");
-                    actBorder.Name = "ID" + user.IDFriend;
+                    actBorder.Name = "ID" + friend;
 
 
 

@@ -177,3 +177,13 @@ C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\ob
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CopyComplete
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\RequestFriends.g.cs
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\RequestFriends.baml
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\System.Text.Json.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\System.Memory.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\System.Buffers.dll
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.exe.config
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\UserProfileTemplate.g.cs
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\UserProfileTemplate.baml
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\DownloadViewer.g.cs
+C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Windows\DownloadViewer.baml

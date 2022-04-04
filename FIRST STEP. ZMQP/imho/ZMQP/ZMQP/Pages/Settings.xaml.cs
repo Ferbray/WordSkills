@@ -27,10 +27,12 @@ namespace ZMQP.Pages
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            Classes.Getter.ForgetMe();
             Windows.Login login = new Windows.Login();
-            Content = null;
-            Application.Current.MainWindow.Close();
+            Application.Current.Windows.OfType<Window>().SingleOrDefault(x => x.IsActive).Close();
+            
             login.Show();
+
         }
     }
 }

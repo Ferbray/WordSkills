@@ -13,9 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
 using System.Threading;
+using ZMQP.Classes;
+using System.IO;
 
 namespace ZMQP.Windows
 {
+
+   
     public partial class ApplicationTemplate : Window
     {
         public ApplicationTemplate()
@@ -24,6 +28,8 @@ namespace ZMQP.Windows
             MainFrame.Content = new Pages.MainPage();
         }
 
+        
+
         private void ToolBarButtonMin_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
@@ -31,6 +37,7 @@ namespace ZMQP.Windows
 
         private void ToolBarButtonClose_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            NetWork.SetInactiveStatus(Classes.Hndr.id);
             this.Close();
         }
 
@@ -201,11 +208,56 @@ namespace ZMQP.Windows
             HambMenuV2.Visibility = Visibility.Hidden;
         }
 
-
-        private void SetLogin(object sender, EventArgs e)
+        private string GetProfilePhoto()
         {
-            ProfileName.Text = Classes.Hndr.login;
+            string photopath = "unknown";
+            using (UserContext db = new UserContext())
+            {
+                var users = db.Users;
+                foreach (User u in users)
+                {
+                    if (Classes.Hndr.id == u.ID)
+                    {
+                        photopath = u.Photo;
+                        break;
+                    }
+                }
+            }
+            return photopath;
         }
 
+        private void LoadPhotoProfile(object sender, RoutedEventArgs e)
+        {
+            var binaryData = Convert.FromBase64String(Hndr.photo);
+            BitmapImage bi = new BitmapImage();
+            bi.BeginInit();
+            bi.StreamSource = new MemoryStream(binaryData);
+            bi.EndInit();
+
+            (sender as Image).Source = bi;
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            NetWork.SetInactiveStatus(Classes.Hndr.id);
+        }
+
+       
+
+        private void Window_RequestBringIntoView(object sender, RequestBringIntoViewEventArgs e)
+        {
+            /*var binaryData = Convert.FromBase64String(Hndr.photo);
+             BitmapImage bi = new BitmapImage();
+             bi.BeginInit();
+             bi.StreamSource = new MemoryStream(binaryData);
+             bi.EndInit();
+
+             (sender as Image).Source = bi;*/
+        }
+
+        private void LoadProfileName(object sender, RoutedEventArgs e)
+        {
+            (sender as TextBlock).Text = Classes.Hndr.login; 
+        }
     }
 }

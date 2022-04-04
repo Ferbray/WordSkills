@@ -11,6 +11,8 @@ namespace ZMQP.Classes
         public static string title;
         public static string login;
         public static int id;
-
+        public static string pathtofile;
+        public static string photo;
+        public static int friendid;
     }
 }

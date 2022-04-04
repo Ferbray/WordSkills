@@ -21,7 +21,7 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="170"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="1" Width="400" HorizontalAlignment="Right">
@@ -62,11 +62,11 @@
 
                         </Border>
                     </Grid>
-                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="ResponseRequestsText"></TextBlock>
+                    <TextBlock Foreground="#FF929292" FontSize="22" Margin="10" Grid.Column="0" Name="ResponseRequestsText" Width="180" HorizontalAlignment="Left"></TextBlock>
 
                 </Grid>
-                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="RequestPlace" Loaded="LoadResponse"/>
-                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="ResponsePlace" Visibility="Hidden" Loaded="LoadRequests">
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="ResponsePlace" Loaded="LoadResponse"/>
+                <WrapPanel Grid.Row="1" HorizontalAlignment="Left" Name="RequestPlace" Visibility="Hidden" Loaded="LoadRequests" >
 
                 </WrapPanel>
             </Grid>

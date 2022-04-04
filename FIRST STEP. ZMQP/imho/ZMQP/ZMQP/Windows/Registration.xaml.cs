@@ -141,51 +141,19 @@ namespace ZMQP.Windows
             return false;
         }
 
-        private bool CheckIdenticalUser(bool check_field)
-        {
-            if (!check_field) return false;
-
-            using (UserContext db = new UserContext())
-            {
-                var users = db.Users;
-                foreach (User u in users)
-                {
-                    if (u.Login == Login.Text || u.Email == Email.Text)
-                    {
-                        error_reg.Text = (u.Login == Login.Text) ? 
-                            "Уже есть пользователь с логином \n" + Login.Text : 
-                            "Уже есть пользователь с логином\n" + Email.Text;
-                        return false;
-                    }
-                }
-                error_reg.Text = "";
-                return true;
-            }
-        }
+       
 
         private void RegistrateNewUser(object sender, MouseButtonEventArgs e)
         {
             bool check_field = CheckLengthField(true);
             check_field = CheckIdenticalField(check_field);
-            check_field = CheckIdenticalUser(check_field);
+            string pass = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password;
 
-            if (check_field == true)
+            if (check_field == true && NetWork.CheckProfileRegistration(Login.Text, Email.Text, pass))
             {
-                using (UserContext db = new UserContext())
-                {
-                    User user1 = new User
-                    {
-                        Login = Login.Text,
-                        Email = Email.Text,
-                        Password = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password,
-                        isAdmin = 0
-                    };
-                    db.Users.Add(user1);
-                    db.SaveChanges();
-                    Windows.Login login = new Windows.Login();
-                    this.Close();
-                    login.Show();
-                }
+                Windows.Login login = new Windows.Login();
+                this.Close();
+                login.Show();
             }
         }
     }

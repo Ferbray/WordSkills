@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZMQP.Windows"
         mc:Ignorable="d"
-        Title="ZMQP Launcher" Height="720" Width="1280" MinHeight="700" MinWidth="1000" AllowsTransparency="True" Background="Transparent" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip">
+        Title="ZMQP Launcher" Height="720" Width="1280" MinHeight="700" MinWidth="1000" AllowsTransparency="True" Background="Transparent" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" Closed="Window_Closed" RequestBringIntoView="Window_RequestBringIntoView">
     <Window.Resources>
         <Style TargetType="TextBlock" x:Key="MenuCategory">
             <Setter Property="Foreground" Value="#FF909090"></Setter>
@@ -16,7 +16,9 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+       
     </Window.Resources>
+    
     <Border CornerRadius="15">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -236,19 +238,22 @@
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0" Width="40">
-                                            <Image Source="/Resources/photo_2022-01-07_17-08-19 (2).jpg" Width="40">
+                                            <Image Width="40" Height="40" Stretch="Fill" Name="ProfileImage" Loaded="LoadPhotoProfile">
                                                 <Image.Clip>
                                                     <EllipseGeometry Center="20, 20" RadiusX="20" RadiusY="20" />
                                                 </Image.Clip>
                                             </Image>
                                         </Grid>
+                                        <Frame NavigationUIVisibility="Hidden" x:Name="SubMenu"></Frame>
                                         <Grid Grid.Column="1" Margin="15,0,0,0" Height="16" MouseDown="HamburgerMenuVisible">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition/>
                                                 <ColumnDefinition Width="20"/>
                                             </Grid.ColumnDefinitions>
-                                            <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Initialized="SetLogin" x:Name="ProfileName"></TextBlock>
+                                            <TextBlock Style="{StaticResource MenuCategory}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" x:Name="ProfileName" Loaded="LoadProfileName">
+                                            </TextBlock>
                                             <TextBlock Foreground="#FFB9B9B9" FontWeight="Bold" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">▼</TextBlock>
+                                            
                                         </Grid>
 
                                     </Grid>

@@ -150,7 +150,7 @@
                         </Image>
                     </Grid>
                     <Grid Grid.Row="4">
-                        <CheckBox FontFamily="Bahnschrift" Foreground="#FF949494" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Padding="3,1,0,0" ClickMode="Release" IsChecked="True">
+                        <CheckBox FontFamily="Bahnschrift" Foreground="#FF949494" Name="CheckboxValue" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Padding="3,1,0,0" ClickMode="Release">
 
                             <CheckBox.Style>
                                 <Style TargetType="{x:Type CheckBox }">
@@ -189,7 +189,7 @@
                 </Grid>
                 <Grid Grid.Row="4" >
                     <TextBlock FontFamily="Bahnschrift" Foreground="#FF949494" HorizontalAlignment="Center">Нет аккаунта, <Hyperlink TextDecorations="{x:Null}" Click="Hyperlink_Click">Зарегистрироваться</Hyperlink></TextBlock>
-                    <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,50" Visibility="Hidden" Name="error_entry"></TextBlock>
+                    <TextBlock VerticalAlignment="Bottom" Foreground="#FFE90C0C" HorizontalAlignment="Center" Margin="0,0,0,50" Name="error_entry"></TextBlock>
                 </Grid>
             </Grid>
         </Grid>

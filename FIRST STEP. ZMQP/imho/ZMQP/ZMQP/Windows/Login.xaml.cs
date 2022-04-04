@@ -108,61 +108,33 @@ namespace ZMQP.Windows
 
         }
 
-        private bool CheckIndenticalUser(bool check_field)
+       private bool isChecked()
         {
-            using (UserContext db = new UserContext())
+            if (CheckboxValue.IsChecked == true)
             {
-                var users = db.Users;
-                foreach (User u in users)
-                {
-                    if (
-                        u.Login == LoginBox.Text && 
-                        (PassBoxVisibility.Text == u.Password || PassBoxNoVisibility.Password == u.Password) && 
-                        check_field)
-                    {
-                        error_entry.Text = "";
-                        return true;
-                    }
-                }
-                if (check_field)
-                    error_entry.Text = "Не верный логин или пароль";
-                return false;
+                return true;
             }
-        }
-
-        private int GetID()
-        {
-            int id = 0;
-            using (UserContext db = new UserContext())
-            {
-                var users = db.Users;
-                foreach (User u in users)
-                {
-                    if (u.Login == LoginBox.Text)
-                    {
-                        id = u.ID;
-                        break;
-                    }
-                }
-            }
-            return id;
+            return false;
         }
 
         private void Verification_MouseDown(object sender, MouseButtonEventArgs e)
         {
             bool check_field = CheckLengthField(true);
-            check_field = CheckIndenticalUser(check_field);
+            string pass = (PassBoxVisibility.Visibility == Visibility.Visible) ? PassBoxVisibility.Text : PassBoxNoVisibility.Password;
 
-            if (check_field == true)
+            if (check_field == true && NetWork.CheckProfile(LoginBox.Text, pass))
             {
-                using (UserContext db = new UserContext())
+                Hndr.id = NetWork.GetID(LoginBox.Text);
+                Hndr.login = LoginBox.Text;
+                Hndr.photo = NetWork.GetProfileImage(Hndr.id.ToString());
+                if (isChecked())
                 {
-                    Classes.Hndr.id = GetID();
-                    Classes.Hndr.login = LoginBox.Text;
-                    Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
-                    this.Close();
-                    at.Show();
+                    Getter.RememberMe();
                 }
+                NetWork.SetActiveStatus(Hndr.id);
+                Windows.ApplicationTemplate at = new Windows.ApplicationTemplate();
+                this.Close();
+                at.Show();
             }
         }
     }
