@@ -183,3 +183,12 @@ D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\BanUser.g.cs
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MuteUser.g.cs
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\BanUser.baml
 D:\MyFiles\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\MuteUser.baml
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Admin.g.cs
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\FindFriends.g.cs
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.dll
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.SqlServer.dll
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.xml
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\bin\Debug\EntityFramework.SqlServer.xml
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\Admin.baml
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\Pages\FindFriends.baml
+C:\Gagaev\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQP\obj\Debug\ZMQP.csproj.CopyComplete
