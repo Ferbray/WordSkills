@@ -11,3 +11,16 @@ C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPSer
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.xml
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\PARANOIC\Documents\GitHub\WordSkills\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.CopyComplete
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\ZMQPServer.exe.config
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\ZMQPServer.exe
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\ZMQPServer.pdb
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.dll
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.xml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.AssemblyReference.cache
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.SuggestedBindingRedirects.cache
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.CoreCompileInputs.cache
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.csproj.CopyComplete
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.exe
+C:\UE9TSEVMIE5BSFVZ\Git\GitHub\FIRST STEP. ZMQP\imho\ZMQP\ZMQPServer\obj\Debug\ZMQPServer.pdb
