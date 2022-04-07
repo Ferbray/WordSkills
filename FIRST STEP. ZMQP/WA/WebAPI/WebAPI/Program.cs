@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+var connectString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<GamesContext>(options =>
-    options.UseSqlite("Data Source=games.db")
+    options.UseSqlServer(connectString)
 ) ;
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

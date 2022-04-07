@@ -12,13 +12,14 @@ namespace WebAPI.Migrations
                 name: "Games",
                 columns: table => new
                 {
-                    id = table.Column<string>(type: "TEXT", nullable: false),
-                    title = table.Column<string>(type: "TEXT", nullable: false),
-                    creator = table.Column<string>(type: "TEXT", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Creator = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Games", x => x.id);
+                    table.PrimaryKey("PK_Games", x => x.Id);
                 });
         }
 
