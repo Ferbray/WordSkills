@@ -18,17 +18,17 @@ namespace SecondAPI.Models
     public class User
     {
         public int Id { get; set; }
-        public string Login { get; set; }
+        public string Login { get; set; } = string.Empty;
 
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
-        public string Password { get; set; }
+        public string Password { get; set; } = string.Empty;
 
         public int isAdmin { get; set; }
         public int isBan { get; set; }
         public int isMute { get; set; }
 
-        public string Photo { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
+        public string? Photo { get; set; }
+        public string? Description { get; set; }
     }
 }
