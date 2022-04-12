@@ -73,6 +73,14 @@ namespace SecondAPI.Controllers
             return Ok(userFromDatabase);
         }
 
+        [HttpGet]
+        [Produces(typeof(IEnumerable<User>))]
+        public async Task<IActionResult> Get([FromQuery]string? login)
+        {
+            var user = await _users.Users.Where(x => string.IsNullOrEmpty(login) || x.Login.StartsWith(login)).ToListAsync();
+            return Ok(user);
+        }
+
         public class UserPutModel
         {
             public int? IsMute { get; set; }

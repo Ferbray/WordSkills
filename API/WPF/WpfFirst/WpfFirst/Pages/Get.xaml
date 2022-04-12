@@ -1,0 +1,35 @@
+﻿<Page x:Class="WpfFirst.Get"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfFirst"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Get">
+
+    <Grid Background="White">
+        <Grid Margin="0,120,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="80"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0" Width="250" Height="40" x:Name="FindBoxID" FontSize="22"></TextBox>
+                <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Login</TextBlock>
+                <TextBox Grid.Row="1" Width="250" Height="40" x:Name="FindBoxLogin" FontSize="22" TextChanged="FindBoxLogin_TextChanged"></TextBox>
+                <TextBox Grid.Row="2" Width="250" Height="40" x:Name="FindBoxEmail" FontSize="22"></TextBox>
+                <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Post" Click="Button_Click"></Button>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <ListBox x:Name="PostBoxList" FontSize="22"></ListBox>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
