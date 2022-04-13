@@ -9,6 +9,7 @@
       Title="Get">
 
     <Grid Background="White">
+        <TextBlock FontSize="32" VerticalAlignment="Top" Margin="0,20,0,0" TextAlignment="Center">Получить пользователя</TextBlock>
         <Grid Margin="0,120,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -24,7 +25,7 @@
                 <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Login</TextBlock>
                 <TextBox Grid.Row="1" Width="250" Height="40" x:Name="FindBoxLogin" FontSize="22" TextChanged="FindBoxLogin_TextChanged"></TextBox>
                 <TextBox Grid.Row="2" Width="250" Height="40" x:Name="FindBoxEmail" FontSize="22"></TextBox>
-                <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Post" Click="Button_Click"></Button>
+                <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Back" Click="Button_Back"></Button>
             </Grid>
 
             <Grid Grid.Column="1">

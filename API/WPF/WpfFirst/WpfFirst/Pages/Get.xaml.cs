@@ -60,9 +60,9 @@ namespace WpfFirst
             IsEnabled = true;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Back(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Post());
+            this.NavigationService.GoBack();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace WpfFirst
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.NavigationService.Navigate(new Get());
+            MainFrame.NavigationService.Navigate(new HomePages());
         }
     }
 }

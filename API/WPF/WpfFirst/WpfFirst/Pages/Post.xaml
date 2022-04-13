@@ -9,6 +9,7 @@
       Title="Post">
 
     <Grid Background="White">
+        <TextBlock FontSize="32" VerticalAlignment="Top" Margin="0,20,0,0" TextAlignment="Center">Создать пользователя</TextBlock>
         <Grid Margin="0,120,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -19,8 +20,8 @@
                     <RowDefinition Height="80"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
-                    <RowDefinition Height="80"></RowDefinition>
-                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Login</TextBlock>
                 <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Email</TextBlock>
@@ -29,7 +30,7 @@
                 <TextBox Grid.Row="1" Width="250" Height="40" x:Name="FindBoxEmail" FontSize="22"></TextBox>
                 <TextBox Grid.Row="2" Width="250" Height="40" x:Name="FindBoxPassword" FontSize="22"></TextBox>
                 <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Post" Click="Button_Click_Async"></Button>
-                <Button FontSize="22" Grid.Row="4" Height="40" Width="250" Content="GetLogin" Click="Button_Click"></Button>
+                <Button FontSize="22" Grid.Row="4" Height="40" Width="250" Content="Back" Click="Button_Back"></Button>
             </Grid>
 
             <Grid Grid.Column="1">

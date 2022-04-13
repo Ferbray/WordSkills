@@ -29,9 +29,9 @@ namespace WpfFirst
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Back(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Get());
+            this.NavigationService.GoBack();
         }
 
         private async void Button_Click_Async(object sender, RoutedEventArgs e)
@@ -50,7 +50,7 @@ namespace WpfFirst
 
             if (response.IsSuccessStatusCode)
             {
-                this.NavigationService.Navigate(new Get());
+                this.NavigationService.GoBack();
             }
 
             else

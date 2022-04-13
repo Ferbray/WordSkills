@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\Delete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\HomePages.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Get.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +21,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\Delete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\HomePages.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\Get.xaml">
       <SubType>Designer</SubType>
     </Page>

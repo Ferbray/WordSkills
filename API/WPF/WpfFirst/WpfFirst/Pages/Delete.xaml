@@ -1,0 +1,33 @@
+﻿<Page x:Class="WpfFirst.Pages.Delete"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfFirst.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Delete">
+
+    <Grid Background="White">
+        <TextBlock FontSize="32" VerticalAlignment="Top" Margin="0,20,0,0" TextAlignment="Center">Удалить пользователя</TextBlock>
+        <Grid Margin="0,120,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="80"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">ID</TextBlock>
+                <TextBox Grid.Row="0" Width="250" Height="40" x:Name="DeleteBoxID" FontSize="22"></TextBox>
+                <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Login</TextBlock>
+                <TextBox Grid.Row="1" Width="250" Height="40" x:Name="DeleteBoxLogin" FontSize="22"></TextBox>
+                <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Back" Click="Button_Delete"></Button>
+                <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Back" Click="Button_Back"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
