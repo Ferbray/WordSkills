@@ -58,14 +58,10 @@ namespace WebAPI.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Game>>> Get(string title)
+        public async Task<ActionResult<IEnumerable<Game>>> Get([FromQuery] string? title)
         {
-            var game = await _db.Games.FirstOrDefaultAsync(x => x.Title == title);
-            if (game == null)
-            {
-                return NotFound();
-            }
-            return new ObjectResult(game);
+            var game = await _db.Games.Where(x => string.IsNullOrEmpty(title) || x.Title == title).ToListAsync();
+            return Ok(game);
         }
         
         [HttpGet("{creator}")]

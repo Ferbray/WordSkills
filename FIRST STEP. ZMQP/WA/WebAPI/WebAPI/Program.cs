@@ -6,9 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-var connectString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<GamesContext>(options =>
-    options.UseSqlServer(connectString)
+    options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Games;Integrated Security=true;")
 ) ;
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
