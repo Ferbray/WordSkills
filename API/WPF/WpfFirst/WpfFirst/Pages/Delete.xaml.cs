@@ -26,11 +26,11 @@ namespace WpfFirst.Pages
             InitializeComponent();
         }
 
-        private async Task Button_DeleteAsync(object sender, RoutedEventArgs e)
+        private async void Button_DeleteAsync(object sender, RoutedEventArgs e)
         {
             IsEnabled = false;
             var client = App.HttpClient;
-            var response = await client.DeleteAsync($"https://localhost:7144/{DeleteBoxID}");
+            var response = await client.DeleteAsync($"https://localhost:7144/User/{DeleteBoxID.Text}");
 
             if (response.IsSuccessStatusCode)
             {

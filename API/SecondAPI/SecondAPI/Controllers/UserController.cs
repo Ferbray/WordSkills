@@ -35,7 +35,7 @@ namespace SecondAPI.Controllers
             return Ok(user);
         }
 
-        [HttpGet("{isMute}")]
+        [HttpGet("{isMute:int}")]
         [Produces(typeof(IEnumerable<User>))]
         public async Task<IActionResult> Get([FromRoute] int isMute)
         {
@@ -43,7 +43,7 @@ namespace SecondAPI.Controllers
             return Ok(users);
         }
 
-        [HttpDelete(Name = "DeleteUser")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int Id)
         {
             var user = await _users.Users.FirstOrDefaultAsync(x => x.Id == Id);
@@ -55,7 +55,7 @@ namespace SecondAPI.Controllers
             return Ok();
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         [Produces(typeof(IEnumerable<User>))]
         public async Task<IActionResult> Put([FromBody]UserPutModel userFromBody, [FromRoute]int id) {
 

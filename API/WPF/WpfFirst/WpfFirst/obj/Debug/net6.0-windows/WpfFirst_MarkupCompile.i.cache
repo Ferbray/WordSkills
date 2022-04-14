@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\MyFiles\GitHub\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\
 WpfFirst
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\MyFiles\GitHub\API\WPF\WpfFirst\WpfFirst\App.xaml
-5169215986
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\App.xaml
+6-2067662726
 
-101394366707
+11309707195
 1941905061893
-MainWindow.xaml;Pages\Delete.xaml;Pages\Get.xaml;Pages\HomePages.xaml;Pages\Post.xaml;
+MainWindow.xaml;Pages\Delete.xaml;Pages\Edit.xaml;Pages\Get.xaml;Pages\HomePages.xaml;Pages\Post.xaml;
 
 True
 

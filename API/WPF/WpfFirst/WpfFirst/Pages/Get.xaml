@@ -21,6 +21,7 @@
                     <RowDefinition Height="80"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
                 </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">ID</TextBlock>
                 <TextBox Grid.Row="0" Width="250" Height="40" x:Name="FindBoxID" FontSize="22"></TextBox>
                 <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Login</TextBlock>
                 <TextBox Grid.Row="1" Width="250" Height="40" x:Name="FindBoxLogin" FontSize="22" TextChanged="FindBoxLogin_TextChanged"></TextBox>
@@ -29,7 +30,7 @@
             </Grid>
 
             <Grid Grid.Column="1">
-                <ListBox x:Name="PostBoxList" FontSize="22"></ListBox>
+                <ListBox x:Name="PostBoxList" FontSize="22" Loaded="PostBoxList_Loaded"></ListBox>
             </Grid>
         </Grid>
     </Grid>

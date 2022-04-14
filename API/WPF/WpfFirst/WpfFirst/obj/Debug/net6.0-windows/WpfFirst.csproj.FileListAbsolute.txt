@@ -53,3 +53,10 @@ D:\MyFiles\GitHub\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\HomeP
 D:\MyFiles\GitHub\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\App.baml
 D:\MyFiles\GitHub\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\Delete.baml
 D:\MyFiles\GitHub\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\HomePages.baml
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\Delete.g.cs
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\HomePages.g.cs
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\App.baml
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\Delete.baml
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\HomePages.baml
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\Edit.g.cs
+C:\Gagaev\WordSkills\API\WPF\WpfFirst\WpfFirst\obj\Debug\net6.0-windows\Pages\Edit.baml

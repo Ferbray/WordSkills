@@ -31,6 +31,11 @@ namespace WpfFirst
             this.NavigationService.Navigate(new Get());
         }
 
+        private void Button_Edit(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Edit());
+        }
+
         private void Button_Post(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Post());

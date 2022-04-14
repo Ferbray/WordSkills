@@ -14,10 +14,12 @@
                 <RowDefinition Height="100"></RowDefinition>
                 <RowDefinition Height="100"></RowDefinition>
                 <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
             </Grid.RowDefinitions>
             <Button Grid.Row="0" Width="350" Height="80" Content="Получить" FontSize="28" Click="Button_Get"></Button>
             <Button Grid.Row="1" Width="350" Height="80" Content="Отправить" FontSize="28" Click="Button_Post"></Button>
-            <Button Grid.Row="2" Width="350" Height="80" Content="Удалить" FontSize="28" Click="Button_Delete"></Button>
+            <Button Grid.Row="2" Width="350" Height="80" Content="Редактировать" FontSize="28" Click="Button_Edit"></Button>
+            <Button Grid.Row="3" Width="350" Height="80" Content="Удалить" FontSize="28" Click="Button_Delete"></Button>
         </Grid>
     </Grid>
 </Page>

@@ -1,0 +1,18 @@
+﻿<Page x:Class="WPF2.Pages.WeatherGrid"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="WeatherGrid">
+
+    <Grid>
+        <TextBlock Text="WEATHER" FontSize="44" Margin="0,20,0,0" HorizontalAlignment="Center"></TextBlock>
+        <Grid Margin="0,120,0,0">
+            <DataGrid x:Name="WeatherTable" FontSize="28" ItemsSource="{Binding Source=content}" HorizontalAlignment="Center" Loaded="WeatherTable_Loaded">
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Page>

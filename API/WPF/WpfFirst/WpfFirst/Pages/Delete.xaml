@@ -20,12 +20,13 @@
                     <RowDefinition Height="80"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="80"></RowDefinition>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">ID</TextBlock>
                 <TextBox Grid.Row="0" Width="250" Height="40" x:Name="DeleteBoxID" FontSize="22"></TextBox>
                 <TextBlock Grid.Row="1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,320,0">Login</TextBlock>
                 <TextBox Grid.Row="1" Width="250" Height="40" x:Name="DeleteBoxLogin" FontSize="22"></TextBox>
-                <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Back" Click="Button_Delete"></Button>
+                <Button FontSize="22" Grid.Row="2" Height="40" Width="250" Content="Delete" Click="Button_DeleteAsync"></Button>
                 <Button FontSize="22" Grid.Row="3" Height="40" Width="250" Content="Back" Click="Button_Back"></Button>
             </Grid>
         </Grid>

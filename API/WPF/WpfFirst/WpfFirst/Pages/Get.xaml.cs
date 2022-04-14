@@ -64,5 +64,36 @@ namespace WpfFirst
         {
             this.NavigationService.GoBack();
         }
+
+        private async void PostBoxList_Loaded(object sender, RoutedEventArgs e)
+        {
+            IsEnabled = false;
+            var client = App.HttpClient;
+            var query = HttpUtility.ParseQueryString(string.Empty);
+            if (!string.IsNullOrWhiteSpace(FindBoxLogin.Text))
+            {
+                query["Login"] = FindBoxLogin.Text;
+            }
+
+            var builder = new UriBuilder("https://localhost:7144/User");
+            builder.Query = query.ToString();
+            var response = await client.GetAsync(builder.Uri);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var item2 = await response.Content.ReadFromJsonAsync<IEnumerable<UserWebApiModel>>(
+                    new JsonSerializerOptions(JsonSerializerDefaults.Web));
+
+                PostBoxList.ItemsSource = item2;
+
+            }
+
+            else
+            {
+                MessageBox.Show($"Ne uspeshno {response.StatusCode} {await response.Content.ReadAsStringAsync()}");
+            }
+            IsEnabled = true;
+
+        }
     }
 }

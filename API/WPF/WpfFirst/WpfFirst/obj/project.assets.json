@@ -8,19 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\yt_fe\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyFiles\\GitHub\\API\\WPF\\WpfFirst\\WpfFirst\\WpfFirst.csproj",
+      "projectUniqueName": "C:\\Gagaev\\WordSkills\\API\\WPF\\WpfFirst\\WpfFirst\\WpfFirst.csproj",
       "projectName": "WpfFirst",
-      "projectPath": "D:\\MyFiles\\GitHub\\API\\WPF\\WpfFirst\\WpfFirst\\WpfFirst.csproj",
-      "packagesPath": "C:\\Users\\yt_fe\\.nuget\\packages\\",
-      "outputPath": "D:\\MyFiles\\GitHub\\API\\WPF\\WpfFirst\\WpfFirst\\obj\\",
+      "projectPath": "C:\\Gagaev\\WordSkills\\API\\WPF\\WpfFirst\\WpfFirst\\WpfFirst.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Gagaev\\WordSkills\\API\\WPF\\WpfFirst\\WpfFirst\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\yt_fe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
